@@ -9,7 +9,7 @@ Logueate con **LABORATORIA** como usuario y contraseña.
 
 En vista a la necesidad que presentan los jugadores novatos al iniciar su camino como invocadores, desarrollamos esta app con el fin de brindarles un espacio donde puedan estudiar a detalle las características de cada uno de los personajes del juego, para de este modo aumentar su rendimiento y conocimiento sobre el universo de League of Legends.
 
-Nos basamos en usuarios nuevos, con poco o nulo conocimiento sobre los campeones, en edades comprendidas en 12 y 25 años, que se ubiquen en Latinoamérica o sean de habla hispana. 
+Nos basamos en usuarios nuevos, con poco o nulo conocimiento sobre los campeones, en edades comprendidas en 12 y 25 años, que se ubiquen en Latinoamérica. 
 
 Se entrevistaron a 5 usuarios que nos ayudaron a consolidar la idea principal de esta app, afirmando la utilidad de una aplicación como esta y del valor que le agrega a su experiencia como jugadores novatos, invitandolos de este modo a jugar. 
 
