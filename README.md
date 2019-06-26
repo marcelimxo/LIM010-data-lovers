@@ -21,6 +21,16 @@ Este prototipo está basado en la interfaz de la página oficial del juego Leagu
 
 La mayoría indicó que les resulta bastante intuitiva la interfaz, además de destacar la importancia en el tamaño de los botones, y las letras. Sin embargo, surgió la sugerencia de mostrar las características en otra página, al igual que mostrar una paginación para ubicar mejor a los campeones. Estas sugerencias se sometieron a una encuesta entre los mismos usuarios y el resultado final terminó siendo el presentado a continuación:
 
-![Segundo prototipo de baja fidelidad, version mobile](https://lh3.googleusercontent.com/qlomC97Ps9dscZsGu-coCSZGObcERRVsqsOIK9Qtem5F49xWq2dhLaP9XunknYMojxjL8MmXz0nX-w "Segundo prototipo de baja fidelidad, version mobile")
+![Segundo prototipo de baja fidelidad, version mobile](https://lh3.googleusercontent.com/qlomC97Ps9dscZsGu-coCSZGObcERRVsqsOIK9Qtem5F49xWq2dhLaP9XunknYMojxjL8MmXz0nX-w  "Segundo prototipo de baja fidelidad, version mobile")
 
 Se decidió dejar la paginación al fondo y las características mostrarlas en un desplegable, todo en la misma ventana. 
+
+## Desktop
+El prototipo de Desktop esta basado en las historias de usuario que surgieron a partir de las entrevistas. 
+El primer prototipo es la siguiente imagen:
+
+![enter image description here](https://lh3.googleusercontent.com/k-xylFRS1sjydl-HsCaBtqfB3iTNLY88LHbuJrbkZigTyDTgtZN1NTa44ZjvT3B2RiL1uwpientF "Primer prototipo")
+
+El feedback que se obtuvo fue que la pagina debería contar con una sección de búsqueda por nombre de los campeones el cual se agrego en el siguiente prototipo:
+
+![enter image description here](https://lh3.googleusercontent.com/Ffb9kaZ0VFe5DAh5k8NnS7NIOKMZF1LP5JXB1sT6o0S8wZ13rNPC2KVg0QiwyGqT8S2Lkq05G0v7 "Prototipo de baja fidelidad")
