@@ -1,3 +1,13 @@
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
 .dark-blue-bg {
   background-color: #030a11;
 }
