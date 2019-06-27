@@ -15,15 +15,20 @@
     <section id="login" class="flex mobile-login dark-blue-bg">
 
       <div class="mobile-title caudex dark-gold-letter">
-        <h1>Invocadores Leyendas</h1>
+        <p>INVOCADORES LEYENDAS</p>
       </div>
-      <form>
-        <label for="user" class="mobile-label open-sans pale-gold-letter">Usuario</label>
-        <input type="text" id="user" class="mobile-input open-sans pale-gold-letter gunmetal-bg" />
-        <span id="empty-user" class="empty-user"></span>
-        <label for="password" class="mobile-label open-sans pale-gold-letter">Contraseña</label>
-        <input type="password" id="password" class="mobile-input open-sans pale-gold-letter gunmetal-bg" />
-        <span id="empty-psw" class="empty-psw"></span>
+      <form class="padding-5">
+
+        <div class="margin-bottom-10">
+          <label for="user" class="mobile-label open-sans pale-gold-letter">Usuario</label>
+          <input type="text" id="user" class="mobile-input open-sans pale-gold-letter gunmetal-bg" />
+          <span id="empty-user" class="empty-user"></span>
+        </div>
+        <div class="margin-bottom-10">
+          <label for="password" class="mobile-label open-sans pale-gold-letter">Contraseña</label>
+          <input type="password" id="password" class="mobile-input open-sans pale-gold-letter gunmetal-bg" />
+          <span id="empty-psw" class="empty-psw"></span>
+        </div>
         <span class="open-sans pale-gold-letter span-password bold">¿Olvidaste tu contraseña?</span>
         <input type="submit" value="INGRESA" class="btn-login bold caudex gunmetal-bg" id="btn-login">
         <span id="error-login" class="error-login"></span>
