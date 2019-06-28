@@ -3,14 +3,12 @@
   flex-flow: row wrap;
 }
 
-.block {
-  display: block;
-  text-align: right;
-}
-
 .flex > * {
   padding: 2.5%;
   flex-flow: wrap;
+  width: 100%;
+  min-width: 350px;
+  max-width: 350px;
 }
 
 .column {
