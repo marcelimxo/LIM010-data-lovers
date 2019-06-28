@@ -22,6 +22,10 @@
   position: relative;
 }
 
+.width-100 {
+  width: 100%;
+}
+
 .width-50 {
   width: 50%;
 }
@@ -68,7 +72,7 @@
 
 .mobile-login {
   width: 375px;
-  height: 667px;
+  height: -webkit-fill-available;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -89,7 +93,7 @@
 }
 
 .mobile-input {
-  width: 335px;
+  width: -webkit-fill-available;
   height: 45px;
   border-radius: 2px;
   border: solid 1px #785a28;

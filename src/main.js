@@ -3,8 +3,8 @@ const btnLogin = document.getElementById("btn-login");
 
 btnLogin.addEventListener("click", evento => {
   evento.preventDefault();
-  let user = document.getElementById("user");
-  let password = document.getElementById("password");
+  const user = document.getElementById("user");
+  const password = document.getElementById("password");
   const emptyUser = document.getElementById("empty-user");
   const emptyPsw = document.getElementById("empty-psw");
   const errorLogin = document.getElementById("error-login");
@@ -15,15 +15,19 @@ btnLogin.addEventListener("click", evento => {
       // pagCifrado.classList.remove('hide');
       alert("bien");
     } else {
-      errorLogin.innerHTML = "Usuario o contraseña incorrectas";
       emptyUser.innerHTML = "";
+      user.value = "";
+      password.value = "";
       emptyPsw.innerHTML = "";
+      errorLogin.innerHTML = "Usuario o contraseña incorrectas";
     }
   } else {
     if (user.value === "") {
+        emptyPsw.innerHTML = "";
       emptyUser.innerHTML = "Ingrese el usuario";
       user.focus();
     } else {
+        emptyUser.innerHTML = "";
       emptyPsw.innerHTML = "Ingrese la contraseña";
       password.focus();
     }
