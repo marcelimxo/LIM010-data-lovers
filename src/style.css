@@ -70,7 +70,6 @@
   width: 375px;
   height: 667px;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
 }
@@ -78,7 +77,6 @@
 .mobile-title {
   font-size: 1.8rem;
   text-align: center;
-  /* height: 0px; */
   display: flex;
   flex-direction: column-reverse;
 }
