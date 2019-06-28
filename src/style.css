@@ -4,7 +4,7 @@
 }
 
 .flex > * {
-  padding: 10px;
+  padding: 5px; /* borrar */
   flex: 1 100%;
 }
 
@@ -95,4 +95,9 @@
   height: 22px;
   font-size: 16px;
   line-height: 1;
+}
+
+.class-error{
+  color: red;
+  font-size: 20px;
 }
