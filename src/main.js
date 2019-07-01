@@ -32,3 +32,64 @@ btnLogin.addEventListener('click', evento => {
     }
   }
 });
+
+const allArrDataLol = Object.values(LOL.data);
+
+//function containerOfAllFunctions(arrKeys) {
+  // Recorre la data y plasma en el html templates (cards y ventanas modales)
+
+  // const containerList = document.getElementById('container-list');
+  // const createTemplateCard = (arrKeys) => {
+  //   let newArrKeys = [];
+  //   let templates = [];
+  //   containerList.value = '';
+
+  //   for (let i = 0; i < arrKeys.length; i++) {
+  //     newArrKeys.push(Object.assign({}, arrKeys[i]));
+  //   }
+
+  //   for (let i = 0; i < newArrKeys.length; i++) {
+  //     templates.push(`
+  //     <div class ="card-link">
+  //         <a class="blog-card" id="${ newArrKeys[i].id }" href="#openmodal${i}">
+  //         <div>
+  //           <img class="post-image " src="${ newArrKeys[i].img}" />
+  //           <div class="article-details" >
+  //             <h1 class="post-name" id="${ newArrKeys[i].id }">${ newArrKeys[i].name} </h1>
+  //             <h3 class="post-title" id="${ newArrKeys[i].id }"> ${ newArrKeys[i].title}</h3>
+  //             <h3 class="post-title" id="${ newArrKeys[i].id }"> <img class="difficulty-img" src="img/difficulty.jpg"/> ${ newArrKeys[i].info.difficulty}</h3>
+  //           </div>                   
+  //         </div>
+  //         </a>
+  //     </div>
+            
+  //     );
+  //   }
+  //   containerList.innerHTML = templates.join('');
+  // }};
+
+const mainContainer = document.getElementById('main-container');
+  const createTemplateCard = (list) => {
+    let templateCard = '';
+    list.forEach((dataLol) => {
+      const card = `
+      <div class='cards'>
+        <figure>
+        <img class='frontal' src="${ dataLol.splash}"/>
+          <li class='name'>${ dataLol.name}</li>
+          <hr>
+           <div class='trasera'>
+             <li class='title'> ${ dataLol.blurb}</li>
+           </div>
+        </figure>
+      </div>`;
+      templateCard += card;
+    }),
+    mainContainer.innerHTML = templateCard;
+  };
+  createTemplateCard(allArrDataLol);
+  const selectOrder = document.getElementById('order');
+  selectOrder.addEventListener('change', () => {
+    const dataOrdenada = lol.sortChampions(arrDataLolTotal, selectOrder.value);
+    createTemplateCard(dataOrdenada);
+  });
