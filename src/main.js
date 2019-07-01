@@ -7,7 +7,7 @@ btnLogin.addEventListener('click', evento => {
   const user = document.getElementById('user');
   const password = document.getElementById('password');
   const error = document.getElementById('error');
-  if (validarContraseña(user.value, password.value) === true) {
+  if (loginValidate(user.value, password.value) === true) {
     pagLogin.classList.add('hide');
     pagGeneral.classList.remove('hide');
   } else {
@@ -16,9 +16,9 @@ btnLogin.addEventListener('click', evento => {
 });
 
 
-const allArrDataLol = Object.values(lolJS(LOL.data));
+const ourData = Object.values(lolJS(LOL.data));
+const list = mostrarCampeones(ourData); // array modificado con los dotos que yo quiero
 const champions = document.getElementById('all-champions');
-const list = mostrarCampeones(allArrDataLol); // array modificado con los dotos que yo quiero
 
 const createTemplateCard = (list) => {
   let templateCard = '';

@@ -9,7 +9,7 @@
     .then(data => console.log(data));
 }; */
 
-const validarContraseña = (user, password) => {
+const loginValidate = (user, password) => {
   if (user !== '' && password !== '') {
     const msg = '';
     if (user === 'LABORATORIA' && password === 'LABORATORIA') {
