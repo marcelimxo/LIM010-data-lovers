@@ -146,6 +146,9 @@
     width: 32px;
     height: 32px;
   }
+  .sort {
+    font-size: 20px;
+  }
   .img-sort {
     width: 21px;
     height: 21px;
@@ -157,10 +160,20 @@
   .label-champions {
     font-size: 1.5rem;
   }
+  .body {
+    background-image: url(img/img-mobile.svg);
+    /* background-repeat: no-repeat; */
+  }
+    .space-around{
+      justify-content: space-around;
+    }
 }
 @media screen and (max-width: 480px) {
   .body {
     background-image: url(img/img-mobile.svg);
+  }
+  .labels-sort{
+  display: none;
   }
   .title {
     font-size: 2rem;
@@ -174,9 +187,7 @@
     width: 10.4px;
     height: 10.4px;
   }
-  .sort {
-    font-size: 18px;
-  }
+  
   .sort-control {
     justify-content: space-between;
     padding: 15px 10px 0 10px;
