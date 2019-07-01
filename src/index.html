@@ -12,40 +12,41 @@
 <body id="body">
   <header></header>
   <main class="position-relative">
-      <section id="login-container" class="align height-100">
-          <form class="login">
-            <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
-            <div class="error">
-                <span id="error"></span>
-            </div>
-            <div class="input-group">
-              <label for="user" class="mobile-label pale-gold-letter">Usuario</label>
-              <input type="text" id="user" class="mobile-input pale-gold-letter gunmetal-bg" />
-            </div>
-            <div class="input-group">
-              <label for="password" class="mobile-label pale-gold-letter">Contraseña</label>
-              <input type="password" id="password" class="mobile-input pale-gold-letter gunmetal-bg" />
-              <div class="lost-password"><span class="pale-gold-letter bold">¿Olvidaste tu contraseña?</span></div>
-            </div>
-            <div>
-              <input type="submit" value="INGRESA" class="btn-login bold caudex gunmetal-bg" id="btn-login" />
-            </div>
-            <div class="registration">
-              <span class="span-no-account dark-gold-letter">¿No tienes una cuenta?</span>
-              <span class="span-no-account bold dark-gold-letter">Registrate</span>
-            </div>
-          </form>
-      </section>
-      <section id="general" class="general">
-          <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
-          <div class="labels-sort flex space-around">
-              <label for="search" id="search-champ" class="sort caudex pale-gold-letter">BUSCAR UN CAMPEÓN</label>
-              <label for="" id="filters" class="sort caudex pale-gold-letter">Ordenar Por</label>
-            </div>
-          <div class="input-group with-icon">
-            <input type="text" id="search" class="search" placeholder="BUSCAR" />
-            <img class="icon" alt="lupa" src="img/magnifier.svg">
-          </div>
+    <section id="login-container" class="align height-100">
+      <form class="login">
+        <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
+        <div class="error">
+          <span id="error"></span>
+        </div>
+        <div class="input-group">
+          <label for="user" class="mobile-label pale-gold-letter">Usuario</label>
+          <input type="text" id="user" class="mobile-input pale-gold-letter gunmetal-bg" />
+        </div>
+        <div class="input-group">
+          <label for="password" class="mobile-label pale-gold-letter">Contraseña</label>
+          <input type="password" id="password" class="mobile-input pale-gold-letter gunmetal-bg" />
+          <div class="lost-password"><span class="pale-gold-letter bold">¿Olvidaste tu contraseña?</span></div>
+        </div>
+        <div>
+          <input type="submit" value="INGRESA" class="btn-login bold caudex gunmetal-bg" id="btn-login" />
+        </div>
+        <div class="registration">
+          <span class="span-no-account dark-gold-letter">¿No tienes una cuenta?</span>
+          <span class="span-no-account bold dark-gold-letter">Registrate</span>
+        </div>
+      </form>
+    </section>
+    <section id="general" class="general">
+      <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
+      <div class="labels-sort flex space-around">
+        <label for="search" id="search-champ" class="sort caudex pale-gold-letter">BUSCAR UN CAMPEÓN</label>
+        <label for="" id="filters" class="sort caudex pale-gold-letter">Ordenar Por</label>
+      </div>
+      <div id="filter-group" class="filter-group">
+        <div class="input-group with-icon">
+          <input type="text" id="search" class="search" placeholder="BUSCAR" />
+          <img class="icon" alt="lupa" src="img/magnifier.svg">
+        </div>
         <div class="sort-control flex">
           <div class="border-filtros flex">
             <span id="sort-az" class="sort-span caudex pale-gold-letter">A-Z</span>
@@ -61,14 +62,13 @@
           </div>
         </div>
       </div>
-
       <div class="title-type flex">
         <img src="img/izquierda.svg" alt="line" class="left-line" />
         <h3 class="label-champions caudex pale-gold-letter bold">CAMPEONES</h3>
         <img src="img/derecha.svg" alt="line" class="right-left" />
       </div>
       <div id="main-container" class="galeria flex"></div>
-      
+
       <!-- <nav>
         <ul class="galeria flex">
           <li><a href=""> <img src="" alt=""> </a></li>

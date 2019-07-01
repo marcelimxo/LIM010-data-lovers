@@ -94,7 +94,6 @@
 }
 /* nuevos estilos */
 .search {
-  background: white url(img/magnifier.svg) right no-repeat;
   width: 23rem;
   height: 32.8px;
   border-radius: 2px;

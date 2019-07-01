@@ -11,7 +11,7 @@ btnLogin.addEventListener('click', evento => {
     if (user.value === 'LABORATORIA' && password.value === 'LABORATORIA') {
       pagLogin.classList.add('hide');
       pagGeneral.classList.remove('hide');
-      document.getElementById("body").style.background = "url(img/img-mobile.svg) blue repeat-x center";
+      document.getElementById("body").style.background = "url(img/img-mobile.svg) repeat-x center";
     } else {
       user.value = '';
       password.value = '';
