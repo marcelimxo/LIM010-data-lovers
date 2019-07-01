@@ -1,7 +1,7 @@
 const btnLogin = document.getElementById('btn-login');
 const pagLogin = document.getElementById('login-container');
 const pagGeneral = document.getElementById('general');
-pagGeneral.classList.add('hide'); 
+/* pagGeneral.classList.add('hide');  */
 btnLogin.addEventListener('click', evento => {
   evento.preventDefault();
   const user = document.getElementById('user');
@@ -17,25 +17,23 @@ btnLogin.addEventListener('click', evento => {
 
 
 const ourData = Object.values(lolJS(LOL.data));
-const list = mostrarCampeones(ourData); // array modificado con los dotos que yo quiero
 const champions = document.getElementById('all-champions');
 
 const createTemplateCard = (list) => {
   let templateCard = '';
-  list.forEach((dataLol) => {
+  list.forEach((ourData) => {
     const card = `
-      <div class='cards'>
-        <figure>
-        <img class='frontal' src="${ dataLol.img}"/>
-          <li class='name'>${ dataLol.name}</li>
-          <hr>
+      <div class="cards">
+        <figure class="champ-img">
+        <img src="${ourData.img}"/>
         </figure>
+        <p class="sort champ-name">${ourData.name}</p>
       </div>`;
     templateCard += card;
   }),
   champions.innerHTML = templateCard;
 };
-createTemplateCard(list);
+createTemplateCard(ourData);
 /* const selectOrder = document.getElementById('order');
 selectOrder.addEventListener('change', () => {
   const dataOrdenada = lol.sortChampions(arrDataLolTotal, selectOrder.value);
