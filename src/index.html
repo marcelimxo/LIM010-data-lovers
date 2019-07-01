@@ -40,35 +40,36 @@
       <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
       <div class="labels-sort flex space-around">
         <label for="search" id="search-champ" class="sort caudex pale-gold-letter">BUSCAR UN CAMPEÓN</label>
-        <label for="" id="filters" class="sort caudex pale-gold-letter">Ordenar Por</label>
+        <label for="" id="filters" class="sort caudex pale-gold-letter">ORDENAR POR</label>
       </div>
-      <div id="filter-group" class="filter-group">
+      <div id="filter-group" class="filter-group flex space-around">
         <div class="input-group with-icon">
           <input type="text" id="search" class="search" placeholder="BUSCAR" />
           <img class="icon" alt="lupa" src="img/magnifier.svg">
         </div>
         <div class="sort-control flex">
-          <div class="border-filtros flex">
-            <span id="sort-az" class="sort-span caudex pale-gold-letter">A-Z</span>
+          <button class="filter-buttons">
+            <span id="sort-az" class="sort caudex pale-gold-letter">A-Z</span>
             <img src="img/sort.svg" alt="sort a-z" class="img-sort" />
-          </div>
-          <div class="border-filtros flex">
-            <span id="sort-type" class="sort-span caudex pale-gold-letter">Tipo</span>
-            <img src="img/caret-down.svg" alt="caret download" class="img-sort" />
-          </div>
-          <div class="border-filtros flex">
-            <span id="ad" class="sort-span caudex pale-gold-letter bold">AD</span>
-            <img src="img/sort.svg" alt="sort a-z" class="img-sort" />
-          </div>
+          </button>
+          <select class="filter-buttons sort caudex pale-gold-letter">
+            <option value disabled selected>Tipo
+            </option>
+          </select>
+          <button class="filter-buttons">
+            <span id="ad" class="sort caudex pale-gold-letter">AD</span>
+            <img src="img/sort.svg" alt="sort attack damage" class="img-sort" />
+          </button>
         </div>
-        <div class="title-type flex">
-          <img src="img/izquierda.svg" alt="line" class="left-line" />
-          <h3 class="label-champions caudex pale-gold-letter bold">CAMPEONES</h3>
-          <img src="img/derecha.svg" alt="line" class="right-left" />
-        </div>
-        <div id="main-container" class="galeria flex"></div>
+      </div>
+      <div class="title-type flex">
+        <img src="img/divider-desktop.svg" alt="line" class=""/>
+        <h3 class="label-champions caudex pale-gold-letter bold">CAMPEONES</h3>
+        <img src="img/divider-desktop.svg" alt="line" class="divider-right"/>
+      </div>
+      <div id="all-champions" class="galeria flex"></div>
 
-        <!-- <nav>
+      <!-- <nav>
         <ul class="galeria flex">
           <li><a href=""> <img src="" alt=""> </a></li>
           <li><a href=""> <img src="" alt=""> </a></li>

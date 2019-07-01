@@ -9,11 +9,59 @@
     .then(data => console.log(data));
 }; */
 
-const lolJS = () => {
+const validarContraseña = (user, password) => {
+  if (user !== '' && password !== '') {
+    const msg = '';
+    if (user === 'LABORATORIA' && password === 'LABORATORIA') {
+      return true;
+    } else {
+      switch (user, password) {
+      case user === '':
+        msg = 'Ingrese el usuario';
+        user.focus();
+        break;
+      case password === '':
+        msg = 'Ingrese la contraseña';
+        password.focus();
+        break;
+      
+      default:
+        msg = 'Usuario o contraseña incorrectas';
+        break;
+      } return msg;
+    }
+  }
+    
+    
+  /* {
+      user = '';
+      password = '';
+      msg = 'Usuario o contraseña incorrectas';
+      return false;
+    }
+  } else {
+    if (user === '') {
+      msg = 'Ingrese el usuario';
+      user.focus();
+    } else {
+      msg = 'Ingrese la contraseña';
+      password.focus();
+    }
+  } */
+};
+
+
+const mostrarCampeones = (data) => {
+  /* escribo las instrucciones*/
+  return [{}, {}, {}];
+};
+
+
+const lolJS = (data) => {
   /* Inicilizamos el array vacio */
   let arrChamps = [];
   /*  Recorremos todos los campeones de la propiedad "data" en el objeto LOL */
-  for (const key in LOL.data) {
+  for (const key in data) {
     /* Sacamos las propiedades existentes en data y le asignamos el valor correspondiente al nombre de esa propiedad */
     const {name, id, title, img, info: {attack, defense, magic, difficulty}, stats: {hp}} = LOL.data[key];
     /* Agregamos esas propiedades a un objeto nuevo y este lo agregamos al array de objetos */
@@ -31,6 +79,6 @@ const lolJS = () => {
   return arrChamps;
 };
 
-console.log(lolJS());
+/* console.log(lolJS(LOL.data)); */
 
 window.lolJS = lolJS;

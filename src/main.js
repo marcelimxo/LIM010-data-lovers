@@ -7,28 +7,19 @@ btnLogin.addEventListener('click', evento => {
   const user = document.getElementById('user');
   const password = document.getElementById('password');
   const error = document.getElementById('error');
-  if (user.value !== '' && password.value !== '') {
-    if (user.value === 'LABORATORIA' && password.value === 'LABORATORIA') {
-      pagLogin.classList.add('hide');
-      pagGeneral.classList.remove('hide');
-    } else {
-      user.value = '';
-      password.value = '';
-      error.innerHTML = 'Usuario o contraseña incorrectas';
-    }
+  if (validarContraseña(user.value, password.value) === true) {
+    pagLogin.classList.add('hide');
+    pagGeneral.classList.remove('hide');
   } else {
-    if (user.value === '') {
-      error.innerHTML = 'Ingrese el usuario';
-      user.focus();
-    } else {
-      error.innerHTML = 'Ingrese la contraseña';
-      password.focus();
-    }
+    
   }
 });
 
-const allArrDataLol = Object.values(LOL.data);
-const mainContainer = document.getElementById('main-container');
+
+const allArrDataLol = Object.values(lolJS(LOL.data));
+const champions = document.getElementById('all-champions');
+const list = mostrarCampeones(allArrDataLol); // array modificado con los dotos que yo quiero
+
 const createTemplateCard = (list) => {
   let templateCard = '';
   list.forEach((dataLol) => {
@@ -42,11 +33,11 @@ const createTemplateCard = (list) => {
       </div>`;
     templateCard += card;
   }),
-  mainContainer.innerHTML = templateCard;
+  champions.innerHTML = templateCard;
 };
-createTemplateCard(allArrDataLol);
-const selectOrder = document.getElementById('order');
+createTemplateCard(list);
+/* const selectOrder = document.getElementById('order');
 selectOrder.addEventListener('change', () => {
   const dataOrdenada = lol.sortChampions(arrDataLolTotal, selectOrder.value);
   createTemplateCard(dataOrdenada);
-});
+}); */
