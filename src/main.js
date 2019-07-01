@@ -11,6 +11,7 @@ btnLogin.addEventListener('click', evento => {
     if (user.value === 'LABORATORIA' && password.value === 'LABORATORIA') {
       pagLogin.classList.add('hide');
       pagGeneral.classList.remove('hide');
+      document.getElementById("body").style.background = "url(img/img-mobile.svg) repeat-x center";
     } else {
       user.value = '';
       password.value = '';
@@ -26,3 +27,30 @@ btnLogin.addEventListener('click', evento => {
     }
   }
 });
+
+const allArrDataLol = Object.values(LOL.data);
+const mainContainer = document.getElementById('main-container');
+  const createTemplateCard = (list) => {
+    let templateCard = '';
+    list.forEach((dataLol) => {
+      const card = `
+      <div class='cards'>
+        <figure>
+        <img class='frontal' src="${ dataLol.splash}"/>
+          <li class='name'>${ dataLol.name}</li>
+          <hr>
+           <div class='trasera'>
+             <li class='title'> ${ dataLol.blurb}</li>
+           </div>
+        </figure>
+      </div>`;
+      templateCard += card;
+    }),
+    mainContainer.innerHTML = templateCard;
+  };
+  createTemplateCard(allArrDataLol);
+  const selectOrder = document.getElementById('order');
+  selectOrder.addEventListener('change', () => {
+    const dataOrdenada = lol.sortChampions(arrDataLolTotal, selectOrder.value);
+    createTemplateCard(dataOrdenada);
+  });

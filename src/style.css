@@ -199,10 +199,41 @@ body {
 	}
 	.label-champions {
 		font-size: 1.5rem;
-	}
+  }
+  .space-around{
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .body {
+    background-image: url(img/img-mobile.svg);
+  }
+  .labels-sort {
+    display: none;
+  }
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .magnifier {
+    width: 27px;
+    height: 27px;
+  }
+  .img-sort {
+    width: 10.4px;
+    height: 10.4px;
+  }
+  .sort-control {
+    justify-content: space-between;
+    padding: 15px 10px 0 10px;
+  }
+  .label-champions {
+    width: 166px;
+    height: 21px;
+    font-size: 16px;
+    letter-spacing: 8px;
+  }
 	body {
 		margin: 0;
 		padding: 20px;
