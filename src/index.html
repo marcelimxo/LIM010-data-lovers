@@ -9,47 +9,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
-<body class="body">
+<body id="body">
   <header></header>
   <main class="position-relative">
-    <section id="login-container">
-      <div class="  ">
-        <form class="mobile-login dark-blue-bg    column">
-          <div class="mobile-title caudex dark-gold-letter">
-            <p>INVOCADORES LEYENDAS</p>
+      <section id="login-container" class="align height-100">
+          <form class="login">
+            <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
+            <div class="error">
+                <span id="error"></span>
+            </div>
+            <div class="input-group">
+              <label for="user" class="mobile-label pale-gold-letter">Usuario</label>
+              <input type="text" id="user" class="mobile-input pale-gold-letter gunmetal-bg" />
+            </div>
+            <div class="input-group">
+              <label for="password" class="mobile-label pale-gold-letter">Contraseña</label>
+              <input type="password" id="password" class="mobile-input pale-gold-letter gunmetal-bg" />
+              <div class="lost-password"><span class="pale-gold-letter bold">¿Olvidaste tu contraseña?</span></div>
+            </div>
+            <div>
+              <input type="submit" value="INGRESA" class="btn-login bold caudex gunmetal-bg" id="btn-login" />
+            </div>
+            <div class="registration">
+              <span class="span-no-account dark-gold-letter">¿No tienes una cuenta?</span>
+              <span class="span-no-account bold dark-gold-letter">Registrate</span>
+            </div>
+          </form>
+      </section>
+      <section id="general" class="general">
+          <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
+          <div class="labels-sort flex space-around">
+              <label for="search" id="search-champ" class="sort caudex pale-gold-letter">BUSCAR UN CAMPEÓN</label>
+              <label for="" id="filters" class="sort caudex pale-gold-letter">Ordenar Por</label>
+            </div>
+          <div class="input-group with-icon">
+            <input type="text" id="search" class="search" placeholder="BUSCAR" />
+            <img class="icon" alt="lupa" src="img/magnifier.svg">
           </div>
-          <div>
-            <label for="user" class="mobile-label open-sans pale-gold-letter">Usuario</label>
-            <input type="text" id="user" class="mobile-input open-sans pale-gold-letter gunmetal-bg" />
-            <span id="empty-user" class="class-error"></span>
-          </div>
-          <div>
-            <label for="password" class="mobile-label open-sans pale-gold-letter">Contraseña</label>
-            <input type="password" id="password" class="mobile-input open-sans pale-gold-letter gunmetal-bg" />
-            <span id="empty-psw" class="class-error"></span>
-          </div>
-          <span class="open-sans pale-gold-letter span-password bold">¿Olvidaste tu contraseña?</span>
-          <div>
-            <input type="submit" value="INGRESA" class="btn-login bold caudex gunmetal-bg" id="btn-login" />
-            <span id="error-login" class="class-error"></span>
-          </div>
-          <div>
-            <span class="span-no-account open-sans dark-gold-letter">¿No tienes una cuenta?</span>
-            <span class="span-no-account open-sans bold dark-gold-letter">Registrate</span>
-          </div>
-        </form>
-      </div>
-    </section>
-    <section id="general" class="general">
-      <img src="img/logo-mobile.svg" alt="logo de invocadores leyendas" class="logo-mobile" />
-      <div class="labels-sort flex space-around">
-        <label for="search" id="search-champ" class="sort caudex pale-gold-letter">BUSCAR UN CAMPEÓN</label>
-        <label for="" id="filters" class="sort caudex pale-gold-letter">Ordenar Por</label>
-      </div>
-      <div class="flex space-around">
-        <div class="sort-control flex">
-          <input type="text" id="search" class="search caudex" placeholder="BUSCAR" />
-        </div>
         <div class="sort-control flex">
           <div class="border-filtros flex">
             <span id="sort-az" class="sort-span caudex pale-gold-letter">A-Z</span>
@@ -83,7 +79,7 @@
     </section>
   </main>
   <footer></footer>
-  <script src="./data/lol/lol.js"></script> 
+  <!-- <script src="./data/lol/lol.js"></script>  -->
   <script src="data.js"></script>
   <script src="main.js"></script>
 </body>
