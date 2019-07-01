@@ -80,8 +80,8 @@ body {
 
 .icon {
   position: absolute;
-  right: 9px;
-  top: 13px;
+    left: 29%;
+    top: 13px;
 }
 
 /* Estilos que se repiten */
@@ -95,6 +95,7 @@ body {
   margin-top: 5px;
   padding-left: 16px;
   height: 45px;
+  width: 30%;
   border-radius: 2px;
   border: solid 1px #785a28;
 }
@@ -225,6 +226,7 @@ body {
 
 .title-type {
   justify-content: space-evenly;
+  padding: 15px 0px 15px 0px;
 }
 .sort {
   letter-spacing: 4px;
@@ -262,7 +264,6 @@ body {
   }
   .sort-control {
     justify-content: space-between;
-    padding: 15px 10px 0 10px;
   }
   .label-champions {
     font-size: 14px;
@@ -293,11 +294,12 @@ body {
   .sort {
     font-size: 18px;
   }
-  .sort-control {
-    justify-content: space-between;
-    padding: 15px 10px 0 10px;
+  .icon {
+    left: 90%;
   }
-
+  .input-group input {
+    width: auto;
+  }
   .divider{
     content: url(img/mobile/divider-mobile.svg)
   }
