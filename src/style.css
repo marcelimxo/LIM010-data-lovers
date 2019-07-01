@@ -1,3 +1,7 @@
+.hide {
+  display: none;
+}
+
 .dark-blue-bg {
   background-color: #030a11;
 }
@@ -27,7 +31,8 @@
 }
 
 .mobile-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .mobile-label {
@@ -52,7 +57,7 @@
 }
 
 .btn-login {
-  width: 335px;
+  width: -webkit-fill-available;
   height: 50px;
   border-radius: 5px;
   border-style: solid;
@@ -74,4 +79,112 @@
 .class-error {
   color: red;
   font-size: 20px;
+}
+.flex {
+  display: flex;
+}
+.general {
+  margin: auto;
+  padding: auto;
+}
+.logo-mobile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* nuevos estilos */
+.search {
+  background: white url(img/magnifier.svg) right no-repeat;
+  width: 23rem;
+  height: 32.8px;
+  border-radius: 2px;
+  color: #785a28;
+  border: solid 1px #785a28;
+  background-color: #1e2328;
+}
+::placeholder {
+  color: #937341;
+  font-family: Caudex;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+.border-filtros {
+  width: 100px;
+  height: 32.8px;
+  border-style: solid;
+  border-width: 1px;
+  border-image-source: linear-gradient(to bottom, #c3a758, #6b521e);
+  border-image-slice: 1;
+  background-color: rgba(25, 28, 33, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.body {
+  background-color: #030a11;
+}
+.title-type {
+  justify-content: space-evenly;
+}
+.sort-span {
+  width: 50px;
+  height: 13.3px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #937341;
+}
+@media screen and (min-width: 780px) and (max-width: 2024px) {
+  /* .search {
+    font-size: 36px;
+    padding: 1%;
+    width: 80%;
+  } */
+  .title {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .magnifier {
+    width: 32px;
+    height: 32px;
+  }
+  .img-sort {
+    width: 21px;
+    height: 21px;
+  }
+  .sort-control {
+    justify-content: space-between;
+    padding: 15px 10px 0 10px;
+  }
+  .label-champions {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .body {
+    background-image: url(img/img-mobile.svg);
+  }
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .magnifier {
+    width: 27px;
+    height: 27px;
+  }
+  .img-sort {
+    width: 10.4px;
+    height: 10.4px;
+  }
+  .sort {
+    font-size: 18px;
+  }
+  .sort-control {
+    justify-content: space-between;
+    padding: 15px 10px 0 10px;
+  }
+  .label-champions {
+    width: 166px;
+    height: 21px;
+    font-size: 16px;
+    letter-spacing: 8px;
+  }
 }

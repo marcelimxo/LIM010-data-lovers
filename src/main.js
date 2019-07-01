@@ -1,5 +1,7 @@
 const btnLogin = document.getElementById('btn-login');
-
+const pagLogin = document.getElementById('login-container');
+const pagGeneral = document.getElementById('general');
+pagGeneral.classList.add('hide');
 btnLogin.addEventListener('click', evento => {
   evento.preventDefault();
   const user = document.getElementById('user');
@@ -9,7 +11,8 @@ btnLogin.addEventListener('click', evento => {
   const errorLogin = document.getElementById('error-login');
   if (user.value !== '' && password.value !== '') {
     if (user.value === 'LABORATORIA' && password.value === 'LABORATORIA') {
-      alert('bien');
+      pagLogin.classList.add('hide');
+      pagGeneral.classList.remove('hide');
     } else {
       emptyUser.innerHTML = '';
       user.value = '';

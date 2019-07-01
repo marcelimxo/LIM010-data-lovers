@@ -2,25 +2,22 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Caudex:400,700|Open+Sans&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Caudex:400,700|Open+Sans&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
-<body>
+<body class="body">
   <header></header>
   <main class="position-relative">
     <section id="login-container">
       <div class="  ">
-
         <form class="mobile-login dark-blue-bg    column">
-
           <div class="mobile-title caudex dark-gold-letter">
             <p>INVOCADORES LEYENDAS</p>
           </div>
-
           <div>
             <label for="user" class="mobile-label open-sans pale-gold-letter">Usuario</label>
             <input type="text" id="user" class="mobile-input open-sans pale-gold-letter gunmetal-bg" />
@@ -33,17 +30,41 @@
           </div>
           <span class="open-sans pale-gold-letter span-password bold">¿Olvidaste tu contraseña?</span>
           <div>
-            <input type="submit" value="INGRESA" class="btn-login bold caudex gunmetal-bg" id="btn-login">
+            <input type="submit" value="INGRESA" class="btn-login bold caudex gunmetal-bg" id="btn-login" />
             <span id="error-login" class="class-error"></span>
           </div>
           <div>
-            <span class="span-no-account open-sans dark-gold-letter">¿No tienes una cuenta?</span> <span
-              class="span-no-account open-sans bold dark-gold-letter">Registrate</span>
+            <span class="span-no-account open-sans dark-gold-letter">¿No tienes una cuenta?</span>
+            <span class="span-no-account open-sans bold dark-gold-letter">Registrate</span>
           </div>
         </form>
       </div>
     </section>
-    <section id="general" class="dark-blue-bg">
+    <section id="general" class="general">
+      <img src="img/logo-mobile.svg" alt="logo de invocadores leyendas" class="logo-mobile">
+      <div class="sort-control flex">
+        <input type="text" id="search" class="search" placeholder="BUSCAR" />
+      </div>
+      <div class="sort-control flex">
+        <!-- <label for="" class="sort caudex pale-gold-letter">Ordenar Por</label> -->
+        <div class="border-filtros flex">
+          <span id="sort-az" class="sort-span caudex pale-gold-letter">A-Z</span>
+          <img src="img/sort.svg" alt="sort a-z" class="img-sort" />
+        </div>
+        <div class="border-filtros flex">
+          <span id="sort-type" class="sort-span caudex">Tipo</span>
+          <img src="img/caret-down.svg" alt="caret download" class="img-sort" />
+        </div>
+        <div class="border-filtros flex"> 
+          <span id="ad" class="sort-span caudex pale-gold-letter bold">AD</span>
+          <img src="img/sort.svg" alt="sort a-z" class="img-sort" />
+        </div>
+      </div>
+      <div class="title-type flex">
+        <img src="img/izquierda.svg" alt="line" class="left-line">
+        <h3 class="label-champions caudex pale-gold-letter bold">CAMPEONES</h3>
+        <img src="img/derecha.svg" alt="line" class="right-left">
+      </div>
     </section>
   </main>
   <footer></footer>
