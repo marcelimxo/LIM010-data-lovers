@@ -241,7 +241,6 @@ p.sort {
 .champ-name {
 	width: 165px;
 	flex-flow: column nowrap;
-	justify-content: space-around;
 }
 .cards {
 	text-align: center;
@@ -309,5 +308,21 @@ p.sort {
 	.galeria {
 		flex-flow: wrap column;
 		justify-content: space-between;
+		padding: 0px;
+	}
+	.champ-img {
+		margin: 0;
+		display: inherit;
+		width: 0;
+		height: 0;
+	}
+	.champ-name {
+		width: auto;
+		flex-flow: column nowrap;
+	}
+	.cards {
+		text-align: center;
+		border: 1px solid red;
+		margin: 0 0 30px 0;
 	}
 }
