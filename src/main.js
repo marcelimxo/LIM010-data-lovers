@@ -1,17 +1,18 @@
 const btnLogin = document.getElementById('btn-login');
 const pagLogin = document.getElementById('login-container');
 const pagGeneral = document.getElementById('general');
-/* pagGeneral.classList.add('hide');  */
+pagGeneral.classList.add('hide');  
 btnLogin.addEventListener('click', evento => {
   evento.preventDefault();
   const user = document.getElementById('user');
   const password = document.getElementById('password');
   const error = document.getElementById('error');
-  if (loginValidate(user.value, password.value) === true) {
+  let funcLoginValidator = loginValidate(user.value, password.value);
+  if (funcLoginValidator === 'ok') {
     pagLogin.classList.add('hide');
     pagGeneral.classList.remove('hide');
   } else {
-    
+    error.innerHTML = funcLoginValidator;
   }
 });
 
