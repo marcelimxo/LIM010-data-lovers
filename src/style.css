@@ -80,8 +80,8 @@ body {
 
 .icon {
   position: absolute;
-    left: 29%;
-    top: 13px;
+  left: 90%;
+  top: 13px;
 }
 
 /* Estilos que se repiten */
@@ -95,7 +95,7 @@ body {
   margin-top: 5px;
   padding-left: 16px;
   height: 45px;
-  width: 30%;
+  width: 335px;
   border-radius: 2px;
   border: solid 1px #785a28;
 }
@@ -241,6 +241,10 @@ body {
   display: inline-block;
   position: relative;
 }
+.sort-control {
+  justify-content: space-between;
+  margin-top: 10px;
+}
 
 /* Campeones */
 
@@ -303,7 +307,9 @@ body {
   .divider{
     content: url(img/mobile/divider-mobile.svg)
   }
-
+  .filter-group{
+    flex-direction: column;
+  }
   .galeria {    
     flex-flow: wrap column;
     justify-content: space-between;
