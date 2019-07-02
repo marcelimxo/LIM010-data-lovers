@@ -202,6 +202,15 @@ select.filter-buttons {
     background-size: 15%;
     padding: 0.4em 1em;
 }
+.sort-az.filter-buttons {
+	overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    background: url(img/sort.svg) no-repeat right #191c2180;
+    -webkit-appearance: none;
+    background-position-x: 80%;
+    background-size: 15%;
+    padding: 0.4em 1em;
+}
 .filter-buttons:active,
 .filter-buttons:focus {
 	border: solid 1px #c49646;

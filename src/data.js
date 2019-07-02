@@ -30,7 +30,7 @@ const loginValidate = (user, password) => {
     
   return msg;
 };
-  
+
 // Segunda Historia de Usuario-- Mostrar los campeones
 const lolJS = (data) => {
   /* Inicilizamos el array vacio */
@@ -55,7 +55,27 @@ const lolJS = (data) => {
   return arrChamps;
 };
 
+//ordenamiento de a-z
+const sortChampionsAz = (data, clickOrder) => {
+  const arrSortName = data.sort((ab, bc) => {
+    if (ab.name > bc.name) {
+      return 1;
+    } if (ab.name < bc.name) {
+      return -1;
+    }
+    return 0;
+  });
+  if (clickOrder === '0') {
+    return arrSortName;
+  }
+  if (clickOrder === '1') {
+    return arrSortName.reverse();
+  }
+  return 0;
+};
+
 console.log(lolJS(LOL.data)); 
 console.log(LOL.data);
 
 window.lolJS = lolJS;
+window.sortChampionsAz = sortChampionsAz;

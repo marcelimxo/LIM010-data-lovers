@@ -44,8 +44,10 @@ const createTemplateCard = (list) => {
   champions.innerHTML = templateCard;
 };
 createTemplateCard(ourData);
-/* const selectOrder = document.getElementById('order');
-selectOrder.addEventListener('change', () => {
-  const dataOrdenada = lol.sortChampions(arrDataLolTotal, selectOrder.value);
+debugger;
+const selectSortAz = document.getElementById('cbox-az');
+
+selectSortAz.addEventListener('change', ()=>{
+  const dataOrdenada = window.sortChampionsAz(ourData, selectSortAz.value);
   createTemplateCard(dataOrdenada);
-}); */
+});
