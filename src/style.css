@@ -186,11 +186,15 @@ body {
 }
 .filter-buttons {
 	width: 100px;
+	margin-left: 1em;
 	border-style: solid;
 	border-width: 1px;
 	border-image: linear-gradient(to bottom, #c3a758, #6b521e);
 	border-image-slice: 1;
 	background-color: rgba(25, 28, 33, 0.5);
+}
+select.filter-buttons {
+	padding: 0.4em 0.5em;
 }
 .filter-buttons:active,
 .filter-buttons:focus {
@@ -233,18 +237,26 @@ p.sort {
 
 /* Campeones */
 .champ-img {
-	margin: 0;
-	display: inline-block;
-	width: 165px;
-	height: 170.4px;
+    margin: 0;
+    display: inline-block;
+    width: 165px;
+    height: 170.4px;
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(to bottom,#927345, #92734500);
+    border-image-slice: 1;
 }
 .champ-name {
-	width: 165px;
-	flex-flow: column nowrap;
+    width: 165px;
+    flex-flow: column nowrap;
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(to bottom, #92734500, #927345);
+    border-image-slice: 1;
+    background: linear-gradient(180deg, #29363f38 0%, #29363f00 100%);
 }
 .cards {
 	text-align: center;
-	border: 1px solid red;
 	margin: 0 30px 30px 0;
 }
 /* Estilos para mobile */
@@ -261,6 +273,7 @@ p.sort {
 	}
 	.filter-buttons {
 		padding: 0.4em 0 0.4em 0;
+		margin: 0;
 	}
 	.label-champions {
 		font-size: 14px;
@@ -288,7 +301,7 @@ p.sort {
 		height: 10.4px;
 	}
 	.sort {
-		font-size: 18px;
+		font-size: 0.9rem;
 	}
 	.icon {
 		left: 90%;
@@ -319,10 +332,13 @@ p.sort {
 	.champ-name {
 		width: auto;
 		flex-flow: column nowrap;
+		border: none;
+	    background: none;
 	}
 	.cards {
 		text-align: center;
-		border: 1px solid red;
+		border: solid 1px #463714;
+		background-color: rgba(17, 19, 24, 0.9);
 		margin: 0 0 30px 0;
 	}
 }
