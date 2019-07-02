@@ -11,7 +11,7 @@ btnLogin.addEventListener('click', evento => {
     pagLogin.classList.add('hide');
     pagGeneral.classList.remove('hide');
   } else {
-    
+
   }
 });
 
@@ -25,7 +25,12 @@ const createTemplateCard = (list) => {
   list.forEach((ourData) => {
     const card = `
       <div class="cards">
-          <figure class="champ-img">
+          <figure class="champ-img"  style="
+          background-image: url(${ourData.splash});
+          background-size: cover;
+          background-position-x: 70%;
+          background-repeat: space;
+      ">
             <img src="${ourData.img}"/>
           </figure>
           <div class="champ-name flex">

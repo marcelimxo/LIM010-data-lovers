@@ -63,12 +63,13 @@ const lolJS = (data) => {
   /*  Recorremos todos los campeones de la propiedad "data" en el objeto LOL */
   for (const key in data) {
     /* Sacamos las propiedades existentes en data y le asignamos el valor correspondiente al nombre de esa propiedad */
-    const {name, id, title, img, info: {attack, defense, magic, difficulty}, stats: {hp}} = LOL.data[key];
+    const {name, id, title, img, splash, info: {attack, defense, magic, difficulty}, stats: {hp}} = LOL.data[key];
     /* Agregamos esas propiedades a un objeto nuevo y este lo agregamos al array de objetos */
     arrChamps.push({name,
       id,
       title,
       img,
+      splash,
       attack,
       defense, 
       magic, 
