@@ -29,36 +29,15 @@ const loginValidate = (user, password) => {
   }
     
   return msg;
-  /* {
-      user = '';
-      password = '';
-      msg = 'Usuario o contraseña incorrectas';
-      return false;
-    }
-  } else {
-    if (user === '') {
-      msg = 'Ingrese el usuario';
-      user.focus();
-    } else {
-      msg = 'Ingrese la contraseña';
-      password.focus();
-    }
-  } */
 };
-
-
-const mostrarCampeones = (data) => {
-  /* escribo las instrucciones*/
-  return [{}, {}, {}];
-};
-
-
+  
+// Segunda Historia de Usuario-- Mostrar los campeones
 const lolJS = (data) => {
   /* Inicilizamos el array vacio */
   let arrChamps = [];
   /*  Recorremos todos los campeones de la propiedad "data" en el objeto LOL */
   for (const key in data) {
-    /* Sacamos las propiedades existentes en data y le asignamos el valor correspondiente al nombre de esa propiedad */
+  /* Sacamos las propiedades existentes en data y le asignamos el valor correspondiente al nombre de esa propiedad */
     const {name, id, title, img, splash, info: {attack, defense, magic, difficulty}, stats: {hp}} = LOL.data[key];
     /* Agregamos esas propiedades a un objeto nuevo y este lo agregamos al array de objetos */
     arrChamps.push({name,
