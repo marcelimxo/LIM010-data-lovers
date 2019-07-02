@@ -30,6 +30,32 @@ const loginValidate = (user, password) => {
     
   return msg;
 };
+
+
+const obj = {
+  Blitzcrank: 'https://i.blogs.es/e5a747/blitz/1366_2000.jpg',
+  Jinx: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_13.jpg',
+  LeeSin: 'https://thegamersports.mundodeportivo.com/wp-content/uploads/2017/03/LeeSin_Splash_11.jpg',
+  Lucian: 'https://i.blogs.es/cc1ded/lucian_hiredgun_splash/1366_2000.jpg',
+  Orianna: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_8.jpg',
+  Shaco: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_6.jpg',
+  Singed: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_5.jpg',
+  TahmKench: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_3.jpg',
+  Thresh: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_6.jpg',
+};
+
+const curarData = (data, personajes) => {
+  const arrJugadores = Object.values(data);
+  for (let i = 0; i < arrJugadores.length; i++) {
+    if (personajes.hasOwnProperty(arrJugadores[i].id)) {
+      arrJugadores[i].splash = obj[arrJugadores[i].id];
+      console.log(arrJugadores[i]);
+    }
+  }
+};
+
+const dataCurada = curarData(LOL.data, obj);
+
   
 // Segunda Historia de Usuario-- Mostrar los campeones
 const lolJS = (data) => {
@@ -55,7 +81,7 @@ const lolJS = (data) => {
   return arrChamps;
 };
 
-console.log(lolJS(LOL.data)); 
-console.log(LOL.data);
+console.log(lolJS(dataCurada)); 
+
 
 window.lolJS = lolJS;

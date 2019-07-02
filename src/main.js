@@ -18,7 +18,7 @@ btnLogin.addEventListener('click', evento => {
   }
 });
 
-const ourData = Object.values(lolJS(LOL.data));
+const ourData = lolJS(curarData(LOL.data, obj));
 const champions = document.getElementById('all-champions');
 
 const createTemplateCard = list => {
