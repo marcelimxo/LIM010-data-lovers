@@ -69,7 +69,7 @@ body {
   display: flex;
 }
 
-.galeria {    
+.galeria {
   flex-flow: wrap row;
   justify-content: space-between;
 }
@@ -175,8 +175,8 @@ body {
 
 /* Estilos generales */
 
-.divider{
-  content:url(img/divider-desktop.svg);
+.divider {
+  content: url(img/divider-desktop.svg);
 }
 
 .divider-right {
@@ -243,9 +243,12 @@ body {
 }
 .sort-control {
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 5px;
 }
-
+.filter-group {
+  flex-direction: row;
+  justify-content: space-around;
+}
 /* Campeones */
 
 .champ-img {
@@ -304,13 +307,13 @@ body {
   .input-group input {
     width: auto;
   }
-  .divider{
-    content: url(img/mobile/divider-mobile.svg)
+  .divider {
+    content: url(img/mobile/divider-mobile.svg);
   }
-  .filter-group{
+  .filter-group {
     flex-direction: column;
   }
-  .galeria {    
+  .galeria {
     flex-flow: wrap column;
     justify-content: space-between;
   }
