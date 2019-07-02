@@ -1,7 +1,8 @@
 const btnLogin = document.getElementById('btn-login');
 const pagLogin = document.getElementById('login-container');
 const pagGeneral = document.getElementById('general');
-pagGeneral.classList.add('hide');  
+const body = document.getElementById('body');
+pagGeneral.classList.add('hide');
 btnLogin.addEventListener('click', evento => {
   evento.preventDefault();
   const user = document.getElementById('user');
@@ -11,19 +12,19 @@ btnLogin.addEventListener('click', evento => {
   if (funcLoginValidator === 'ok') {
     pagLogin.classList.add('hide');
     pagGeneral.classList.remove('hide');
+    body.classList.replace('login-bg', 'general-bg');
   } else {
     error.innerHTML = funcLoginValidator;
   }
 });
 
-
 const ourData = Object.values(lolJS(LOL.data));
 const champions = document.getElementById('all-champions');
 
-const createTemplateCard = (list) => {
+const createTemplateCard = list => {
   let templateCard = '';
   /* hacer una especie de if para poder mostrar los que faltan */
-  list.forEach((ourData) => {
+  list.forEach(ourData => {
     const card = `
       <div class="cards">
           <figure class="champ-img"  style="
@@ -41,7 +42,7 @@ const createTemplateCard = (list) => {
       </div>`;
     templateCard += card;
   }),
-  champions.innerHTML = templateCard;
+  (champions.innerHTML = templateCard);
 };
 createTemplateCard(ourData);
 /* const selectOrder = document.getElementById('order');
