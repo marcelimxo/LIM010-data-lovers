@@ -279,6 +279,9 @@ p.sort {
   text-align: center;
   margin: 0 30px 30px 0;
 }
+.cards img {
+  display: none;
+}
 /* Estilos para mobile */
 @media screen and (max-width: 767px) {
   .labels-sort {
@@ -360,5 +363,8 @@ p.sort {
     border: solid 1px #463714;
     background-color: rgba(17, 19, 24, 0.9);
     margin: 0 0 30px 0;
+  }
+  .cards img {
+    display: inline;
   }
 }

@@ -18,7 +18,8 @@ btnLogin.addEventListener('click', evento => {
   }
 });
 
-const ourData = lolJS(curarData(LOL.data, obj));
+const dataCampeones = selectedData(dataCurated(LOL.data, obj));
+// const ourData = lolJS(dataCurated(LOL.data, obj));
 const champions = document.getElementById('all-champions');
 
 const createTemplateCard = list => {
@@ -28,23 +29,23 @@ const createTemplateCard = list => {
     const card = `
       <div class="cards">
           <figure class="champ-img"  style="
-          background-image: url(${ourData.splash});
+          background-image: url(${ourData.img});
           background-size: cover;
           background-position-x: 70%;
           background-repeat: space;
       ">
-            <img src="${ourData.img}"/>
+            <img class"champ-small-img" src="${ourData.miniatura}"/>
           </figure>
           <div class="champ-name flex">
-            <p class="sort caudex">${ourData.name}</p>
-            <p class="sort caudex">${ourData.title}</p>
+            <p class="sort caudex">${ourData.nombre}</p>
+            <p class="sort caudex">${ourData.aka}</p>
           </div>
       </div>`;
     templateCard += card;
   }),
   (champions.innerHTML = templateCard);
 };
-createTemplateCard(ourData);
+createTemplateCard(dataCampeones);
 /* const selectOrder = document.getElementById('order');
 selectOrder.addEventListener('change', () => {
   const dataOrdenada = lol.sortChampions(arrDataLolTotal, selectOrder.value);
