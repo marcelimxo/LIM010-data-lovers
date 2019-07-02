@@ -9,30 +9,26 @@
     .then(data => console.log(data));
 }; */
 
+// Primera Historia de Usuario-- Acceso al sistema
 const loginValidate = (user, password) => {
+  let msg = '';
   if (user !== '' && password !== '') {
-    const msg = '';
     if (user === 'LABORATORIA' && password === 'LABORATORIA') {
-      return true;
+      msg = 'ok';
     } else {
-      switch (user, password) {
-      case user === '':
-        msg = 'Ingrese el usuario';
-        user.focus();
-        break;
-      case password === '':
-        msg = 'Ingrese la contraseña';
-        password.focus();
-        break;
-      
-      default:
-        msg = 'Usuario o contraseña incorrectas';
-        break;
-      } return msg;
+      user = '';
+      password = '';
+      msg = 'Usuario o contraseña incorrectas';
+    }
+  } else {
+    if (user === '') {
+      msg = 'Ingrese el usuario';
+    } else {
+      msg = 'Ingrese la contraseña';
     }
   }
     
-    
+  return msg;
   /* {
       user = '';
       password = '';
