@@ -29,8 +29,8 @@ const createTemplateCard = (list) => {
             <img src="${ourData.img}"/>
           </figure>
           <div class="champ-name flex">
-            <p class="sort">${ourData.name}</p>
-            <p class="sort">${ourData.title}</p>
+            <p class="sort caudex">${ourData.name}</p>
+            <p class="sort caudex">${ourData.title}</p>
           </div>
       </div>`;
     templateCard += card;
