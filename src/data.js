@@ -49,23 +49,23 @@ const curarData = (data, personajes) => {
   for (let i = 0; i < arrJugadores.length; i++) {
     if (personajes.hasOwnProperty(arrJugadores[i].id)) {
       arrJugadores[i].splash = obj[arrJugadores[i].id];
-      console.log(arrJugadores[i]);
+      // console.log(arrJugadores[i]);
     }
-  }
+  } return arrJugadores;
 };
 
-const dataCurada = curarData(LOL.data, obj);
+// console.log(curarData(LOL.data, obj)); 
 
   
 // Segunda Historia de Usuario-- Mostrar los campeones
 const lolJS = (data) => {
-  /* Inicilizamos el array vacio */
+  // Inicilizamos el array vacio 
   let arrChamps = [];
-  /*  Recorremos todos los campeones de la propiedad "data" en el objeto LOL */
+  //  Recorremos todos los campeones de la propiedad "data" en el objeto LOL 
   for (const key in data) {
-  /* Sacamos las propiedades existentes en data y le asignamos el valor correspondiente al nombre de esa propiedad */
+  // Sacamos las propiedades existentes en data y le asignamos el valor correspondiente al nombre de esa propiedad 
     const {name, id, title, img, splash, info: {attack, defense, magic, difficulty}, stats: {hp}} = LOL.data[key];
-    /* Agregamos esas propiedades a un objeto nuevo y este lo agregamos al array de objetos */
+    // Agregamos esas propiedades a un objeto nuevo y este lo agregamos al array de objetos 
     arrChamps.push({name,
       id,
       title,
@@ -81,7 +81,24 @@ const lolJS = (data) => {
   return arrChamps;
 };
 
-console.log(lolJS(dataCurada)); 
 
+const lolJS2 = (data) => {
+  const dataArr = [];
+  for (let i = 0; i < data.length; i++);
+  dataArr.push({ 
+    nombre: data[i].name,
+    aka: data[i].title,
+    miniatura: data[i].img,
+    img: data[i].splash,
+    ataque: data[i].info.attack,
+    magia: data[i].info.magic,
+    'help points': data[i].stats.hp
+  });
+  return dataArr; 
+};
+
+
+console.log(lolJS(curarData(LOL.data, obj)));  
 
 window.lolJS = lolJS;
+window.curarData = curarData;
