@@ -191,10 +191,16 @@ body {
 	border-width: 1px;
 	border-image: linear-gradient(to bottom, #c3a758, #6b521e);
 	border-image-slice: 1;
-	background-color: rgba(25, 28, 33, 0.5);
+	background-color: #191c2180;
 }
 select.filter-buttons {
-	padding: 0.4em 0.5em;
+	overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    background: url(img/tag.svg) no-repeat right #191c2180;
+    -webkit-appearance: none;
+    background-position-x: 80%;
+    background-size: 15%;
+    padding: 0.4em 1em;
 }
 .filter-buttons:active,
 .filter-buttons:focus {
@@ -212,14 +218,6 @@ select.filter-buttons {
 .sort {
 	letter-spacing: 4px;
 	color: #937341;
-}
-.sort select {
-	overflow: hidden;
-	overflow: -moz-hidden-unscrollable;
-	background: url(img/tag.svg) no-repeat right rgba(25, 28, 33, 0.5);
-	/* border: 2px double red; */
-	display: inline-block;
-	position: relative;
 }
 
 p.sort {
