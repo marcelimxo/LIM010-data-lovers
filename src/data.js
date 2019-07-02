@@ -79,6 +79,7 @@ const lolJS = (data) => {
   return arrChamps;
 };
 
-/* console.log(lolJS(LOL.data)); */
+console.log(lolJS(LOL.data)); 
+console.log(LOL.data);
 
 window.lolJS = lolJS;

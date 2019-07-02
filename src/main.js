@@ -21,13 +21,17 @@ const champions = document.getElementById('all-champions');
 
 const createTemplateCard = (list) => {
   let templateCard = '';
+  /* hacer una especie de if para poder mostrar los que faltan */
   list.forEach((ourData) => {
     const card = `
       <div class="cards">
-        <figure class="champ-img">
-        <img src="${ourData.img}"/>
-        </figure>
-        <p class="sort champ-name">${ourData.name}</p>
+          <figure class="champ-img">
+            <img src="${ourData.img}"/>
+          </figure>
+          <div class="champ-name flex">
+            <p class="sort">${ourData.name}</p>
+            <p class="sort">${ourData.title}</p>
+          </div>
       </div>`;
     templateCard += card;
   }),
