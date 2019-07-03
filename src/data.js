@@ -40,7 +40,6 @@ const loginValidate = (user, password) => {
       msg = 'Ingrese la contraseña';
     }
   }
-    
   return msg;
 };
 
@@ -72,11 +71,10 @@ const selectedData = (data) => {
 };
 
 
-//ordenamiento de a-z
-debugger;
+/* ordenamiento de a-z */
 const sortChampionsAz = (data, clickOrder) => {
   const arrSortName = data.sort((ab, bc) => {
-    // a es menor que b según criterio de ordenamiento
+    /* a es menor que b según criterio de ordenamiento */
     if (ab.nombre > bc.nombre) {
       return 1;
     } if (ab.nombre < bc.nombre) {
@@ -93,10 +91,10 @@ const sortChampionsAz = (data, clickOrder) => {
   return 0;
 };
 
-//ordenamiento attackdamage ascendente y descendente
+/*  ordenamiento attackdamage ascendente y descendente  */
 const sortAttackdamage = (data, clickOrder) => {
   const arrSortAttackdamage = data.sort((ab, bc) => {
-    // a es menor que b según criterio de ordenamiento
+    /* a es menor que b según criterio de ordenamiento */
     if (ab.attackdamage > bc.attackdamage) {
       return 1;
     } if (ab.attackdamage < bc.attackdamage) {
