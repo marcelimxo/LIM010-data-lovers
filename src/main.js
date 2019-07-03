@@ -21,7 +21,6 @@ btnLogin.addEventListener('click', evento => {
 const dataCampeones = selectedData(dataCurated(LOL.data, obj));
 // const ourData = lolJS(dataCurated(LOL.data, obj));
 const champions = document.getElementById('all-champions');
-
 const createTemplateCard = list => {
   let templateCard = '';
   /* hacer una especie de if para poder mostrar los que faltan */
@@ -54,7 +53,7 @@ selectSortAz.addEventListener('change', ()=>{
 });
 
 // 5ta historia de usuario attackdamage
-const selectAttackdamage= document.getElementById('ad');
+const selectAttackdamage = document.getElementById('ad');
 selectAttackdamage.addEventListener('change', ()=>{
   const dataOrdenada = window.sortAttackdamage(dataCampeones, selectAttackdamage.value);
   createTemplateCard(dataOrdenada);
