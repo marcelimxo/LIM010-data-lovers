@@ -46,8 +46,17 @@ const createTemplateCard = list => {
   (champions.innerHTML = templateCard);
 };
 createTemplateCard(dataCampeones);
-/* const selectOrder = document.getElementById('order');
-selectOrder.addEventListener('change', () => {
-  const dataOrdenada = lol.sortChampions(arrDataLolTotal, selectOrder.value);
+// 4ta historia de usuario ordenar en orden alfabetico
+const selectSortAz = document.getElementById('cbox-az');
+selectSortAz.addEventListener('change', ()=>{
+  const dataOrdenada = window.sortChampionsAz(dataCampeones, selectSortAz.value);
   createTemplateCard(dataOrdenada);
-}); */
+});
+
+// 5ta historia de usuario attackdamage
+const selectAttackdamage= document.getElementById('ad');
+selectAttackdamage.addEventListener('change', ()=>{
+  const dataOrdenada = window.sortAttackdamage(dataCampeones, selectAttackdamage.value);
+  createTemplateCard(dataOrdenada);
+});
+

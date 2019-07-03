@@ -207,22 +207,29 @@ body {
   letter-spacing: 4px;
 }
 .filter-buttons {
-  width: 100px;
-  margin-left: 1em;
-  border-style: solid;
-  border-width: 1px;
-  border-image: linear-gradient(to bottom, #c3a758, #6b521e);
-  border-image-slice: 1;
-  background-color: #191c2180;
+	width: 100px;
+	margin-left: 1em;
+	border-style: solid;
+	border-width: 1px;
+	border-image: linear-gradient(to bottom, #c3a758, #6b521e);
+	border-image-slice: 1;
+	background-color: #191c2180;
+	overflow: hidden;
+	overflow: -moz-hidden-unscrollable;
+	-webkit-appearance: none;
+    background-position-x: 80%;
+    background-size: 15%;
+    padding: 0.4em 1em;
 }
 select.filter-buttons {
-  overflow: hidden;
-  overflow: -moz-hidden-unscrollable;
-  background: url(img/tag.svg) no-repeat right #191c2180;
-  -webkit-appearance: none;
-  background-position-x: 80%;
-  background-size: 15%;
-  padding: 0.4em 1em;
+	background: url(img/tag.svg) no-repeat right #191c2180;
+	background-position-x: 80%;
+    background-size: 15%;
+}
+.icon-select.filter-buttons {
+    background: url(img/sort.svg) no-repeat right #191c2180;
+    background-position-x: 80%;
+    background-size: 15%;
 }
 .filter-buttons:active,
 .filter-buttons:focus {

@@ -44,7 +44,6 @@ const loginValidate = (user, password) => {
   return msg;
 };
 
-
 const dataCurated = (data, personajes) => {
   const arrJugadores = Object.values(data);
   for (let i = 0; i < arrJugadores.length; i++) {
@@ -53,7 +52,6 @@ const dataCurated = (data, personajes) => {
     }
   } return arrJugadores;
 };
-
 
 const selectedData = (data) => {
   const newArrayDataCampeones = [];
@@ -66,11 +64,56 @@ const selectedData = (data) => {
         img: data[i].splash,
         ataque: data[i].info.attack,
         magia: data[i].info.magic,
-        'help points': data[i].stats.hp
+        'help points': data[i].stats.hp,
+        attackdamage: data[i].stats.attackdamage
       });
   };  
   return newArrayDataCampeones; 
 };
 
+
+//ordenamiento de a-z
+debugger;
+const sortChampionsAz = (data, clickOrder) => {
+  const arrSortName = data.sort((ab, bc) => {
+    // a es menor que b según criterio de ordenamiento
+    if (ab.nombre > bc.nombre) {
+      return 1;
+    } if (ab.nombre < bc.nombre) {
+      return -1;
+    }
+    return 0;
+  });
+  if (clickOrder === '0') {
+    return arrSortName;
+  }
+  if (clickOrder === '1') {
+    return arrSortName.reverse();
+  }
+  return 0;
+};
+
+//ordenamiento attackdamage ascendente y descendente
+const sortAttackdamage = (data, clickOrder) => {
+  const arrSortAttackdamage = data.sort((ab, bc) => {
+    // a es menor que b según criterio de ordenamiento
+    if (ab.attackdamage > bc.attackdamage) {
+      return 1;
+    } if (ab.attackdamage < bc.attackdamage) {
+      return -1;
+    }
+    return 0;
+  });
+  if (clickOrder === '0') {
+    return arrSortAttackdamage;
+  }
+  if (clickOrder === '1') {
+    return arrSortAttackdamage.reverse();
+  }
+  return 0;
+};
+
 window.dataCurated = dataCurated;
 window.selectedData = selectedData;
+window.sortChampionsAz = sortChampionsAz;
+window.sortAttackdamage = sortAttackdamage;
