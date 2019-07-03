@@ -9,7 +9,20 @@
     .then(data => console.log(data));
 }; */
 
+const obj = {
+  Blitzcrank: 'https://i.blogs.es/e5a747/blitz/1366_2000.jpg',
+  Jinx: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_13.jpg',
+  LeeSin: 'img/splash/LeeSin_Splash_11.jpg',
+  Lucian: 'https://i.blogs.es/cc1ded/lucian_hiredgun_splash/1366_2000.jpg',
+  Orianna: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_8.jpg',
+  Shaco: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_6.jpg',
+  Singed: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_5.jpg',
+  TahmKench: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_3.jpg',
+  Thresh: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_6.jpg',
+};
+
 // Primera Historia de Usuario-- Acceso al sistema
+
 const loginValidate = (user, password) => {
   let msg = '';
   if (user !== '' && password !== '') {
@@ -31,38 +44,42 @@ const loginValidate = (user, password) => {
   return msg;
 };
 
-// Segunda Historia de Usuario-- Mostrar los campeones
-const lolJS = (data) => {
-  /* Inicilizamos el array vacio */
-  let arrChamps = [];
-  /*  Recorremos todos los campeones de la propiedad "data" en el objeto LOL */
-  for (const key in data) {
-  /* Sacamos las propiedades existentes en data y le asignamos el valor correspondiente al nombre de esa propiedad */
-    const {name, id, title, img, splash, info: {attack, defense, magic, difficulty}, stats: {hp}, stats:{attackdamage}} = LOL.data[key];
-    /* Agregamos esas propiedades a un objeto nuevo y este lo agregamos al array de objetos */
-    arrChamps.push({name,
-      id,
-      title,
-      img,
-      splash,
-      attack,
-      defense, 
-      magic, 
-      difficulty,
-      hp,
-      attackdamage
-    });
-  }
-  return arrChamps;
+const dataCurated = (data, personajes) => {
+  const arrJugadores = Object.values(data);
+  for (let i = 0; i < arrJugadores.length; i++) {
+    if (personajes.hasOwnProperty(arrJugadores[i].id)) {
+      arrJugadores[i].splash = obj[arrJugadores[i].id];
+    }
+  } return arrJugadores;
 };
 
+const selectedData = (data) => {
+  const newArrayDataCampeones = [];
+  for (let i = 0; i < data.length; i++) {
+    newArrayDataCampeones.push(
+      {
+        nombre: data[i].name,
+        aka: data[i].title,
+        miniatura: data[i].img,
+        img: data[i].splash,
+        ataque: data[i].info.attack,
+        magia: data[i].info.magic,
+        'help points': data[i].stats.hp,
+        attackdamage: data[i].stats.attackdamage
+      });
+  };  
+  return newArrayDataCampeones; 
+};
+
+
 //ordenamiento de a-z
+debugger;
 const sortChampionsAz = (data, clickOrder) => {
   const arrSortName = data.sort((ab, bc) => {
     // a es menor que b según criterio de ordenamiento
-    if (ab.name > bc.name) {
+    if (ab.nombre > bc.nombre) {
       return 1;
-    } if (ab.name < bc.name) {
+    } if (ab.nombre < bc.nombre) {
       return -1;
     }
     return 0;
@@ -96,9 +113,7 @@ const sortAttackdamage = (data, clickOrder) => {
   return 0;
 };
 
-console.log(lolJS(LOL.data)); 
-console.log(LOL.data);
-
-window.lolJS = lolJS;
+window.dataCurated = dataCurated;
+window.selectedData = selectedData;
 window.sortChampionsAz = sortChampionsAz;
 window.sortAttackdamage = sortAttackdamage;

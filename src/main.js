@@ -1,7 +1,8 @@
 const btnLogin = document.getElementById('btn-login');
 const pagLogin = document.getElementById('login-container');
 const pagGeneral = document.getElementById('general');
-pagGeneral.classList.add('hide');  
+const body = document.getElementById('body');
+pagGeneral.classList.add('hide');
 btnLogin.addEventListener('click', evento => {
   evento.preventDefault();
   const user = document.getElementById('user');
@@ -11,49 +12,51 @@ btnLogin.addEventListener('click', evento => {
   if (funcLoginValidator === 'ok') {
     pagLogin.classList.add('hide');
     pagGeneral.classList.remove('hide');
+    body.classList.replace('login-bg', 'general-bg');
   } else {
     error.innerHTML = funcLoginValidator;
   }
 });
 
-
-const ourData = Object.values(lolJS(LOL.data));
+const dataCampeones = selectedData(dataCurated(LOL.data, obj));
+// const ourData = lolJS(dataCurated(LOL.data, obj));
 const champions = document.getElementById('all-champions');
 
-const createTemplateCard = (list) => {
+const createTemplateCard = list => {
   let templateCard = '';
   /* hacer una especie de if para poder mostrar los que faltan */
-  list.forEach((ourData) => {
+  list.forEach(ourData => {
     const card = `
       <div class="cards">
           <figure class="champ-img"  style="
-          background-image: url(${ourData.splash});
+          background-image: url(${ourData.img});
           background-size: cover;
           background-position-x: 70%;
           background-repeat: space;
       ">
-            <img src="${ourData.img}"/>
+            <img class"champ-small-img" src="${ourData.miniatura}"/>
           </figure>
           <div class="champ-name flex">
-            <p class="sort caudex">${ourData.name}</p>
-            <p class="sort caudex">${ourData.title}</p>
+            <p class="sort caudex">${ourData.nombre}</p>
+            <p class="sort caudex">${ourData.aka}</p>
           </div>
       </div>`;
     templateCard += card;
   }),
-  champions.innerHTML = templateCard;
+  (champions.innerHTML = templateCard);
 };
-createTemplateCard(ourData);
+createTemplateCard(dataCampeones);
 // 4ta historia de usuario ordenar en orden alfabetico
 const selectSortAz = document.getElementById('cbox-az');
 selectSortAz.addEventListener('change', ()=>{
-  const dataOrdenada = window.sortChampionsAz(ourData, selectSortAz.value);
+  const dataOrdenada = window.sortChampionsAz(dataCampeones, selectSortAz.value);
   createTemplateCard(dataOrdenada);
 });
 
 // 5ta historia de usuario attackdamage
 const selectAttackdamage= document.getElementById('ad');
 selectAttackdamage.addEventListener('change', ()=>{
-  const dataOrdenada = window.sortAttackdamage(ourData, selectAttackdamage.value);
+  const dataOrdenada = window.sortAttackdamage(dataCampeones, selectAttackdamage.value);
   createTemplateCard(dataOrdenada);
 });
+
