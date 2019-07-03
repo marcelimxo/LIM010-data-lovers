@@ -48,7 +48,7 @@
             <img class="icon" alt="lupa" src="img/magnifier.svg">
           </div>
           <div class="sort-control flex">
-            <select class="filter-buttons sort-az sort caudex" id="cbox-az">
+            <select class="filter-buttons sort caudex icon-select" id="cbox-az">
               <option value="0" selected>A-z</option>
               <option value="1">Z-A</option>
             </select>
@@ -56,10 +56,11 @@
               <option value disabled selected>Tipo
               </option>
             </select>
-            <button class="filter-buttons">
-              <span id="ad" class="sort caudex">AD</span>
-              <img src="img/sort.svg" alt="sort attack damage" class="img-sort" />
-            </button>
+            <select class="filter-buttons sort caudex icon-select" id="ad">
+              <option value="" selected>AD</option>
+              <option value="0">Asc</option>
+              <option value="1">Desc</option>
+            </select>
           </div>
         </div>
       

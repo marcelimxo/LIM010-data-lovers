@@ -44,10 +44,16 @@ const createTemplateCard = (list) => {
   champions.innerHTML = templateCard;
 };
 createTemplateCard(ourData);
-debugger;
+// 4ta historia de usuario ordenar en orden alfabetico
 const selectSortAz = document.getElementById('cbox-az');
-
 selectSortAz.addEventListener('change', ()=>{
   const dataOrdenada = window.sortChampionsAz(ourData, selectSortAz.value);
+  createTemplateCard(dataOrdenada);
+});
+
+// 5ta historia de usuario attackdamage
+const selectAttackdamage= document.getElementById('ad');
+selectAttackdamage.addEventListener('change', ()=>{
+  const dataOrdenada = window.sortAttackdamage(ourData, selectAttackdamage.value);
   createTemplateCard(dataOrdenada);
 });

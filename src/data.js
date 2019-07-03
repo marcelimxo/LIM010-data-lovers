@@ -38,7 +38,7 @@ const lolJS = (data) => {
   /*  Recorremos todos los campeones de la propiedad "data" en el objeto LOL */
   for (const key in data) {
   /* Sacamos las propiedades existentes en data y le asignamos el valor correspondiente al nombre de esa propiedad */
-    const {name, id, title, img, splash, info: {attack, defense, magic, difficulty}, stats: {hp}} = LOL.data[key];
+    const {name, id, title, img, splash, info: {attack, defense, magic, difficulty}, stats: {hp}, stats:{attackdamage}} = LOL.data[key];
     /* Agregamos esas propiedades a un objeto nuevo y este lo agregamos al array de objetos */
     arrChamps.push({name,
       id,
@@ -49,7 +49,8 @@ const lolJS = (data) => {
       defense, 
       magic, 
       difficulty,
-      hp
+      hp,
+      attackdamage
     });
   }
   return arrChamps;
@@ -58,6 +59,7 @@ const lolJS = (data) => {
 //ordenamiento de a-z
 const sortChampionsAz = (data, clickOrder) => {
   const arrSortName = data.sort((ab, bc) => {
+    // a es menor que b según criterio de ordenamiento
     if (ab.name > bc.name) {
       return 1;
     } if (ab.name < bc.name) {
@@ -74,8 +76,29 @@ const sortChampionsAz = (data, clickOrder) => {
   return 0;
 };
 
+//ordenamiento attackdamage ascendente y descendente
+const sortAttackdamage = (data, clickOrder) => {
+  const arrSortAttackdamage = data.sort((ab, bc) => {
+    // a es menor que b según criterio de ordenamiento
+    if (ab.attackdamage > bc.attackdamage) {
+      return 1;
+    } if (ab.attackdamage < bc.attackdamage) {
+      return -1;
+    }
+    return 0;
+  });
+  if (clickOrder === '0') {
+    return arrSortAttackdamage;
+  }
+  if (clickOrder === '1') {
+    return arrSortAttackdamage.reverse();
+  }
+  return 0;
+};
+
 console.log(lolJS(LOL.data)); 
 console.log(LOL.data);
 
 window.lolJS = lolJS;
 window.sortChampionsAz = sortChampionsAz;
+window.sortAttackdamage = sortAttackdamage;
