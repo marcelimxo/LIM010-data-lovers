@@ -200,7 +200,9 @@ body {
     padding: 0.4em 1em;
 }
 select.filter-buttons {
-    background: url(img/tag.svg) no-repeat right #191c2180;
+	background: url(img/tag.svg) no-repeat right #191c2180;
+	background-position-x: 80%;
+    background-size: 15%;
 }
 .icon-select.filter-buttons {
     background: url(img/sort.svg) no-repeat right #191c2180;
