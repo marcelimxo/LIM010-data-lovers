@@ -26,7 +26,7 @@ const createTemplateCard = list => {
   /* hacer una especie de if para poder mostrar los que faltan */
   list.forEach(ourData => {
     const card = `
-      <div class="cards">
+      <div class="cards" id="${ourData.id}">
           <figure class="champ-img"  style="
           background-image: url(${ourData.img});
           background-size: cover;

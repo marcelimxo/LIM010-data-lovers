@@ -59,6 +59,7 @@ const selectedData = (data) => {
       {
         nombre: data[i].name,
         aka: data[i].title,
+        id: data[i].id,
         miniatura: data[i].img,
         img: data[i].splash,
         ataque: data[i].info.attack,
