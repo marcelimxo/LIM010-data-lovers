@@ -4,12 +4,12 @@ require('../src/data');
 require('./data.spec.js');
 
 
-describe('example', () => {  
+describe('loginValidate', () => {
   it('debería ser una función', () => {
-    assert.equal(typeof example, 'function');
+    assert.equal(typeof loginValidate, 'function');
   });
 
-  it('debería retornar "example"', () => {
-    assert.equal(example(), 'example');
+  it('debería retornar "ok" si la contraseña y el usuario son iguales a "LABORATORIA"', ()=> {
+    assert.equal(loginValidate('LABORATORIA', 'LABORATORIA'), 'ok');
   });
 });
