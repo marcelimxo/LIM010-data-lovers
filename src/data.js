@@ -70,8 +70,8 @@ const selectedData = (data) => {
         attackdamage: data[i].stats.attackdamage,
         tags: data[i].tags
       });
-  };  
-  return newArrayDataCampeones; 
+  };
+  return newArrayDataCampeones;
 };
 
 
@@ -115,7 +115,16 @@ const sortAttackdamage = (data, clickOrder) => {
   return 0;
 };
 
+/*  Select for type champions  */
+const selectTypeChampions = (data, type) => {
+  const filterTypeChamp = data.filter((obj) => {
+    return (obj.tags[0] === type || obj.tags[1] === type); //0 y 1 para repetir campeones
+  });
+  return filterTypeChamp;
+};
+
 window.dataCurated = dataCurated;
 window.selectedData = selectedData;
 window.sortChampionsAz = sortChampionsAz;
 window.sortAttackdamage = sortAttackdamage;
+window.selectTypeChampions = selectTypeChampions;
