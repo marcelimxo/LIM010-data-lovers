@@ -64,7 +64,8 @@ const selectedData = (data) => {
         ataque: data[i].info.attack,
         magia: data[i].info.magic,
         'help points': data[i].stats.hp,
-        attackdamage: data[i].stats.attackdamage
+        attackdamage: data[i].stats.attackdamage,
+        tags: data[i].tags
       });
   };  
   return newArrayDataCampeones; 
