@@ -2,7 +2,7 @@ const btnLogin = document.getElementById('btn-login');
 const pagLogin = document.getElementById('login-container');
 const pagGeneral = document.getElementById('general');
 const body = document.getElementById('body');
-pagGeneral.classList.add('hide');
+/* pagGeneral.classList.add('hide'); */
 btnLogin.addEventListener('click', evento => {
   evento.preventDefault();
   const user = document.getElementById('user');
@@ -36,7 +36,7 @@ const createTemplateCard = list => {
             <img class"champ-small-img" src="${ourData.miniatura}"/>
           </figure>
           <div class="champ-name flex">
-            <p class="sort caudex">${ourData.nombre}</p>
+            <p class="sort caudex bold">${ourData.nombre}</p>
             <p class="sort caudex">${ourData.aka}</p>
           </div>
       </div>`;
