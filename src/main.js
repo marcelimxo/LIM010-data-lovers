@@ -47,15 +47,21 @@ const createTemplateCard = list => {
 createTemplateCard(dataCampeones);
 // 4ta historia de usuario ordenar en orden alfabetico
 const selectSortAz = document.getElementById('cbox-az');
-selectSortAz.addEventListener('change', ()=>{
+selectSortAz.addEventListener('change', () => {
   const dataOrdenada = window.sortChampionsAz(dataCampeones, selectSortAz.value);
   createTemplateCard(dataOrdenada);
 });
 
 // 5ta historia de usuario attackdamage
 const selectAttackdamage = document.getElementById('ad');
-selectAttackdamage.addEventListener('change', ()=>{
+selectAttackdamage.addEventListener('change', () => {
   const dataOrdenada = window.sortAttackdamage(dataCampeones, selectAttackdamage.value);
   createTemplateCard(dataOrdenada);
 });
 
+// Mostrar campeones por tipo
+const selectTypeChamp = document.getElementById('select-type');
+selectTypeChamp.addEventListener('change', () => {
+  const dataTypeChampions = window.selectTypeChampions(dataCampeones, selectTypeChamp.value);
+  createTemplateCard(dataTypeChampions);
+});
