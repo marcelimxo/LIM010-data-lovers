@@ -19,14 +19,13 @@ btnLogin.addEventListener('click', evento => {
 });
 
 const dataCampeones = selectedData(dataCurated(LOL.data, obj));
-// const ourData = lolJS(dataCurated(LOL.data, obj));
 const champions = document.getElementById('all-champions');
+// Mostrar campeones
 const createTemplateCard = list => {
   let templateCard = '';
-  /* hacer una especie de if para poder mostrar los que faltan */
   list.forEach(ourData => {
     const card = `
-      <div class="cards" id="${ourData.id}">
+      <div class="cards" name="champs" id="${ourData.id}">
           <figure class="champ-img"  style="
           background-image: url(${ourData.img});
           background-size: cover;
@@ -41,8 +40,30 @@ const createTemplateCard = list => {
           </div>
       </div>`;
     templateCard += card;
-  }),
-  (champions.innerHTML = templateCard);
+  });
+
+  const champs = document.getElementsByName('champs');
+
+  for (var i = 0; i < champs.length; i++) {
+    if (champs[i].getAttribute('name') === 'champs') {
+      /* si hace click */
+      champs[i].addEventListener('click', () => {
+        console.log(event);
+        // se obtine el id del padre de la imagen
+        // se quita 1 para que coincida con array
+        const number = parseInt(event.target.parentElement.id) - 1 ;
+        // Mostrar modal
+        document.getElementById('my-modal').classList.remove('hide');
+        // Insertar datos en Modal
+        document.getElementById('modal-info').innerHTML = `
+        <img class="imgModal" src="${dataCampeones[number].img}"/>
+        <p> ${dataCampeones[numero].nombre}</p>
+        `;
+      });
+    };
+  }
+
+  champions.innerHTML = templateCard;
 };
 createTemplateCard(dataCampeones);
 // 4ta historia de usuario ordenar en orden alfabetico

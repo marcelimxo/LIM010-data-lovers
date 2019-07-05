@@ -118,7 +118,7 @@ const sortAttackdamage = (data, clickOrder) => {
 /*  Select for type champions  */
 const selectTypeChampions = (data, type) => {
   const filterTypeChamp = data.filter((obj) => {
-    return (obj.tags[0] === type || obj.tags[1] === type); //0 y 1 para repetir campeones
+    return (obj.tags[0] === type || obj.tags[1] === type); // 0 y 1 para repetir campeones
   });
   return filterTypeChamp;
 };
