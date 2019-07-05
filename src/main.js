@@ -57,7 +57,7 @@ const createTemplateCard = list => {
         // Insertar datos en Modal
         document.getElementById('modal-info').innerHTML = `
         <img class="imgModal" src="${dataCampeones[number].img}"/>
-        <p> ${dataCampeones[numero].nombre}</p>
+        <p> ${dataCampeones[number].nombre}</p>
         `;
       });
     };
