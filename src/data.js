@@ -9,18 +9,6 @@
     .then(data => console.log(data));
 }; */
 
-const obj = {
-  Blitzcrank: 'https://i.blogs.es/e5a747/blitz/1366_2000.jpg',
-  Jinx: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_13.jpg',
-  LeeSin: 'img/splash/LeeSin_Splash_11.jpg',
-  Lucian: 'https://i.blogs.es/cc1ded/lucian_hiredgun_splash/1366_2000.jpg',
-  Orianna: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_8.jpg',
-  Shaco: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_6.jpg',
-  Singed: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_5.jpg',
-  TahmKench: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_3.jpg',
-  Thresh: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_6.jpg',
-};
-
 // Primera Historia de Usuario-- Acceso al sistema
 
 const loginValidate = (user, password) => {
@@ -41,6 +29,20 @@ const loginValidate = (user, password) => {
     }
   }
   return msg;
+};
+
+// Segunda Historia de Usuario-- Mostrar los campeones
+
+const obj = {
+  Blitzcrank: 'https://i.blogs.es/e5a747/blitz/1366_2000.jpg',
+  Jinx: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_13.jpg',
+  LeeSin: 'img/splash/LeeSin_Splash_11.jpg',
+  Lucian: 'https://i.blogs.es/cc1ded/lucian_hiredgun_splash/1366_2000.jpg',
+  Orianna: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_8.jpg',
+  Shaco: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_6.jpg',
+  Singed: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_5.jpg',
+  TahmKench: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_3.jpg',
+  Thresh: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_6.jpg',
 };
 
 const dataCurated = (data, personajes) => {
@@ -116,7 +118,7 @@ const sortAttackdamage = (data, clickOrder) => {
 /*  Select for type champions  */
 const selectTypeChampions = (data, type) => {
   const filterTypeChamp = data.filter((obj) => {
-    return (obj.tags[0] === type || obj.tags[1] === type); //0 y 1 para repetir campeones
+    return (obj.tags[0] === type || obj.tags[1] === type); // 0 y 1 para repetir campeones
   });
   return filterTypeChamp;
 };
