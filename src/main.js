@@ -2,8 +2,13 @@ const btnLogin = document.getElementById('btn-login');
 const pagLogin = document.getElementById('login-container');
 const pagGeneral = document.getElementById('general');
 const body = document.getElementById('body');
+<<<<<<< HEAD
 pagGeneral.classList.add('hide'); 
 btnLogin.addEventListener('click', evento => {
+=======
+/* pagGeneral.classList.add('hide'); */
+btnLogin.addEventListener('click', (evento) => {
+>>>>>>> 2095e12a3eb3380e5f3a155e8bc7f0123b2d606e
   evento.preventDefault();
   const user = document.getElementById('user');
   const password = document.getElementById('password');
@@ -18,14 +23,35 @@ btnLogin.addEventListener('click', evento => {
   }
 });
 
+
+// Abrir el modal de cada campeon 
+
+const createModal = () => {
+  const allChampsCards = document.querySelectorAll('.cards');
+  
+  allChampsCards.forEach(champ=>{
+    champ.addEventListener('click', (event)=>{
+      const champId = event.currentTarget.id;
+      const [champData] = dataCampeones.filter(eachChamp => eachChamp.id === champId);
+      const {nombre, tags} = champData;
+      const modalName = document.querySelector('#modal > .champion-name');
+      modalName.innerHTML = nombre;
+      const modalTags = document.querySelector('#modal > .tags');
+      modalTags.innerHTML = tags.join(', ');
+  
+      showModal();
+    });
+  });
+};
+
 const dataCampeones = selectedData(dataCurated(LOL.data, obj));
 const champions = document.getElementById('all-champions');
 // Mostrar campeones
-const createTemplateCard = list => {
+const createTemplateCard = (list) => {
   let templateCard = '';
-  list.forEach(ourData => {
+  list.forEach((ourData) => {
     const card = `
-      <div class="cards" name="champs" id="${ourData.id}">
+      <div class="cards" id="${ourData.id}">
           <figure class="champ-img"  style="
           background-image: url(${ourData.img});
           background-size: cover;
@@ -42,28 +68,9 @@ const createTemplateCard = list => {
     templateCard += card;
   });
 
-  const champs = document.getElementsByName('champs');
-
-  for (var i = 0; i < champs.length; i++) {
-    if (champs[i].getAttribute('name') === 'champs') {
-      /* si hace click */
-      champs[i].addEventListener('click', () => {
-        console.log(event);
-        // se obtine el id del padre de la imagen
-        // se quita 1 para que coincida con array
-        const number = parseInt(event.target.parentElement.id) - 1 ;
-        // Mostrar modal
-        document.getElementById('my-modal').classList.remove('hide');
-        // Insertar datos en Modal
-        document.getElementById('modal-info').innerHTML = `
-        <img class="imgModal" src="${dataCampeones[number].img}"/>
-        <p> ${dataCampeones[number].nombre}</p>
-        `;
-      });
-    };
-  }
-
   champions.innerHTML = templateCard;
+
+  createModal();
 };
 createTemplateCard(dataCampeones);
 // 4ta historia de usuario ordenar en orden alfabetico
@@ -80,9 +87,46 @@ selectAttackdamage.addEventListener('change', () => {
   createTemplateCard(dataOrdenada);
 });
 
+
 // Mostrar campeones por tipo
+const title = document.getElementById('title');
 const selectTypeChamp = document.getElementById('select-type');
+const average = document.getElementById('average');
 selectTypeChamp.addEventListener('change', () => {
   const dataTypeChampions = window.selectTypeChampions(dataCampeones, selectTypeChamp.value);
+  let attackdamageTotal = 0;
+  dataTypeChampions.forEach(champ =>{
+    attackdamageTotal = attackdamageTotal + champ.attackdamage;
+  });
+
+  const attackdamageAverage = Math.round(attackdamageTotal / dataTypeChampions.length);
+  average.innerHTML = `<p> El promedio de daño de ataque es: ${attackdamageAverage} </p>`; 
+
   createTemplateCard(dataTypeChampions);
+  average.classList.remove('hide');
+  title.innerHTML = `${selectTypeChamp.value} (${ dataTypeChampions.length})`;
+});
+
+// Boton de ocultar modal
+const closeBtn = document.getElementById('closeBtn');
+const modal = document.getElementById('modal');
+const mask = document.getElementById('mask');
+
+closeBtn.addEventListener('click', ()=>{
+  modal.classList.remove('visible');
+  mask.classList.remove('visible');
+});
+
+
+const showModal = ()=>{
+  modal.classList.add('visible');
+  mask.classList.add('visible');
+};
+
+// Haciendo la busqueda
+
+const searchInput = document.getElementById('search');
+searchInput.addEventListener('input', (event)=>{
+  const results = dataCampeones.filter(champ=> champ.nombre.toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0);
+  createTemplateCard(results);
 });

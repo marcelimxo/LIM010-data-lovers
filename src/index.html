@@ -11,7 +11,6 @@
 </head>
 
 <body id="body" class="login-bg">
-  <header></header>
   <main class="position-relative">
     <section id="login-container" class="align height-100">
       <form class="login">
@@ -21,11 +20,11 @@
         </div>
         <div class="input-group">
           <label for="user" class="mobile-label pale-gold-letter">Usuario</label>
-          <input type="text" id="user" class="mobile-input pale-gold-letter gunmetal-bg" />
+          <input type="text" id="user" class="mobile-input pale-gold-letter gunmetal-bg" value="LABORATORIA" />
         </div>
         <div class="input-group">
           <label for="password" class="mobile-label pale-gold-letter">Contraseña</label>
-          <input type="password" id="password" class="mobile-input pale-gold-letter gunmetal-bg" />
+          <input type="password" id="password" class="mobile-input pale-gold-letter gunmetal-bg" value="LABORATORIA"/>
           <div class="lost-password"><span class="pale-gold-letter bold">¿Olvidaste tu contraseña?</span></div>
         </div>
         <div>
@@ -37,7 +36,7 @@
         </div>
       </form>
     </section>
-    <section id="general" class="general">
+    <section id="general" class="general hide">
         <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
         <div class="labels-sort flex space-around">
           <label for="search" id="search-champ" class="sort caudex pale-gold-letter">BUSCAR UN CAMPEÓN</label>
@@ -73,20 +72,20 @@
       
       <div class="title-champs flex">
         <img alt="divisor" class="divider">
-        <span class="label-champions caudex pale-gold-letter bold">CAMPEONES</span>
+        <span class="label-champions caudex pale-gold-letter bold" id="title">CAMPEONES</span>
         <img alt="divisor" class="divider divider-right">
       </div>
+      <div class="average caudex pale-gold-letter hide" id="average"></div>
       <div id="all-champions" class="galeria flex"></div>
-      <!-- The Modal -->
-      <div id="my-modal" class="modal hide">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close" id="close">&times;</span>
-          <div class="modal-info" id="modal-info">
-          </div>
-        </div>
+      
+      <div class="mask " id="mask"></div>
+      <div class="champs-modal " id="modal">
+          <button class="close" id="closeBtn">X</button>
+        <p>modal</p>
+        <p class="tags"></p>
+        <p class="champion-name"></p>
       </div>
+
     </section>
   </main>
   <footer></footer>
