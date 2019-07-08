@@ -263,6 +263,11 @@ p.sort {
   justify-content: space-around;
 }
 
+.average {
+  text-align: center;
+  font-size: 1.3em;
+}
+
 /* Campeones */
 .champ-img {
   margin: 0;

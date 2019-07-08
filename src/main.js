@@ -59,11 +59,24 @@ selectAttackdamage.addEventListener('change', () => {
   createTemplateCard(dataOrdenada);
 });
 
+
 // Mostrar campeones por tipo
+const title = document.getElementById('title');
 const selectTypeChamp = document.getElementById('select-type');
+const average = document.getElementById('average');
 selectTypeChamp.addEventListener('change', () => {
   const dataTypeChampions = window.selectTypeChampions(dataCampeones, selectTypeChamp.value);
+  let attackdamageTotal = 0;
+  dataTypeChampions.forEach(champ =>{
+    attackdamageTotal = attackdamageTotal + champ.attackdamage;
+  });
+
+  const attackdamageAverage = Math.round(attackdamageTotal / dataTypeChampions.length);
+  average.innerHTML = `<p> El promedio de daño de ataque es: ${attackdamageAverage} </p>`; 
+
   createTemplateCard(dataTypeChampions);
+  average.classList.remove('hide');
+  title.innerHTML = `${selectTypeChamp.value} (${ dataTypeChampions.length})`;
 });
 
 // Boton de ocultar modal
