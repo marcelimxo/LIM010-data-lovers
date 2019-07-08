@@ -359,8 +359,11 @@ p.sort {
     margin: 0;
   }
   .label-champions {
-    font-size: 14px;
+    font-size: 1em;
     letter-spacing: 4px;
+  }
+  .average{
+    font-size:1em;
   }
   body {
     margin: 0;

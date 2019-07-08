@@ -18,6 +18,27 @@ btnLogin.addEventListener('click', (evento) => {
   }
 });
 
+
+// Abrir el modal de cada campeon 
+
+const createModal = () => {
+  const allChampsCards = document.querySelectorAll('.cards');
+  
+  allChampsCards.forEach(champ=>{
+    champ.addEventListener('click', (event)=>{
+      const champId = event.currentTarget.id;
+      const [champData] = dataCampeones.filter(eachChamp => eachChamp.id === champId);
+      const {nombre, tags} = champData;
+      const modalName = document.querySelector('#modal > .champion-name');
+      modalName.innerHTML = nombre;
+      const modalTags = document.querySelector('#modal > .tags');
+      modalTags.innerHTML = tags.join(', ');
+  
+      showModal();
+    });
+  });
+};
+
 const dataCampeones = selectedData(dataCurated(LOL.data, obj));
 const champions = document.getElementById('all-champions');
 // Mostrar campeones
@@ -43,6 +64,8 @@ const createTemplateCard = (list) => {
   });
 
   champions.innerHTML = templateCard;
+
+  createModal();
 };
 createTemplateCard(dataCampeones);
 // 4ta historia de usuario ordenar en orden alfabetico
@@ -89,24 +112,16 @@ closeBtn.addEventListener('click', ()=>{
   mask.classList.remove('visible');
 });
 
-// Abrir el modal de cada campeon 
-
-const allChampsCards = document.querySelectorAll('.cards');
-allChampsCards.forEach(champ=>{
-  champ.addEventListener('click', (event)=>{
-    const champId = event.currentTarget.id;
-    const [champData] = dataCampeones.filter(eachChamp => eachChamp.id === champId);
-    const {nombre, tags} = champData;
-    const modalName = document.querySelector('#modal > .champion-name');
-    modalName.innerHTML = nombre;
-    const modalTags = document.querySelector('#modal > .tags');
-    modalTags.innerHTML = tags.join(', ');
-
-    showModal();
-  });
-});
 
 const showModal = ()=>{
   modal.classList.add('visible');
   mask.classList.add('visible');
 };
+
+// Haciendo la busqueda
+
+const searchInput = document.getElementById('search');
+searchInput.addEventListener('input', (event)=>{
+  const results = dataCampeones.filter(champ=> champ.nombre.toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0);
+  createTemplateCard(results);
+});
