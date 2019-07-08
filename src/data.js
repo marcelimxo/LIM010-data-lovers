@@ -66,7 +66,7 @@ const selectedData = (data) => {
         img: data[i].splash,
         ataque: data[i].info.attack,
         magia: data[i].info.magic,
-        'help points': data[i].stats.hp,
+        helpPoints: data[i].stats.hp,
         attackdamage: data[i].stats.attackdamage,
         tags: data[i].tags
       });
@@ -122,6 +122,7 @@ const selectTypeChampions = (data, type) => {
   });
   return filterTypeChamp;
 };
+
 
 window.dataCurated = dataCurated;
 window.selectedData = selectedData;

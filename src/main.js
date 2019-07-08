@@ -3,7 +3,7 @@ const pagLogin = document.getElementById('login-container');
 const pagGeneral = document.getElementById('general');
 const body = document.getElementById('body');
 /* pagGeneral.classList.add('hide'); */
-btnLogin.addEventListener('click', evento => {
+btnLogin.addEventListener('click', (evento) => {
   evento.preventDefault();
   const user = document.getElementById('user');
   const password = document.getElementById('password');
@@ -21,11 +21,11 @@ btnLogin.addEventListener('click', evento => {
 const dataCampeones = selectedData(dataCurated(LOL.data, obj));
 const champions = document.getElementById('all-champions');
 // Mostrar campeones
-const createTemplateCard = list => {
+const createTemplateCard = (list) => {
   let templateCard = '';
-  list.forEach(ourData => {
+  list.forEach((ourData) => {
     const card = `
-      <div class="cards" name="champs" id="${ourData.id}">
+      <div class="cards" id="${ourData.id}">
           <figure class="champ-img"  style="
           background-image: url(${ourData.img});
           background-size: cover;
@@ -41,27 +41,6 @@ const createTemplateCard = list => {
       </div>`;
     templateCard += card;
   });
-
-  const champs = document.getElementsByName('champs');
-
-  for (var i = 0; i < champs.length; i++) {
-    if (champs[i].getAttribute('name') === 'champs') {
-      /* si hace click */
-      champs[i].addEventListener('click', () => {
-        console.log(event);
-        // se obtine el id del padre de la imagen
-        // se quita 1 para que coincida con array
-        const number = parseInt(event.target.parentElement.id) - 1 ;
-        // Mostrar modal
-        document.getElementById('my-modal').classList.remove('hide');
-        // Insertar datos en Modal
-        document.getElementById('modal-info').innerHTML = `
-        <img class="imgModal" src="${dataCampeones[number].img}"/>
-        <p> ${dataCampeones[number].nombre}</p>
-        `;
-      });
-    };
-  }
 
   champions.innerHTML = templateCard;
 };
@@ -86,3 +65,35 @@ selectTypeChamp.addEventListener('change', () => {
   const dataTypeChampions = window.selectTypeChampions(dataCampeones, selectTypeChamp.value);
   createTemplateCard(dataTypeChampions);
 });
+
+// Boton de ocultar modal
+const closeBtn = document.getElementById('closeBtn');
+const modal = document.getElementById('modal');
+const mask = document.getElementById('mask');
+
+closeBtn.addEventListener('click', ()=>{
+  modal.classList.remove('visible');
+  mask.classList.remove('visible');
+});
+
+// Abrir el modal de cada campeon 
+
+const allChampsCards = document.querySelectorAll('.cards');
+allChampsCards.forEach(champ=>{
+  champ.addEventListener('click', (event)=>{
+    const champId = event.currentTarget.id;
+    const [champData] = dataCampeones.filter(eachChamp => eachChamp.id === champId);
+    const {nombre, tags} = champData;
+    const modalName = document.querySelector('#modal > .champion-name');
+    modalName.innerHTML = nombre;
+    const modalTags = document.querySelector('#modal > .tags');
+    modalTags.innerHTML = tags.join(', ');
+
+    showModal();
+  });
+});
+
+const showModal = ()=>{
+  modal.classList.add('visible');
+  mask.classList.add('visible');
+};
