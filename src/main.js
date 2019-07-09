@@ -2,13 +2,8 @@ const btnLogin = document.getElementById('btn-login');
 const pagLogin = document.getElementById('login-container');
 const pagGeneral = document.getElementById('general');
 const body = document.getElementById('body');
-<<<<<<< HEAD
-pagGeneral.classList.add('hide'); 
-btnLogin.addEventListener('click', evento => {
-=======
 /* pagGeneral.classList.add('hide'); */
 btnLogin.addEventListener('click', (evento) => {
->>>>>>> 2095e12a3eb3380e5f3a155e8bc7f0123b2d606e
   evento.preventDefault();
   const user = document.getElementById('user');
   const password = document.getElementById('password');
@@ -28,17 +23,17 @@ btnLogin.addEventListener('click', (evento) => {
 
 const createModal = () => {
   const allChampsCards = document.querySelectorAll('.cards');
-  
-  allChampsCards.forEach(champ=>{
-    champ.addEventListener('click', (event)=>{
+
+  allChampsCards.forEach(champ => {
+    champ.addEventListener('click', (event) => {
       const champId = event.currentTarget.id;
       const [champData] = dataCampeones.filter(eachChamp => eachChamp.id === champId);
-      const {nombre, tags} = champData;
+      const { nombre, tags } = champData;
       const modalName = document.querySelector('#modal > .champion-name');
       modalName.innerHTML = nombre;
       const modalTags = document.querySelector('#modal > .tags');
       modalTags.innerHTML = tags.join(', ');
-  
+
       showModal();
     });
   });
@@ -95,30 +90,30 @@ const average = document.getElementById('average');
 selectTypeChamp.addEventListener('change', () => {
   const dataTypeChampions = window.selectTypeChampions(dataCampeones, selectTypeChamp.value);
   let attackdamageTotal = 0;
-  dataTypeChampions.forEach(champ =>{
+  dataTypeChampions.forEach(champ => {
     attackdamageTotal = attackdamageTotal + champ.attackdamage;
   });
 
   const attackdamageAverage = Math.round(attackdamageTotal / dataTypeChampions.length);
-  average.innerHTML = `<p> El promedio de daño de ataque es: ${attackdamageAverage} </p>`; 
+  average.innerHTML = `<p> El promedio de daño de ataque es: ${attackdamageAverage} </p>`;
 
   createTemplateCard(dataTypeChampions);
   average.classList.remove('hide');
-  title.innerHTML = `${selectTypeChamp.value} (${ dataTypeChampions.length})`;
+  title.innerHTML = `${selectTypeChamp.value} (${dataTypeChampions.length})`;
 });
 
 // Boton de ocultar modal
-const closeBtn = document.getElementById('closeBtn');
+const closeBtn = document.getElementById('close-btn');
 const modal = document.getElementById('modal');
 const mask = document.getElementById('mask');
 
-closeBtn.addEventListener('click', ()=>{
+closeBtn.addEventListener('click', () => {
   modal.classList.remove('visible');
   mask.classList.remove('visible');
 });
 
 
-const showModal = ()=>{
+const showModal = () => {
   modal.classList.add('visible');
   mask.classList.add('visible');
 };
@@ -126,7 +121,7 @@ const showModal = ()=>{
 // Haciendo la busqueda
 
 const searchInput = document.getElementById('search');
-searchInput.addEventListener('input', (event)=>{
-  const results = dataCampeones.filter(champ=> champ.nombre.toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0);
+searchInput.addEventListener('input', (event) => {
+  const results = dataCampeones.filter(champ => champ.nombre.toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0);
   createTemplateCard(results);
 });
