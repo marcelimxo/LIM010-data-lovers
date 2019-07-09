@@ -308,12 +308,29 @@ p.sort {
   margin: 0 auto;
   width: 70%;
   height: 500px;
-  background: #bdc3c7;
-  z-index: 100;
+  z-index: 3;
   transition: 0.3s ease-out;
   visibility: hidden;
   transform: translateY(45px);
   opacity: 0;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 70%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(0.5);
+  transition: 0.3s ease-out;
+  visibility: hidden;
+  transform: translateY(45px);
+  opacity: 0;
+  z-index: 2;
 }
 
 .mask {
@@ -324,7 +341,7 @@ p.sort {
   width: 100%;
   height: 100%;
   background: rgba(52, 73, 94, 0.8);
-  z-index: 50;
+  z-index: 1;
   transition: 0.3s;
   opacity: 0;
 }
