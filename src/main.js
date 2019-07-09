@@ -33,7 +33,7 @@ const createModal = () => {
       modalName.innerHTML = nombre;
       const modalTags = document.querySelector('#modal > .tags');
       modalTags.innerHTML = tags.join(', ');
-      const modalBg = document.getElementById('modal').style.backgroundImage = `url('${img}')`;
+      modalBg.style.backgroundImage = `url('${img}')`;
 
       showModal();
     });
@@ -107,16 +107,19 @@ selectTypeChamp.addEventListener('change', () => {
 const closeBtn = document.getElementById('close-btn');
 const modal = document.getElementById('modal');
 const mask = document.getElementById('mask');
+const modalBg = document.getElementById('modal-bg');
 
 closeBtn.addEventListener('click', () => {
   modal.classList.remove('visible');
   mask.classList.remove('visible');
+  modalBg.classList.remove('visible');
 });
 
 
 const showModal = () => {
   modal.classList.add('visible');
   mask.classList.add('visible');
+  modalBg.classList.add('visible');
 };
 
 // Haciendo la busqueda
