@@ -72,8 +72,8 @@ createTemplateCard(dataCampeones);
 // 4ta historia de usuario ordenar en orden alfabetico
 const selectSortAz = document.getElementById('cbox-az');
 selectSortAz.addEventListener('change', () => {
-  const dataOrdenada = window.sortChampionsAz(dataCampeones, selectSortAz.value);
-  createTemplateCard(dataOrdenada);
+  const dataOrdenada = window.sortChampionsAz(window.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectSortAz.value);
+  createTemplateCard(dataOrdenada); //
 });
 
 // 5ta historia de usuario attackdamage
@@ -88,6 +88,7 @@ selectAttackdamage.addEventListener('change', () => {
 const title = document.getElementById('title');
 const selectTypeChamp = document.getElementById('select-type');
 const average = document.getElementById('average');
+
 selectTypeChamp.addEventListener('change', () => {
   const dataTypeChampions = window.selectTypeChampions(dataCampeones, selectTypeChamp.value);
   let attackdamageTotal = 0;
