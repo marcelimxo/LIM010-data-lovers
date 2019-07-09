@@ -11,7 +11,7 @@
 
 // Primera Historia de Usuario-- Acceso al sistema
 
-const loginValidate = (user, password) => {
+loginValidate = (user, password) => {
   let msg = '';
   if (user !== '' && password !== '') {
     if (user === 'LABORATORIA' && password === 'LABORATORIA') {
@@ -122,8 +122,6 @@ const selectTypeChampions = (data, type) => {
   });
   return filterTypeChamp;
 };
-
-
 window.dataCurated = dataCurated;
 window.selectedData = selectedData;
 window.sortChampionsAz = sortChampionsAz;
