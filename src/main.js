@@ -3,7 +3,7 @@ const pagLogin = document.getElementById('login-container');
 const pagGeneral = document.getElementById('general');
 const body = document.getElementById('body');
 /* pagGeneral.classList.add('hide'); */
-btnLogin.addEventListener('click', (evento) => {
+btnLogin.addEventListener('click', evento => {
   evento.preventDefault();
   const user = document.getElementById('user');
   const password = document.getElementById('password');
@@ -18,22 +18,47 @@ btnLogin.addEventListener('click', (evento) => {
   }
 });
 
-
-// Abrir el modal de cada campeon 
+// Abrir el modal de cada campeon
 
 const createModal = () => {
   const allChampsCards = document.querySelectorAll('.cards');
 
   allChampsCards.forEach(champ => {
-    champ.addEventListener('click', (event) => {
+    champ.addEventListener('click', event => {
       const champId = event.currentTarget.id;
-      const [champData] = dataCampeones.filter(eachChamp => eachChamp.id === champId);
-      const { nombre, tags, img } = champData;
+      const [champData] = dataCampeones.filter(
+        eachChamp => eachChamp.id === champId
+      );
+      const {
+        nombre,
+        tags,
+        img,
+        ataque,
+        magia,
+        defensa,
+        dificultad,
+        helpPoints,
+        helpPointsPerLevel,
+        hpRegen,
+        hpRegenPerLevel,
+        mana,
+        manaPerLevel,
+        movespeed,
+        attackrange,
+        attackdamage
+      } = champData;
       const modalName = document.querySelector('#modal > .champion-name');
       modalName.innerHTML = nombre;
       const modalTags = document.querySelector('#modal > .tags');
       modalTags.innerHTML = tags.join(', ');
       modalBg.style.backgroundImage = `url('${img}')`;
+      document.getElementById('ataque').innerHTML = `${ataque}`;
+      document.getElementById('magia').innerHTML = `${magia}`;
+      document.getElementById('defensa').innerHTML = `${defensa}`;
+      document.getElementById('dificultad').innerHTML = `${dificultad}`;
+      document.getElementById('helpPoints').innerHTML = `Help points:${Math.round(helpPoints)} (+${helpPointsPerLevel} por nivel)`;
+      document.getElementById('hpRegen').innerHTML = `Help points regen:${Math.round(hpRegen)} (+${hpRegenPerLevel} por nivel)`;
+      // faltan colocar los otros
 
       showModal();
     });
@@ -43,9 +68,9 @@ const createModal = () => {
 const dataCampeones = selectedData(dataCurated(LOL.data, obj));
 const champions = document.getElementById('all-champions');
 // Mostrar campeones
-const createTemplateCard = (list) => {
+const createTemplateCard = list => {
   let templateCard = '';
-  list.forEach((ourData) => {
+  list.forEach(ourData => {
     const card = `
       <div class="cards" id="${ourData.id}">
           <figure class="champ-img"  style="
@@ -72,30 +97,40 @@ createTemplateCard(dataCampeones);
 // 4ta historia de usuario ordenar en orden alfabetico
 const selectSortAz = document.getElementById('cbox-az');
 selectSortAz.addEventListener('change', () => {
-  const dataOrdenada = window.sortChampionsAz(dataCampeones, selectSortAz.value);
+  const dataOrdenada = window.sortChampionsAz(
+    dataCampeones,
+    selectSortAz.value
+  );
   createTemplateCard(dataOrdenada);
 });
 
 // 5ta historia de usuario attackdamage
 const selectAttackdamage = document.getElementById('ad');
 selectAttackdamage.addEventListener('change', () => {
-  const dataOrdenada = window.sortAttackdamage(dataCampeones, selectAttackdamage.value);
+  const dataOrdenada = window.sortAttackdamage(
+    dataCampeones,
+    selectAttackdamage.value
+  );
   createTemplateCard(dataOrdenada);
 });
-
 
 // Mostrar campeones por tipo
 const title = document.getElementById('title');
 const selectTypeChamp = document.getElementById('select-type');
 const average = document.getElementById('average');
 selectTypeChamp.addEventListener('change', () => {
-  const dataTypeChampions = window.selectTypeChampions(dataCampeones, selectTypeChamp.value);
+  const dataTypeChampions = window.selectTypeChampions(
+    dataCampeones,
+    selectTypeChamp.value
+  );
   let attackdamageTotal = 0;
   dataTypeChampions.forEach(champ => {
     attackdamageTotal = attackdamageTotal + champ.attackdamage;
   });
 
-  const attackdamageAverage = Math.round(attackdamageTotal / dataTypeChampions.length);
+  const attackdamageAverage = Math.round(
+    attackdamageTotal / dataTypeChampions.length
+  );
   average.innerHTML = `<p> El promedio de daño de ataque es: ${attackdamageAverage} </p>`;
 
   createTemplateCard(dataTypeChampions);
@@ -115,7 +150,6 @@ closeBtn.addEventListener('click', () => {
   modalBg.classList.remove('visible');
 });
 
-
 const showModal = () => {
   modal.classList.add('visible');
   mask.classList.add('visible');
@@ -125,7 +159,10 @@ const showModal = () => {
 // Haciendo la busqueda
 
 const searchInput = document.getElementById('search');
-searchInput.addEventListener('input', (event) => {
-  const results = dataCampeones.filter(champ => champ.nombre.toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0);
+searchInput.addEventListener('input', event => {
+  const results = dataCampeones.filter(
+    champ =>
+      champ.nombre.toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0
+  );
   createTemplateCard(results);
 });

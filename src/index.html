@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caudex:400,700|Open+Sans&display=swap" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="https://cdn.leagueoflegends.com/riotbar/prod/1.6.341/images/navigation/icon-game-lol.png" type="image/x-icon">
+  <link rel="shortcut icon"
+    href="https://cdn.leagueoflegends.com/riotbar/prod/1.6.341/images/navigation/icon-game-lol.png" type="image/x-icon">
 </head>
 
 <body id="body" class="login-bg">
@@ -24,7 +25,7 @@
         </div>
         <div class="input-group">
           <label for="password" class="mobile-label pale-gold-letter">Contraseña</label>
-          <input type="password" id="password" class="mobile-input pale-gold-letter gunmetal-bg" value="LABORATORIA"/>
+          <input type="password" id="password" class="mobile-input pale-gold-letter gunmetal-bg" value="LABORATORIA" />
           <div class="lost-password"><span class="pale-gold-letter bold">¿Olvidaste tu contraseña?</span></div>
         </div>
         <div>
@@ -37,39 +38,39 @@
       </form>
     </section>
     <section id="general" class="general hide">
-        <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
-        <div class="labels-sort flex space-around">
-          <label for="search" id="search-champ" class="sort caudex pale-gold-letter">BUSCAR UN CAMPEÓN</label>
-          <label for="" id="filters" class="sort caudex pale-gold-letter">ORDENAR POR</label>
+      <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
+      <div class="labels-sort flex space-around">
+        <label for="search" id="search-champ" class="sort caudex pale-gold-letter">BUSCAR UN CAMPEÓN</label>
+        <label for="" id="filters" class="sort caudex pale-gold-letter">ORDENAR POR</label>
+      </div>
+      <div class="filter-group flex">
+        <div class="input-group with-icon">
+          <input type="text" id="search" class="search" placeholder="BUSCAR" />
+          <img class="icon" alt="lupa" src="img/magnifier.svg">
         </div>
-        <div class="filter-group flex">
-          <div class="input-group with-icon">
-            <input type="text" id="search" class="search" placeholder="BUSCAR" />
-            <img class="icon" alt="lupa" src="img/magnifier.svg">
-          </div>
-          <div class="sort-control flex">
-            <select class="filter-buttons sort caudex icon-select" id="cbox-az">
-              <option value="0" selected>A - Z</option>
-              <option value="1">Z - A</option>
-            </select>
-            <select id="select-type" class="filter-buttons sort caudex">
-              <option value disabled selected>TIPO
-              </option>
-              <option value="Assassin">Assassin</option>
-              <option value="Fighter">Fighter</option>
-              <option value="Mage">Mage</option>
-              <option value="Marksman">Marksman</option>
-              <option value="Support">Support</option>
-              <option value="Tank">Tank</option>
-            </select>
-            <select class="filter-buttons sort caudex icon-select" id="ad">
-              <option value="" selected>AD</option>
-              <option value="0">Asc</option>
-              <option value="1">Desc</option>
-            </select>
-          </div>
+        <div class="sort-control flex">
+          <select class="filter-buttons sort caudex icon-select" id="cbox-az">
+            <option value="0" selected>A - Z</option>
+            <option value="1">Z - A</option>
+          </select>
+          <select id="select-type" class="filter-buttons sort caudex">
+            <option value disabled selected>TIPO
+            </option>
+            <option value="Assassin">Assassin</option>
+            <option value="Fighter">Fighter</option>
+            <option value="Mage">Mage</option>
+            <option value="Marksman">Marksman</option>
+            <option value="Support">Support</option>
+            <option value="Tank">Tank</option>
+          </select>
+          <select class="filter-buttons sort caudex icon-select" id="ad">
+            <option value="" selected>AD</option>
+            <option value="0">Asc</option>
+            <option value="1">Desc</option>
+          </select>
         </div>
-      
+      </div>
+
       <div class="title-champs flex">
         <img alt="divisor" class="divider">
         <span class="label-champions caudex pale-gold-letter bold" id="title">CAMPEONES</span>
@@ -77,16 +78,60 @@
       </div>
       <div class="average caudex pale-gold-letter hide" id="average"></div>
       <div id="all-champions" class="galeria flex"></div>
-      
+
       <div class="mask " id="mask"></div>
       <div class="modal-bg" id="modal-bg"></div>
       <div class="champs-modal " id="modal">
-          <button class="close" id="close-btn">X</button>
-        <p>modal</p>
-        <p class="tags"></p>
+        <button class="close" id="close-btn">X</button>
         <p class="champion-name"></p>
+        <p class="tags"></p>
+        <div class="tablesContainer flex">
+          <div class="tables">
+            <p>Datos</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Ataque</td>
+                  <td id="ataque"></td>
+                </tr>
+                <tr>
+                  <td>Defensa</td>
+                  <td id="defensa"></td>
+                </tr>
+                <tr>
+                  <td>Magia</td>
+                  <td id="magia"></td>
+                </tr>
+                <tr>
+                  <td>Dificultad</td>
+                  <td id="dificultad"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tables">
+            <p>Stats</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td id="helpPoints"></td>
+                  <td id="hpRegen"></td>
+                </tr>
+                <tr>
+                  <td id="mana"></td>
+                  <td id="movespeed"></td>
+                </tr>
+                <tr>
+                    <td id="attackrange"></td>
+                    <td id="attackdamage"></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
-      
+
     </section>
   </main>
   <footer></footer>

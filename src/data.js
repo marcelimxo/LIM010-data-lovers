@@ -66,7 +66,16 @@ const selectedData = (data) => {
         img: data[i].splash,
         ataque: data[i].info.attack,
         magia: data[i].info.magic,
+        defensa: data[i].info.defense,
+        dificultad: data[i].info.difficulty,
         helpPoints: data[i].stats.hp,
+        helpPointsPerLevel: data[i].stats.hpperlevel,
+        hpRegen: data[i].stats.hpregen,
+        hpRegenPerLevel: data[i].stats.hpregenperlevel,
+        mana: data[i].stats.mp,
+        manaPerLevel: data[i].stats.mpperlevel,
+        movespeed: data[i].stats.movespeed,
+        attackrange: data[i].stats.attackrange,
         attackdamage: data[i].stats.attackdamage,
         tags: data[i].tags
       });
