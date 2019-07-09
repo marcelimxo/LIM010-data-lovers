@@ -28,11 +28,12 @@ const createModal = () => {
     champ.addEventListener('click', (event) => {
       const champId = event.currentTarget.id;
       const [champData] = dataCampeones.filter(eachChamp => eachChamp.id === champId);
-      const { nombre, tags } = champData;
+      const { nombre, tags, img } = champData;
       const modalName = document.querySelector('#modal > .champion-name');
       modalName.innerHTML = nombre;
       const modalTags = document.querySelector('#modal > .tags');
       modalTags.innerHTML = tags.join(', ');
+      const modalBg = document.getElementById('modal').style.backgroundImage = `url('${img}')`;
 
       showModal();
     });
