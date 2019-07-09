@@ -22,6 +22,7 @@ describe('loginValidate', () => {
     assert.equal(loginValidate('LABORATORIA', ''), 'Ingrese la contraseña');
   });
 });
+
 // describe('obj', () => {
 //   it('debería ser un objeto', () => {
 //     assert.equal(typeof obj, 'object');
@@ -36,7 +37,6 @@ describe('dataCurated', () => {
   it('debería devolver un nuevo objeto', () => {
     // assert.equal(typeof dataCurated(,), 'function');
   });
-
 });
 
 describe('selectedData', () => {

@@ -48,26 +48,32 @@
           <input type="text" id="search" class="search" placeholder="BUSCAR" />
           <img class="icon" alt="lupa" src="img/magnifier.svg">
         </div>
-        <div class="sort-control flex">
-          <select class="filter-buttons sort caudex icon-select" id="cbox-az">
-            <option value="0" selected>A - Z</option>
-            <option value="1">Z - A</option>
-          </select>
-          <select id="select-type" class="filter-buttons sort caudex">
-            <option value disabled selected>TIPO
-            </option>
-            <option value="Assassin">Assassin</option>
-            <option value="Fighter">Fighter</option>
-            <option value="Mage">Mage</option>
-            <option value="Marksman">Marksman</option>
-            <option value="Support">Support</option>
-            <option value="Tank">Tank</option>
-          </select>
-          <select class="filter-buttons sort caudex icon-select" id="ad">
-            <option value="" selected>AD</option>
-            <option value="0">Asc</option>
-            <option value="1">Desc</option>
-          </select>
+        <div class="filter-group flex">
+          <div class="input-group with-icon">
+            <input type="text" id="search" class="search" placeholder="BUSCAR" />
+            <img class="icon" alt="lupa" src="img/magnifier.svg">
+          </div>
+          <div class="sort-control flex">
+            <select class="filter-buttons sort caudex icon-select" id="cbox-az">
+              <option value="0" selected>A - Z</option>
+              <option value="1">Z - A</option>
+            </select>
+            <select id="select-type" class="filter-buttons sort caudex">
+              <option value="default" disabled selected>TIPO
+              </option>
+              <option value="Assassin">Assassin</option>
+              <option value="Fighter">Fighter</option>
+              <option value="Mage">Mage</option>
+              <option value="Marksman">Marksman</option>
+              <option value="Support">Support</option>
+              <option value="Tank">Tank</option>
+            </select>
+            <select class="filter-buttons sort caudex icon-select" id="ad">
+              <option value="" selected>AD</option>
+              <option value="0">Asc</option>
+              <option value="1">Desc</option>
+            </select>
+          </div>
         </div>
       </div>
 
