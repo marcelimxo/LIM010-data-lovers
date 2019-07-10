@@ -97,17 +97,15 @@ createTemplateCard(dataCampeones);
 // 4ta historia de usuario ordenar en orden alfabetico
 const selectSortAz = document.getElementById('cbox-az');
 selectSortAz.addEventListener('change', () => {
-  const dataOrdenada = window.sortChampionsAz(window.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectSortAz.value);
-  createTemplateCard(dataOrdenada); //
+  const dataOrdenadaAz = window.sortChampionsAz(window.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectSortAz.value);
+  createTemplateCard(dataOrdenadaAz); //
 });
 
 // 5ta historia de usuario attackdamage
 const selectAttackdamage = document.getElementById('ad');
+debugger;
 selectAttackdamage.addEventListener('change', () => {
-  const dataOrdenada = window.sortAttackdamage(
-    dataCampeones,
-    selectAttackdamage.value
-  );
+  const dataOrdenada = window.sortAttackdamage(window.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectAttackdamage.value);
   createTemplateCard(dataOrdenada);
 });
 
@@ -117,18 +115,14 @@ const selectTypeChamp = document.getElementById('select-type');
 const average = document.getElementById('average');
 
 selectTypeChamp.addEventListener('change', () => {
-  const dataTypeChampions = window.selectTypeChampions(
-    dataCampeones,
-    selectTypeChamp.value
-  );
+  let dataTypeChampions = [];
+  dataTypeChampions = window.selectTypeChampions(dataCampeones, selectTypeChamp.value);
   let attackdamageTotal = 0;
   dataTypeChampions.forEach(champ => {
     attackdamageTotal = attackdamageTotal + champ.attackdamage;
   });
 
-  const attackdamageAverage = Math.round(
-    attackdamageTotal / dataTypeChampions.length
-  );
+  const attackdamageAverage = Math.round(attackdamageTotal / dataTypeChampions.length);
   average.innerHTML = `<p> El promedio de daño de ataque es: ${attackdamageAverage} </p>`;
 
   createTemplateCard(dataTypeChampions);

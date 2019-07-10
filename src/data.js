@@ -105,9 +105,9 @@ const sortChampionsAz = (data, clickOrder) => {
 };
 
 /*  ordenamiento attackdamage ascendente y descendente  */
+debugger;
 const sortAttackdamage = (data, clickOrder) => {
   const arrSortAttackdamage = data.sort((ab, bc) => {
-    /* a es menor que b según criterio de ordenamiento */
     if (ab.attackdamage > bc.attackdamage) {
       return 1;
     } if (ab.attackdamage < bc.attackdamage) {
@@ -127,7 +127,12 @@ const sortAttackdamage = (data, clickOrder) => {
 /*  Select for type champions  */
 const selectTypeChampions = (data, type) => {
   const filterTypeChamp = data.filter((obj) => {
-    return (obj.tags[0] === type || obj.tags[1] === type); // 0 y 1 para repetir campeones
+    if (type !== 'Total') {
+      return (obj.tags[0] === type || obj.tags[1] === type); // 0 y 1 para repetir campeones
+    } else {
+      return data;
+    }
+    
   });
   return filterTypeChamp;
 };
