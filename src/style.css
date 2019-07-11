@@ -315,10 +315,18 @@ p.sort {
   opacity: 0;
 }
 
-.champs-modal > p {
+.tags {
+  margin: 1% 0 1px 10%;
+  font-family: "Caudex", serif;
+  font-size: 1.5rem;
+  color: #5cf7eb;
+  text-shadow: 0px 3px 4px #111318e6;
+}
+
+.champion-name {
   margin: 5% 0 1px 10%;
   font-family: "Caudex", serif;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: #e5e5e5;
   text-shadow: 0px 3px 4px #111318e6;
 }
@@ -362,6 +370,8 @@ p.sort {
   margin: 0;
   text-align: center;
   font-weight: bold;
+  color: #0d404c;
+  font-size: 1.2rem;
 }
 
 table {
@@ -373,6 +383,7 @@ td {
   width: 10%;
   text-align: justify;
   padding-left: 4.5%;
+  padding-right: 2%;
 }
 
 td > span {
@@ -515,5 +526,6 @@ td > span {
   .champs-modal,.modal-bg{
     position: fixed;
     top: -33px;
+    overflow-y: auto;
   }
 }
