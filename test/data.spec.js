@@ -10,17 +10,22 @@ describe('loginValidate', () => {
   });
   /* 
   it('debería retornar "ok" si la contraseña y el usuario son iguales a "LABORATORIA"', ()=> {
-    assert.equal(loginValidate('LABORATORIA', 'LABORATORIA'), 'ok');
+    expect(loginValidate('LABORATORIA', 'LABORATORIA')).toBe('ok');
   });
   it('debería retornar "Usuario o contraseña incorrectas" si la contraseña o el usuario son diferentes a "LABORATORIA"', ()=> {
-    assert.equal(loginValidate('USUARIO', 'LABORATORIA'), 'Usuario o contraseña incorrectas');
+    expect(loginValidate('USUARIO', 'LABORATORIA')).toBe('Usuario o contraseña incorrectas');
   });
   it('debería retornar "Ingrese el usuario" si el usuario se encuentra vacio', ()=> {
-    assert.equal(loginValidate('', 'LABORATORIA'), 'Ingrese el usuario');
+    expect(loginValidate('', 'LABORATORIA')).toBe('Ingrese el usuario');
   });
   it('debería retornar "Ingrese la contraseña" si la contraseña se encuentra vacio', ()=> {
+<<<<<<< HEAD
     assert.equal(loginValidate('LABORATORIA', ''), 'Ingrese la contraseña');
   }); */
+=======
+    expect(loginValidate('LABORATORIA', '')).toBe('Ingrese la contraseña');
+  });
+>>>>>>> 95b47dac53c1d64594defaf9725ba3602bdcae82
 });
 /* 
 describe('dataCurated', () => {
@@ -35,24 +40,24 @@ describe('dataCurated', () => {
 
 describe('selectedData', () => {
   it('debería ser una función', () => {
-    assert.equal(typeof selectedData, 'function');
+    expect(typeof selectedData).toBe('function');
   });
 });
 
 describe('sortChampionsAz', () => {
   it('debería ser una función', () => {
-    assert.equal(typeof sortChampionsAz, 'function');
+    expect(typeof sortChampionsAz).toBe('function');
   });
 });
 
 describe('sortAttackdamage', () => {
   it('debería ser una función', () => {
-    assert.equal(typeof sortAttackdamage, 'function');
+    expect(typeof sortAttackdamage).toBe('function');
   });
 });
 
 describe('selectTypeChampions', () => {
   it('debería ser una función', () => {
-    assert.equal(typeof selectTypeChampions, 'function');
+    expect(typeof selectTypeChampions).toBe('function');
   });
 }); */
