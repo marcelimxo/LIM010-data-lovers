@@ -105,6 +105,7 @@ const sortChampionsAz = (data, clickOrder) => {
 };
 
 /*  ordenamiento attackdamage ascendente y descendente  */
+
 const sortAttackdamage = (data, clickOrder) => {
   const arrSortAttackdamage = data.sort((ab, bc) => {
     if (ab.attackdamage > bc.attackdamage) {
