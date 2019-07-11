@@ -23,12 +23,6 @@ describe('loginValidate', () => {
   });
 });
 
-// describe('obj', () => {
-//   it('debería ser un objeto', () => {
-//     assert.equal(typeof obj, 'object');
-//   });
-// });
-
 describe('dataCurated', () => {
   it('debería ser una función', () => {
     assert.equal(typeof dataCurated, 'function');

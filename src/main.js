@@ -144,7 +144,6 @@ closeBtn.addEventListener('click', () => {
   mask.classList.remove('visible');
   modalBg.classList.remove('visible');
 });
-
 const showModal = () => {
   modal.classList.add('visible');
   mask.classList.add('visible');
