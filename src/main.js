@@ -103,7 +103,6 @@ selectSortAz.addEventListener('change', () => {
 
 // 5ta historia de usuario attackdamage
 const selectAttackdamage = document.getElementById('ad');
-debugger;
 selectAttackdamage.addEventListener('change', () => {
   const dataOrdenada = window.sortAttackdamage(window.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectAttackdamage.value);
   createTemplateCard(dataOrdenada);
@@ -141,7 +140,6 @@ closeBtn.addEventListener('click', () => {
   mask.classList.remove('visible');
   modalBg.classList.remove('visible');
 });
-
 const showModal = () => {
   modal.classList.add('visible');
   mask.classList.add('visible');
