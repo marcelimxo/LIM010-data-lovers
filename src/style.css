@@ -306,7 +306,7 @@ p.sort {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 70%;
+  width: 85%;
   height: 500px;
   z-index: 3;
   transition: 0.3s ease-out;
@@ -329,7 +329,7 @@ p.sort {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 70%;
+  width: 85%;
   height: 500px;
   background-size: cover;
   background-position: center;
@@ -341,7 +341,7 @@ p.sort {
   z-index: 2;
 }
 
-.tablesContainer {
+.tables-container {
   justify-content: space-around;
   margin-top: 5%;
 }
@@ -349,6 +349,12 @@ p.sort {
 .tables {
   background-color: #e5e5e5e3;
   width: 300px;
+  border: 10px double rgba(0, 0, 0, 0.5);
+}
+
+.tables:nth-child(2){
+  background-color: #e5e5e5e3;
+  width: 60%;
   border: 10px double rgba(0, 0, 0, 0.5);
 }
 
@@ -364,8 +370,14 @@ table {
 }
 
 td {
-  width: 50%;
-  text-align: center;
+  width: 10%;
+  text-align: justify;
+  padding-left: 4.5%;
+}
+
+td > span {
+  font-weight: bold;
+  color: #1e2328;
 }
 
 .mask {
@@ -413,6 +425,7 @@ td {
   .label-champions {
     font-size: 1em;
     letter-spacing: 4px;
+    text-align: center;
   }
   .average {
     font-size: 1em;
@@ -462,16 +475,17 @@ td {
     flex-direction: column;
   }
   .galeria,
-  .tablesContainer {
+  .tables-container {
     flex-flow: wrap column;
     justify-content: space-between;
     padding: 0px;
   }
 
-  .tables {
+  .tables,.tables:nth-child(2) {
     margin: 10px 0;
     width: auto;
   }
+
   .champ-img {
     margin: 0;
     display: inherit;
@@ -496,5 +510,10 @@ td {
   }
   .cards img {
     display: inline;
+  }
+
+  .champs-modal,.modal-bg{
+    position: fixed;
+    top: -33px;
   }
 }

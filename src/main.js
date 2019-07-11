@@ -56,8 +56,12 @@ const createModal = () => {
       document.getElementById('magia').innerHTML = `${magia}`;
       document.getElementById('defensa').innerHTML = `${defensa}`;
       document.getElementById('dificultad').innerHTML = `${dificultad}`;
-      document.getElementById('helpPoints').innerHTML = `Help points:${Math.round(helpPoints)} (+${helpPointsPerLevel} por nivel)`;
-      document.getElementById('hpRegen').innerHTML = `Help points regen:${Math.round(hpRegen)} (+${hpRegenPerLevel} por nivel)`;
+      document.getElementById('help-points').innerHTML = `<span>Vida</span>: ${Math.round(helpPoints)} (+${helpPointsPerLevel} por nivel)`;
+      document.getElementById('hp-regen').innerHTML = `<span>Regeneración de vida</span>: ${Math.round(hpRegen)} (+${hpRegenPerLevel} por nivel)`;
+      document.getElementById('mana').innerHTML = `<span>Mana</span>: ${Math.round(mana)} (+${manaPerLevel} por nivel)`;
+      document.getElementById('movespeed').innerHTML = `<span>Velocidad de movimiento</span>: ${Math.round(movespeed)}`;
+      document.getElementById('attackrange').innerHTML = `<span>Rango de ataque</span>: ${Math.round(attackrange)}`;
+      document.getElementById('attackdamage').innerHTML = `<span>Daño de ataque</span>: ${Math.round(attackdamage)}`;
       // faltan colocar los otros
 
       showModal();
@@ -103,7 +107,6 @@ selectSortAz.addEventListener('change', () => {
 
 // 5ta historia de usuario attackdamage
 const selectAttackdamage = document.getElementById('ad');
-debugger;
 selectAttackdamage.addEventListener('change', () => {
   const dataOrdenada = window.sortAttackdamage(window.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectAttackdamage.value);
   createTemplateCard(dataOrdenada);
