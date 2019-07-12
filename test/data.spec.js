@@ -8,29 +8,24 @@ describe('loginValidate', () => {
   it('debería ser una función', () => {
     expect(typeof loginValidate).toBe('function');
   });
-  /* 
-  it('debería retornar "ok" si la contraseña y el usuario son iguales a "LABORATORIA"', ()=> {
+
+  it('debería retornar "ok" si la contraseña y el usuario son iguales a "LABORATORIA"', () => {
     expect(loginValidate('LABORATORIA', 'LABORATORIA')).toBe('ok');
   });
-  it('debería retornar "Usuario o contraseña incorrectas" si la contraseña o el usuario son diferentes a "LABORATORIA"', ()=> {
+  it('debería retornar "Usuario o contraseña incorrectas" si la contraseña o el usuario son diferentes a "LABORATORIA"', () => {
     expect(loginValidate('USUARIO', 'LABORATORIA')).toBe('Usuario o contraseña incorrectas');
   });
-  it('debería retornar "Ingrese el usuario" si el usuario se encuentra vacio', ()=> {
+  it('debería retornar "Ingrese el usuario" si el usuario se encuentra vacio', () => {
     expect(loginValidate('', 'LABORATORIA')).toBe('Ingrese el usuario');
   });
-  it('debería retornar "Ingrese la contraseña" si la contraseña se encuentra vacio', ()=> {
-<<<<<<< HEAD
-    assert.equal(loginValidate('LABORATORIA', ''), 'Ingrese la contraseña');
-  }); */
-=======
+  it('debería retornar "Ingrese la contraseña" si la contraseña se encuentra vacio', () => {
     expect(loginValidate('LABORATORIA', '')).toBe('Ingrese la contraseña');
   });
->>>>>>> 95b47dac53c1d64594defaf9725ba3602bdcae82
 });
-/* 
+
 describe('dataCurated', () => {
   it('debería ser una función', () => {
-    assert.equal(typeof dataCurated, 'function');
+    expect(typeof dataCurated).toBe('function');
   });
 
   it('debería devolver un nuevo objeto', () => {
@@ -60,4 +55,4 @@ describe('selectTypeChampions', () => {
   it('debería ser una función', () => {
     expect(typeof selectTypeChampions).toBe('function');
   });
-}); */
+}); 
