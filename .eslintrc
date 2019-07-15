@@ -30,7 +30,8 @@
     "no-array-constructor": 1
   },
   "globals": {
-    "app": false
+    "app": false,
+    "LOL" : false
   }
 }
 

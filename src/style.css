@@ -1,5 +1,5 @@
-html,
-main {
+@import url('https://fonts.googleapis.com/css?family=Caudex:400,700|Open+Sans&display=swap');
+html, main {
   width: 100%;
   min-height: 100vh;
 }

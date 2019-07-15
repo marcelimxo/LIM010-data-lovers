@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="ES">
 
 <head>
   <meta charset="utf-8" />
   <title>Invocadores Leyendas - Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Caudex:400,700|Open+Sans&display=swap" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon"
     href="https://cdn.leagueoflegends.com/riotbar/prod/1.6.341/images/navigation/icon-game-lol.png" type="image/x-icon">
 </head>
 
 <body id="body" class="login-bg">
+  <header class="hide">
+    <h1>Invocadores Leyendas</h1>
+  </header>
   <main class="position-relative">
     <section id="login-container" class="align height-100">
       <form class="login">
@@ -32,6 +34,7 @@
           <input type="submit" value="INGRESA" class="btn-login bold caudex gunmetal-bg" id="btn-login" />
         </div>
         <div class="registration">
+          <h2 class="hide">¿No tienes cuenta?</h2>
           <span class="span-no-account dark-gold-letter">¿No tienes una cuenta?</span>
           <span class="span-no-account bold dark-gold-letter">Registrate</span>
         </div>
@@ -41,7 +44,7 @@
       <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
       <div class="labels-sort flex space-around">
         <label for="search" id="search-champ" class="sort caudex pale-gold-letter">BUSCAR UN CAMPEÓN</label>
-        <label for="" id="filters" class="sort caudex pale-gold-letter">ORDENAR POR</label>
+        <label for="cbox-az" id="filters" class="sort caudex pale-gold-letter">ORDENAR POR</label>
       </div>
       <div class="filter-group flex">
         <div class="input-group with-icon">
@@ -73,9 +76,9 @@
       </div>
 
       <div class="title-champs flex">
-        <img alt="divisor" class="divider">
+        <div class="divider"></div>
         <span class="label-champions caudex pale-gold-letter bold" id="title">CAMPEONES</span>
-        <img alt="divisor" class="divider divider-right">
+        <div class="divider divider-right"></div>
       </div>
       <div class="average caudex pale-gold-letter hide" id="average"></div>
       <div id="all-champions" class="galeria flex"></div>
