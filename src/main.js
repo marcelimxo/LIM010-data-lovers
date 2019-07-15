@@ -9,7 +9,7 @@ btnLogin.addEventListener('click', evento => {
   const user = document.getElementById('user');
   const password = document.getElementById('password');
   const error = document.getElementById('error');
-  let funcLoginValidator = loginValidate(user.value, password.value);
+  let funcLoginValidator = app.loginValidate(user.value, password.value);
   if (funcLoginValidator === 'ok') {
     pagLogin.classList.add('hide');
     pagGeneral.classList.remove('hide');
@@ -71,7 +71,7 @@ const createModal = () => {
   });
 };
 
-const dataCampeones = selectedData(dataCurated(LOL.data, obj));
+const dataCampeones = app.selectedData(app.dataCurated(LOL.data, app.obj));
 const champions = document.getElementById('all-champions');
 // Mostrar campeones
 const createTemplateCard = list => {
@@ -103,14 +103,14 @@ createTemplateCard(dataCampeones);
 // 4ta historia de usuario ordenar en orden alfabetico
 const selectSortAz = document.getElementById('cbox-az');
 selectSortAz.addEventListener('change', () => {
-  const dataOrdenadaAz = window.sortChampionsAz(window.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectSortAz.value);
+  const dataOrdenadaAz = app.sortChampionsAz(app.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectSortAz.value);
   createTemplateCard(dataOrdenadaAz); //
 });
 
 // 5ta historia de usuario attackdamage
 const selectAttackdamage = document.getElementById('ad');
 selectAttackdamage.addEventListener('change', () => {
-  const dataOrdenada = window.sortAttackdamage(window.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectAttackdamage.value);
+  const dataOrdenada = app.sortAttackdamage(app.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectAttackdamage.value);
   createTemplateCard(dataOrdenada);
 });
 
@@ -121,7 +121,7 @@ const average = document.getElementById('average');
 
 selectTypeChamp.addEventListener('change', () => {
   let dataTypeChampions = [];
-  dataTypeChampions = window.selectTypeChampions(dataCampeones, selectTypeChamp.value);
+  dataTypeChampions = app.selectTypeChampions(dataCampeones, selectTypeChamp.value);
   let attackdamageTotal = 0;
   dataTypeChampions.forEach(champ => {
     attackdamageTotal = attackdamageTotal + champ.attackdamage;

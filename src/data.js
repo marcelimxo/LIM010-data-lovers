@@ -1,6 +1,5 @@
 const app = {
   // Primera Historia de Usuario-- Acceso al sistema
-
   loginValidate: (user, password) => {
     let msg = '';
     if (user !== '' && password !== '') {
@@ -39,7 +38,7 @@ const app = {
     const arrJugadores = Object.values(data);
     for (let i = 0; i < arrJugadores.length; i++) {
       if (personajes.hasOwnProperty(arrJugadores[i].id)) {
-        arrJugadores[i].splash = obj[arrJugadores[i].id];
+        arrJugadores[i].splash = app.obj[arrJugadores[i].id];
       }
     } return arrJugadores;
   },
@@ -82,7 +81,7 @@ const app = {
       } if (ab.nombre < bc.nombre) {
         return -1;
       }
-      return 0;
+      // return 0;
     });
     if (clickOrder === '0') {
       return arrSortName;
@@ -90,7 +89,7 @@ const app = {
     if (clickOrder === '1') {
       return arrSortName.reverse();
     }
-    return 0;
+    // return 0;
   },
 
   // Orden de Daño de Ataque Ascendente y Descendente
@@ -102,7 +101,7 @@ const app = {
       } if (ab.attackdamage < bc.attackdamage) {
         return -1;
       }
-      return 0;
+      // return 0;
     });
     if (clickOrder === '0') {
       return arrSortAttackdamage;
@@ -110,7 +109,7 @@ const app = {
     if (clickOrder === '1') {
       return arrSortAttackdamage.reverse();
     }
-    return 0;
+    // return 0;
   },
 
   // Filtro por tipo
