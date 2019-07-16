@@ -2,8 +2,8 @@ const btnLogin = document.getElementById('btn-login');
 const pagLogin = document.getElementById('login-container');
 const pagGeneral = document.getElementById('general');
 const body = document.getElementById('body');
-const footer = document.getElementsByTagName('footer');
-/* pagGeneral.classList.add('hide'); */
+const footer = document.getElementById('footer');
+
 btnLogin.addEventListener('click', evento => {
   evento.preventDefault();
   const user = document.getElementById('user');
@@ -13,8 +13,8 @@ btnLogin.addEventListener('click', evento => {
   if (funcLoginValidator === 'ok') {
     pagLogin.classList.add('hide');
     pagGeneral.classList.remove('hide');
-    footer.classList.remove('hide');
     body.classList.replace('login-bg', 'general-bg');
+    footer.classList.remove('hide');
   } else {
     error.innerHTML = funcLoginValidator;
   }
