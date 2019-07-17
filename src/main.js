@@ -4,8 +4,9 @@ const pagGeneral = document.getElementById('general');
 const body = document.getElementById('body');
 const footer = document.getElementById('footer');
 
-btnLogin.addEventListener('click', evento => {
-  evento.preventDefault();
+// Login
+btnLogin.addEventListener('click', event => {
+  event.preventDefault();
   const user = document.getElementById('user');
   const password = document.getElementById('password');
   const error = document.getElementById('error');
@@ -20,7 +21,7 @@ btnLogin.addEventListener('click', evento => {
   }
 });
 
-// Abrir el modal de cada campeon
+// Crear el modal de cada campeon
 
 const createModal = () => {
   const allChampsCards = document.querySelectorAll('.cards');
@@ -32,13 +33,13 @@ const createModal = () => {
         eachChamp => eachChamp.id === champId
       );
       const {
-        nombre,
+        name,
         tags,
         img,
-        ataque,
-        magia,
-        defensa,
-        dificultad,
+        attack,
+        magic,
+        defense,
+        difficulty,
         helpPoints,
         helpPointsPerLevel,
         hpRegen,
@@ -50,14 +51,14 @@ const createModal = () => {
         attackdamage
       } = champData;
       const modalName = document.querySelector('#modal > .champion-name');
-      modalName.innerHTML = nombre;
+      modalName.innerHTML = name;
       const modalTags = document.querySelector('#modal > .tags');
       modalTags.innerHTML = tags.join(', ');
       modalBg.style.backgroundImage = `url('${img}')`;
-      document.getElementById('ataque').innerHTML = `${ataque}`;
-      document.getElementById('magia').innerHTML = `${magia}`;
-      document.getElementById('defensa').innerHTML = `${defensa}`;
-      document.getElementById('dificultad').innerHTML = `${dificultad}`;
+      document.getElementById('attack').innerHTML = `${attack}`;
+      document.getElementById('magic').innerHTML = `${magic}`;
+      document.getElementById('defense').innerHTML = `${defense}`;
+      document.getElementById('difficulty').innerHTML = `${difficulty}`;
       document.getElementById('help-points').innerHTML = `<span>Vida</span>: ${Math.round(helpPoints)} (+${helpPointsPerLevel} por nivel)`;
       document.getElementById('hp-regen').innerHTML = `<span>Regeneración de vida</span>: ${Math.round(hpRegen)} (+${hpRegenPerLevel} por nivel)`;
       document.getElementById('mana').innerHTML = `<span>Mana</span>: ${Math.round(mana)} (+${manaPerLevel} por nivel)`;
@@ -85,10 +86,10 @@ const createTemplateCard = list => {
           background-position-x: 70%;
           background-repeat: space;
       ">
-            <img class"champ-small-img" src="${ourData.miniatura}"/>
+            <img class"champ-small-img" src="${ourData.icon}"/>
           </figure>
           <div class="champ-name flex">
-            <p class="sort caudex bold">${ourData.nombre}</p>
+            <p class="sort caudex bold">${ourData.name}</p>
             <p class="sort caudex">${ourData.aka}</p>
           </div>
       </div>`;
@@ -100,14 +101,14 @@ const createTemplateCard = list => {
   createModal();
 };
 createTemplateCard(dataCampeones);
-// 4ta historia de usuario ordenar en orden alfabetico
+// Ordenar en orden alfabetico
 const selectSortAz = document.getElementById('cbox-az');
 selectSortAz.addEventListener('change', () => {
   const dataOrdenadaAz = app.sortChampionsAz(app.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectSortAz.value);
   createTemplateCard(dataOrdenadaAz); //
 });
 
-// 5ta historia de usuario attackdamage
+// Ordenar por attackdamage
 const selectAttackdamage = document.getElementById('ad');
 selectAttackdamage.addEventListener('change', () => {
   const dataOrdenada = app.sortAttackdamage(app.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectAttackdamage.value);
@@ -146,6 +147,7 @@ closeBtn.addEventListener('click', () => {
   mask.classList.remove('visible');
   modalBg.classList.remove('visible');
 });
+// Mostrar modal
 const showModal = () => {
   modal.classList.add('visible');
   mask.classList.add('visible');
@@ -158,7 +160,7 @@ const searchInput = document.getElementById('search');
 searchInput.addEventListener('input', event => {
   const results = dataCampeones.filter(
     champ =>
-      champ.nombre.toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0
+      champ.name.toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0
   );
   createTemplateCard(results);
 });

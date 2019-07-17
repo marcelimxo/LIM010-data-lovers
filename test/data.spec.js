@@ -7014,15 +7014,15 @@ describe('selectedData', () => {
   });
   it('debería retornar un nuevo objeto con atributos personalizados', () => {
     const selectedDataSalida = {
-      nombre: 'Aatrox',
+      name: 'Aatrox',
       aka: 'the Darkin Blade',
       id: 'Aatrox',
-      miniatura: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png',
+      icon: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Aatrox.png',
       img: 'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
-      ataque: 8,
-      magia: 3,
-      defensa: 4,
-      dificultad: 4,
+      attack: 8,
+      magic: 3,
+      defense: 4,
+      difficulty: 4,
       helpPoints: 537.8,
       helpPointsPerLevel: 85,
       hpRegen: 6.59,
@@ -7043,10 +7043,10 @@ describe('sortAttackdamage', () => {
     expect(typeof app.sortAttackdamage).toBe('function');
   });
   it('debería ordenar por Daño de Ataque Descendente', () => {
-    expect(app.sortAttackdamage(dataCampeones, '1')[0].nombre).toEqual('Maokai');
+    expect(app.sortAttackdamage(dataCampeones, '1')[0].name).toEqual('Maokai');
   });
   it('debería ordenar por Daño de Ataque Ascendente', () => {
-    expect(app.sortAttackdamage(dataCampeones, '0')[0].nombre).toEqual('Orianna');
+    expect(app.sortAttackdamage(dataCampeones, '0')[0].name).toEqual('Orianna');
   });
 });
 
@@ -7055,10 +7055,10 @@ describe('sortChampionsAz', () => {
     expect(typeof app.sortChampionsAz).toBe('function');
   });
   it('debería ordenar de Z - A', () => {
-    expect(app.sortChampionsAz(dataCampeones, '1')[0].nombre).toEqual('Zyra');
+    expect(app.sortChampionsAz(dataCampeones, '1')[0].name).toEqual('Zyra');
   });
   it('debería ordenar de A - Z', () => {
-    expect(app.sortChampionsAz(dataCampeones, '0')[0].nombre).toEqual('Aatrox');
+    expect(app.sortChampionsAz(dataCampeones, '0')[0].name).toEqual('Aatrox');
   });
 });
 
@@ -7067,9 +7067,9 @@ describe('selectTypeChampions', () => {
     expect(typeof app.selectTypeChampions).toBe('function');
   });
   it('debería mostrar el campeon tipo: "Assassin"', () => {
-    expect(app.selectTypeChampions(dataCampeones, 'Assassin')[0].nombre).toEqual('Ahri');
+    expect(app.selectTypeChampions(dataCampeones, 'Assassin')[0].name).toEqual('Ahri');
   });
   it('debería mostrar todos los campeones: "Total"', () => {
-    expect(app.selectTypeChampions(dataCampeones, 'Total')[0].nombre).toEqual('Aatrox');
+    expect(app.selectTypeChampions(dataCampeones, 'Total')[0].name).toEqual('Aatrox');
   });
 }); 
