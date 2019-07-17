@@ -48,15 +48,15 @@ const app = {
     for (let i = 0; i < data.length; i++) {
       newArrayDataCampeones.push(
         {
-          nombre: data[i].name,
+          name: data[i].name,
           aka: data[i].title,
           id: data[i].id,
-          miniatura: data[i].img,
+          icon: data[i].img,
           img: data[i].splash,
-          ataque: data[i].info.attack,
-          magia: data[i].info.magic,
-          defensa: data[i].info.defense,
-          dificultad: data[i].info.difficulty,
+          attack: data[i].info.attack,
+          magic: data[i].info.magic,
+          defense: data[i].info.defense,
+          difficulty: data[i].info.difficulty,
           helpPoints: data[i].stats.hp,
           helpPointsPerLevel: data[i].stats.hpperlevel,
           hpRegen: data[i].stats.hpregen,
@@ -76,9 +76,9 @@ const app = {
   sortChampionsAz: (data, clickOrder) => {
     const arrSortName = data.sort((ab, bc) => {
       /* a es menor que b según criterio de ordenamiento */
-      if (ab.nombre > bc.nombre) {
+      if (ab.name > bc.name) {
         return 1;
-      } if (ab.nombre < bc.nombre) {
+      } if (ab.name < bc.name) {
         return -1;
       }
       // return 0;
@@ -92,7 +92,7 @@ const app = {
     // return 0;
   },
 
-  // Orden de Daño de Ataque Ascendente y Descendente
+  // Orden de Daño de attack Ascendente y Descendente
 
   sortAttackdamage: (data, clickOrder) => {
     const arrSortAttackdamage = data.sort((ab, bc) => {
