@@ -28,11 +28,11 @@ const createModal = () => {
 
   allChampsCards.forEach(champ => {
     champ.addEventListener('click', event => {
-      const champId = event.currentTarget.id;
-      const [champData] = dataCampeones.filter(
-        eachChamp => eachChamp.id === champId
+      const champId = event.currentTarget.id; // currentTarget obtenemos el id del padre
+      const [champData] = championsData.filter(
+        eachChamp => eachChamp.id === champId // solo devuele los campeones que tenga el mismo id del target
       );
-      const {
+      const { // realizo asignación por destructuring de la data
         name,
         tags,
         img,
@@ -50,10 +50,8 @@ const createModal = () => {
         attackrange,
         attackdamage
       } = champData;
-      const modalName = document.querySelector('#modal > .champion-name');
-      modalName.innerHTML = name;
-      const modalTags = document.querySelector('#modal > .tags');
-      modalTags.innerHTML = tags.join(', ');
+      document.querySelector('#modal > .champion-name').innerHTML = name;
+      document.querySelector('#modal > .tags').innerHTML = tags.join(', ');
       modalBg.style.backgroundImage = `url('${img}')`;
       document.getElementById('attack').innerHTML = `${attack}`;
       document.getElementById('magic').innerHTML = `${magic}`;
@@ -65,15 +63,14 @@ const createModal = () => {
       document.getElementById('movespeed').innerHTML = `<span>Velocidad de movimiento</span>: ${Math.round(movespeed)}`;
       document.getElementById('attackrange').innerHTML = `<span>Rango de ataque</span>: ${Math.round(attackrange)}`;
       document.getElementById('attackdamage').innerHTML = `<span>Daño de ataque</span>: ${Math.round(attackdamage)}`;
-      // faltan colocar los otros
 
       showModal();
     });
   });
 };
 
-const dataCampeones = app.selectedData(app.dataCurated(LOL.data, app.obj));
-const champions = document.getElementById('all-champions');
+const championsData = app.selectedData(app.dataCurated(LOL.data, app.obj));
+const championsContainer = document.getElementById('all-champions');
 // Mostrar campeones
 const createTemplateCard = list => {
   let templateCard = '';
@@ -96,22 +93,22 @@ const createTemplateCard = list => {
     templateCard += card;
   });
 
-  champions.innerHTML = templateCard;
+  championsContainer.innerHTML = templateCard;
 
   createModal();
 };
-createTemplateCard(dataCampeones);
+createTemplateCard(championsData);
 // Ordenar en orden alfabetico
 const selectSortAz = document.getElementById('cbox-az');
 selectSortAz.addEventListener('change', () => {
-  const dataOrdenadaAz = app.sortChampionsAz(app.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectSortAz.value);
-  createTemplateCard(dataOrdenadaAz); //
+  const dataOrdenadaAz = app.sortChampionsAz(app.selectTypeChampions(championsData, selectTypeChamp.value), selectSortAz.value);
+  createTemplateCard(dataOrdenadaAz); 
 });
 
 // Ordenar por attackdamage
 const selectAttackdamage = document.getElementById('ad');
 selectAttackdamage.addEventListener('change', () => {
-  const dataOrdenada = app.sortAttackdamage(app.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectAttackdamage.value);
+  const dataOrdenada = app.sortAttackdamage(app.selectTypeChampions(championsData, selectTypeChamp.value), selectAttackdamage.value);
   createTemplateCard(dataOrdenada);
 });
 
@@ -122,7 +119,7 @@ const average = document.getElementById('average');
 
 selectTypeChamp.addEventListener('change', () => {
   let dataTypeChampions = [];
-  dataTypeChampions = app.selectTypeChampions(dataCampeones, selectTypeChamp.value);
+  dataTypeChampions = app.selectTypeChampions(championsData, selectTypeChamp.value);
   let attackdamageTotal = 0;
   dataTypeChampions.forEach(champ => {
     attackdamageTotal = attackdamageTotal + champ.attackdamage;
@@ -158,7 +155,7 @@ const showModal = () => {
 
 const searchInput = document.getElementById('search');
 searchInput.addEventListener('input', event => {
-  const results = dataCampeones.filter(
+  const results = championsData.filter(
     champ =>
       champ.name.toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0
   );

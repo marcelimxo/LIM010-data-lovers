@@ -34,19 +34,19 @@ const app = {
     Thresh: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_6.jpg',
   },
 
-  dataCurated: (data, personajes) => {
-    const arrJugadores = Object.values(data);
-    for (let i = 0; i < arrJugadores.length; i++) {
-      if (personajes.hasOwnProperty(arrJugadores[i].id)) {
-        arrJugadores[i].splash = app.obj[arrJugadores[i].id];
+  dataCurated: (data, character) => {
+    const arrDataCurated = Object.values(data); // Devuelve un array que contiene las propiedades del objeto
+    for (let i = 0; i < arrDataCurated.length; i++) {
+      if (character.hasOwnProperty(arrDataCurated[i].id)) { // Devuelve un booleano indicando si el objeto tiene la propiedad especificada
+        arrDataCurated[i].splash = app.obj[arrDataCurated[i].id]; // si el valor devuelto es true, el splash cambia a el valor indicado en obj
       }
-    } return arrJugadores;
+    } return arrDataCurated;
   },
 
   selectedData: (data) => {
-    const newArrayDataCampeones = [];
+    const arrSelectedData = [];
     for (let i = 0; i < data.length; i++) {
-      newArrayDataCampeones.push(
+      arrSelectedData.push(
         {
           name: data[i].name,
           aka: data[i].title,
@@ -69,7 +69,7 @@ const app = {
           tags: data[i].tags
         });
     };
-    return newArrayDataCampeones;
+    return arrSelectedData;
   },
 
   //  Orden Alfabetico
@@ -81,7 +81,6 @@ const app = {
       } if (ab.name < bc.name) {
         return -1;
       }
-      // return 0;
     });
     if (clickOrder === '0') {
       return arrSortName;
@@ -89,7 +88,6 @@ const app = {
     if (clickOrder === '1') {
       return arrSortName.reverse();
     }
-    // return 0;
   },
 
   // Orden de Daño de attack Ascendente y Descendente
@@ -101,7 +99,6 @@ const app = {
       } if (ab.attackdamage < bc.attackdamage) {
         return -1;
       }
-      // return 0;
     });
     if (clickOrder === '0') {
       return arrSortAttackdamage;
@@ -109,7 +106,6 @@ const app = {
     if (clickOrder === '1') {
       return arrSortAttackdamage.reverse();
     }
-    // return 0;
   },
 
   // Filtro por tipo

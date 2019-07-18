@@ -7,10 +7,10 @@ const LOL = {
   format: 'standAloneComplex',
   version: '6.24.1',
   data: {
-    Aatrox: {
+    Aatroxx: {
       version: '6.24.1',
       id: 'Aatrox',
-      key: '266',
+      keyy: '266',
       name: 'Aatrox',
       title: 'the Darkin Blade',
       img:
@@ -29,10 +29,10 @@ const LOL = {
         full: 'Aatrox.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 0,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'BloodWell',
@@ -62,7 +62,7 @@ const LOL = {
     Ahri: {
       version: '6.24.1',
       id: 'Ahri',
-      key: '103',
+      keyy: '103',
       name: 'Ahri',
       title: 'the Nine-Tailed Fox',
       img:
@@ -81,10 +81,10 @@ const LOL = {
         full: 'Ahri.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 48,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Assassin'],
       partype: 'MP',
@@ -114,7 +114,7 @@ const LOL = {
     Akali: {
       version: '6.24.1',
       id: 'Akali',
-      key: '84',
+      keyy: '84',
       name: 'Akali',
       title: 'the Fist of Shadow',
       img:
@@ -133,10 +133,10 @@ const LOL = {
         full: 'Akali.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 96,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin'],
       partype: 'Energy',
@@ -166,7 +166,7 @@ const LOL = {
     Alistar: {
       version: '6.24.1',
       id: 'Alistar',
-      key: '12',
+      keyy: '12',
       name: 'Alistar',
       title: 'the Minotaur',
       img:
@@ -185,10 +185,10 @@ const LOL = {
         full: 'Alistar.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 144,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Support'],
       partype: 'MP',
@@ -218,7 +218,7 @@ const LOL = {
     Amumu: {
       version: '6.24.1',
       id: 'Amumu',
-      key: '32',
+      keyy: '32',
       name: 'Amumu',
       title: 'the Sad Mummy',
       img:
@@ -237,10 +237,10 @@ const LOL = {
         full: 'Amumu.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 192,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Mage'],
       partype: 'MP',
@@ -270,7 +270,7 @@ const LOL = {
     Anivia: {
       version: '6.24.1',
       id: 'Anivia',
-      key: '34',
+      keyy: '34',
       name: 'Anivia',
       title: 'the Cryophoenix',
       img:
@@ -289,10 +289,10 @@ const LOL = {
         full: 'Anivia.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 240,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -322,7 +322,7 @@ const LOL = {
     Annie: {
       version: '6.24.1',
       id: 'Annie',
-      key: '1',
+      keyy: '1',
       name: 'Annie',
       title: 'the Dark Child',
       img:
@@ -341,10 +341,10 @@ const LOL = {
         full: 'Annie.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 288,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage'],
       partype: 'MP',
@@ -374,7 +374,7 @@ const LOL = {
     Ashe: {
       version: '6.24.1',
       id: 'Ashe',
-      key: '22',
+      keyy: '22',
       name: 'Ashe',
       title: 'the Frost Archer',
       img:
@@ -393,10 +393,10 @@ const LOL = {
         full: 'Ashe.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 336,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Support'],
       partype: 'MP',
@@ -426,7 +426,7 @@ const LOL = {
     AurelionSol: {
       version: '6.24.1',
       id: 'AurelionSol',
-      key: '136',
+      keyy: '136',
       name: 'Aurelion Sol',
       title: 'The Star Forger',
       img:
@@ -445,10 +445,10 @@ const LOL = {
         full: 'AurelionSol.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 384,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Fighter'],
       partype: 'MP',
@@ -478,7 +478,7 @@ const LOL = {
     Azir: {
       version: '6.24.1',
       id: 'Azir',
-      key: '268',
+      keyy: '268',
       name: 'Azir',
       title: 'the Emperor of the Sands',
       img:
@@ -497,10 +497,10 @@ const LOL = {
         full: 'Azir.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 432,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Marksman'],
       partype: 'MP',
@@ -530,7 +530,7 @@ const LOL = {
     Bard: {
       version: '6.24.1',
       id: 'Bard',
-      key: '432',
+      keyy: '432',
       name: 'Bard',
       title: 'the Wandering Caretaker',
       img:
@@ -549,10 +549,10 @@ const LOL = {
         full: 'Bard.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 0,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Mage'],
       partype: 'MP',
@@ -582,7 +582,7 @@ const LOL = {
     Blitzcrank: {
       version: '6.24.1',
       id: 'Blitzcrank',
-      key: '53',
+      keyy: '53',
       name: 'Blitzcrank',
       title: 'the Great Steam Golem',
       img:
@@ -601,10 +601,10 @@ const LOL = {
         full: 'Blitzcrank.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 48,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Fighter'],
       partype: 'MP',
@@ -634,7 +634,7 @@ const LOL = {
     Brand: {
       version: '6.24.1',
       id: 'Brand',
-      key: '63',
+      keyy: '63',
       name: 'Brand',
       title: 'the Burning Vengeance',
       img:
@@ -653,10 +653,10 @@ const LOL = {
         full: 'Brand.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 96,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage'],
       partype: 'MP',
@@ -686,7 +686,7 @@ const LOL = {
     Braum: {
       version: '6.24.1',
       id: 'Braum',
-      key: '201',
+      keyy: '201',
       name: 'Braum',
       title: 'the Heart of the Freljord',
       img:
@@ -705,10 +705,10 @@ const LOL = {
         full: 'Braum.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 144,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Tank'],
       partype: 'MP',
@@ -738,7 +738,7 @@ const LOL = {
     Caitlyn: {
       version: '6.24.1',
       id: 'Caitlyn',
-      key: '51',
+      keyy: '51',
       name: 'Caitlyn',
       title: 'the Sheriff of Piltover',
       img:
@@ -757,10 +757,10 @@ const LOL = {
         full: 'Caitlyn.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 192,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman'],
       partype: 'MP',
@@ -790,7 +790,7 @@ const LOL = {
     Camille: {
       version: '6.24.1',
       id: 'Camille',
-      key: '164',
+      keyy: '164',
       name: 'Camille',
       title: 'the Steel Shadow',
       img:
@@ -809,10 +809,10 @@ const LOL = {
         full: 'Camille.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 144,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -842,7 +842,7 @@ const LOL = {
     Cassiopeia: {
       version: '6.24.1',
       id: 'Cassiopeia',
-      key: '69',
+      keyy: '69',
       name: 'Cassiopeia',
       title: 'the Serpent\'s Embrace',
       img:
@@ -861,10 +861,10 @@ const LOL = {
         full: 'Cassiopeia.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 240,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage'],
       partype: 'MP',
@@ -891,10 +891,10 @@ const LOL = {
         attackspeedperlevel: 1.5
       }
     },
-    Chogath: {
+    Chogathh: {
       version: '6.24.1',
       id: 'Chogath',
-      key: '31',
+      keyy: '31',
       name: 'Cho\'Gath',
       title: 'the Terror of the Void',
       img:
@@ -913,10 +913,10 @@ const LOL = {
         full: 'Chogath.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 288,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Mage'],
       partype: 'MP',
@@ -946,7 +946,7 @@ const LOL = {
     Corki: {
       version: '6.24.1',
       id: 'Corki',
-      key: '42',
+      keyy: '42',
       name: 'Corki',
       title: 'the Daring Bombardier',
       img:
@@ -965,10 +965,10 @@ const LOL = {
         full: 'Corki.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 336,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman'],
       partype: 'MP',
@@ -998,7 +998,7 @@ const LOL = {
     Darius: {
       version: '6.24.1',
       id: 'Darius',
-      key: '122',
+      keyy: '122',
       name: 'Darius',
       title: 'the Hand of Noxus',
       img:
@@ -1017,10 +1017,10 @@ const LOL = {
         full: 'Darius.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 384,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -1050,7 +1050,7 @@ const LOL = {
     Diana: {
       version: '6.24.1',
       id: 'Diana',
-      key: '131',
+      keyy: '131',
       name: 'Diana',
       title: 'Scorn of the Moon',
       img:
@@ -1069,10 +1069,10 @@ const LOL = {
         full: 'Diana.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 432,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Mage'],
       partype: 'MP',
@@ -1102,7 +1102,7 @@ const LOL = {
     Draven: {
       version: '6.24.1',
       id: 'Draven',
-      key: '119',
+      keyy: '119',
       name: 'Draven',
       title: 'the Glorious Executioner',
       img:
@@ -1121,10 +1121,10 @@ const LOL = {
         full: 'Draven.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 0,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman'],
       partype: 'MP',
@@ -1154,7 +1154,7 @@ const LOL = {
     DrMundo: {
       version: '6.24.1',
       id: 'DrMundo',
-      key: '36',
+      keyy: '36',
       name: 'Dr. Mundo',
       title: 'the Madman of Zaun',
       img:
@@ -1173,10 +1173,10 @@ const LOL = {
         full: 'DrMundo.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 48,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'None',
@@ -1206,7 +1206,7 @@ const LOL = {
     Ekko: {
       version: '6.24.1',
       id: 'Ekko',
-      key: '245',
+      keyy: '245',
       name: 'Ekko',
       title: 'the Boy Who Shattered Time',
       img:
@@ -1225,10 +1225,10 @@ const LOL = {
         full: 'Ekko.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 96,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Fighter'],
       partype: 'MP',
@@ -1258,7 +1258,7 @@ const LOL = {
     Elise: {
       version: '6.24.1',
       id: 'Elise',
-      key: '60',
+      keyy: '60',
       name: 'Elise',
       title: 'the Spider Queen',
       img:
@@ -1277,10 +1277,10 @@ const LOL = {
         full: 'Elise.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 144,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Fighter'],
       partype: 'MP',
@@ -1310,7 +1310,7 @@ const LOL = {
     Evelynn: {
       version: '6.24.1',
       id: 'Evelynn',
-      key: '28',
+      keyy: '28',
       name: 'Evelynn',
       title: 'the Widowmaker',
       splash:
@@ -1327,10 +1327,10 @@ const LOL = {
         full: 'Evelynn.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 192,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Mage'],
       partype: 'MP',
@@ -1360,7 +1360,7 @@ const LOL = {
     Ezreal: {
       version: '6.24.1',
       id: 'Ezreal',
-      key: '81',
+      keyy: '81',
       name: 'Ezreal',
       title: 'the Prodigal Explorer',
       img:
@@ -1379,10 +1379,10 @@ const LOL = {
         full: 'Ezreal.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 240,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Mage'],
       partype: 'MP',
@@ -1412,7 +1412,7 @@ const LOL = {
     FiddleSticks: {
       version: '6.24.1',
       id: 'FiddleSticks',
-      key: '9',
+      keyy: '9',
       name: 'Fiddlesticks',
       title: 'the Harbinger of Doom',
       img:
@@ -1431,10 +1431,10 @@ const LOL = {
         full: 'FiddleSticks.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 288,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -1464,7 +1464,7 @@ const LOL = {
     Fiora: {
       version: '6.24.1',
       id: 'Fiora',
-      key: '114',
+      keyy: '114',
       name: 'Fiora',
       title: 'the Grand Duelist',
       img:
@@ -1483,10 +1483,10 @@ const LOL = {
         full: 'Fiora.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 336,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Assassin'],
       partype: 'MP',
@@ -1516,7 +1516,7 @@ const LOL = {
     Fizz: {
       version: '6.24.1',
       id: 'Fizz',
-      key: '105',
+      keyy: '105',
       name: 'Fizz',
       title: 'the Tidal Trickster',
       img:
@@ -1535,10 +1535,10 @@ const LOL = {
         full: 'Fizz.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 384,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Fighter'],
       partype: 'MP',
@@ -1568,7 +1568,7 @@ const LOL = {
     Galio: {
       version: '6.24.1',
       id: 'Galio',
-      key: '3',
+      keyy: '3',
       name: 'Galio',
       title: 'the Sentinel\'s Sorrow',
       img:
@@ -1587,10 +1587,10 @@ const LOL = {
         full: 'Galio.png',
         sprite: 'champion0.png',
         group: 'champion',
-        x: 432,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Mage'],
       partype: 'MP',
@@ -1620,7 +1620,7 @@ const LOL = {
     Gangplank: {
       version: '6.24.1',
       id: 'Gangplank',
-      key: '41',
+      keyy: '41',
       name: 'Gangplank',
       title: 'the Saltwater Scourge',
       img:
@@ -1639,10 +1639,10 @@ const LOL = {
         full: 'Gangplank.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 0,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter'],
       partype: 'MP',
@@ -1672,7 +1672,7 @@ const LOL = {
     Garen: {
       version: '6.24.1',
       id: 'Garen',
-      key: '86',
+      keyy: '86',
       name: 'Garen',
       title: 'The Might of Demacia',
       img:
@@ -1691,10 +1691,10 @@ const LOL = {
         full: 'Garen.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 48,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'None',
@@ -1724,7 +1724,7 @@ const LOL = {
     Gnar: {
       version: '6.24.1',
       id: 'Gnar',
-      key: '150',
+      keyy: '150',
       name: 'Gnar',
       title: 'the Missing Link',
       img:
@@ -1743,10 +1743,10 @@ const LOL = {
         full: 'Gnar.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 96,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'Gnarfury',
@@ -1776,7 +1776,7 @@ const LOL = {
     Gragas: {
       version: '6.24.1',
       id: 'Gragas',
-      key: '79',
+      keyy: '79',
       name: 'Gragas',
       title: 'the Rabble Rouser',
       img:
@@ -1795,10 +1795,10 @@ const LOL = {
         full: 'Gragas.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 144,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Mage'],
       partype: 'MP',
@@ -1828,7 +1828,7 @@ const LOL = {
     Graves: {
       version: '6.24.1',
       id: 'Graves',
-      key: '104',
+      keyy: '104',
       name: 'Graves',
       title: 'the Outlaw',
       img:
@@ -1847,10 +1847,10 @@ const LOL = {
         full: 'Graves.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 192,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman'],
       partype: 'MP',
@@ -1880,10 +1880,10 @@ const LOL = {
     Hecarim: {
       version: '6.24.1',
       id: 'Hecarim',
-      key: '120',
+      keyy: '120',
       name: 'Hecarim',
       title: 'the Shadow of War',
-      champkey: 'Hecarim',
+      champkeyy: 'Hecarim',
       img:
         'https://www.masterypoints.com/assets/img/lol/champion_icons/Hecarim.png',
       splash:
@@ -1900,10 +1900,10 @@ const LOL = {
         full: 'Hecarim.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 240,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -1933,7 +1933,7 @@ const LOL = {
     Heimerdinger: {
       version: '6.24.1',
       id: 'Heimerdinger',
-      key: '74',
+      keyy: '74',
       name: 'Heimerdinger',
       title: 'the Revered Inventor',
       img:
@@ -1952,10 +1952,10 @@ const LOL = {
         full: 'Heimerdinger.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 288,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -1985,7 +1985,7 @@ const LOL = {
     Illaoi: {
       version: '6.24.1',
       id: 'Illaoi',
-      key: '420',
+      keyy: '420',
       name: 'Illaoi',
       title: 'the Kraken Priestess',
       img:
@@ -2004,10 +2004,10 @@ const LOL = {
         full: 'Illaoi.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 336,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -2037,7 +2037,7 @@ const LOL = {
     Irelia: {
       version: '6.24.1',
       id: 'Irelia',
-      key: '39',
+      keyy: '39',
       name: 'Irelia',
       title: 'the Will of the Blades',
       img:
@@ -2056,10 +2056,10 @@ const LOL = {
         full: 'Irelia.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 384,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Assassin'],
       partype: 'MP',
@@ -2089,7 +2089,7 @@ const LOL = {
     Ivern: {
       version: '6.24.1',
       id: 'Ivern',
-      key: '427',
+      keyy: '427',
       name: 'Ivern',
       title: 'the Green Father',
       img:
@@ -2108,10 +2108,10 @@ const LOL = {
         full: 'Ivern.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 96,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Mage'],
       partype: 'MP',
@@ -2141,7 +2141,7 @@ const LOL = {
     Janna: {
       version: '6.24.1',
       id: 'Janna',
-      key: '40',
+      keyy: '40',
       name: 'Janna',
       title: 'the Storm\'s Fury',
       img:
@@ -2160,10 +2160,10 @@ const LOL = {
         full: 'Janna.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 432,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Mage'],
       partype: 'MP',
@@ -2193,7 +2193,7 @@ const LOL = {
     JarvanIV: {
       version: '6.24.1',
       id: 'JarvanIV',
-      key: '59',
+      keyy: '59',
       name: 'Jarvan IV',
       title: 'the Exemplar of Demacia',
       img:
@@ -2212,10 +2212,10 @@ const LOL = {
         full: 'JarvanIV.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 0,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Fighter'],
       partype: 'MP',
@@ -2242,10 +2242,10 @@ const LOL = {
         attackspeedperlevel: 2.5
       }
     },
-    Jax: {
+    Jaxx: {
       version: '6.24.1',
       id: 'Jax',
-      key: '24',
+      keyy: '24',
       name: 'Jax',
       title: 'Grandmaster at Arms',
       img:
@@ -2264,10 +2264,10 @@ const LOL = {
         full: 'Jax.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 48,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Assassin'],
       partype: 'MP',
@@ -2297,7 +2297,7 @@ const LOL = {
     Jayce: {
       version: '6.24.1',
       id: 'Jayce',
-      key: '126',
+      keyy: '126',
       name: 'Jayce',
       title: 'the Defender of Tomorrow',
       img:
@@ -2316,10 +2316,10 @@ const LOL = {
         full: 'Jayce.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 96,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Marksman'],
       partype: 'MP',
@@ -2349,7 +2349,7 @@ const LOL = {
     Jhin: {
       version: '6.24.1',
       id: 'Jhin',
-      key: '202',
+      keyy: '202',
       name: 'Jhin',
       title: 'the Virtuoso',
       img:
@@ -2368,10 +2368,10 @@ const LOL = {
         full: 'Jhin.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 144,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Assassin'],
       partype: 'MP',
@@ -2398,10 +2398,10 @@ const LOL = {
         attackspeedperlevel: 0
       }
     },
-    Jinx: {
+    Jinxx: {
       version: '6.24.1',
       id: 'Jinx',
-      key: '222',
+      keyy: '222',
       name: 'Jinx',
       title: 'the Loose Cannon',
       img:
@@ -2420,10 +2420,10 @@ const LOL = {
         full: 'Jinx.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 192,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman'],
       partype: 'MP',
@@ -2453,7 +2453,7 @@ const LOL = {
     Kalista: {
       version: '6.24.1',
       id: 'Kalista',
-      key: '429',
+      keyy: '429',
       name: 'Kalista',
       title: 'the Spear of Vengeance',
       img:
@@ -2472,10 +2472,10 @@ const LOL = {
         full: 'Kalista.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 240,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman'],
       partype: 'MP',
@@ -2505,7 +2505,7 @@ const LOL = {
     Karma: {
       version: '6.24.1',
       id: 'Karma',
-      key: '43',
+      keyy: '43',
       name: 'Karma',
       title: 'the Enlightened One',
       img:
@@ -2524,10 +2524,10 @@ const LOL = {
         full: 'Karma.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 288,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -2557,7 +2557,7 @@ const LOL = {
     Karthus: {
       version: '6.24.1',
       id: 'Karthus',
-      key: '30',
+      keyy: '30',
       name: 'Karthus',
       title: 'the Deathsinger',
       img:
@@ -2576,10 +2576,10 @@ const LOL = {
         full: 'Karthus.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 336,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage'],
       partype: 'MP',
@@ -2609,7 +2609,7 @@ const LOL = {
     Kassadin: {
       version: '6.24.1',
       id: 'Kassadin',
-      key: '38',
+      keyy: '38',
       name: 'Kassadin',
       title: 'the Void Walker',
       img:
@@ -2628,10 +2628,10 @@ const LOL = {
         full: 'Kassadin.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 384,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Mage'],
       partype: 'MP',
@@ -2661,7 +2661,7 @@ const LOL = {
     Katarina: {
       version: '6.24.1',
       id: 'Katarina',
-      key: '55',
+      keyy: '55',
       name: 'Katarina',
       title: 'the Sinister Blade',
       img:
@@ -2680,10 +2680,10 @@ const LOL = {
         full: 'Katarina.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 432,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Mage'],
       partype: 'None',
@@ -2713,7 +2713,7 @@ const LOL = {
     Kayle: {
       version: '6.24.1',
       id: 'Kayle',
-      key: '10',
+      keyy: '10',
       name: 'Kayle',
       title: 'The Judicator',
       img:
@@ -2732,10 +2732,10 @@ const LOL = {
         full: 'Kayle.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 0,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Support'],
       partype: 'MP',
@@ -2765,7 +2765,7 @@ const LOL = {
     Kennen: {
       version: '6.24.1',
       id: 'Kennen',
-      key: '85',
+      keyy: '85',
       name: 'Kennen',
       title: 'the Heart of the Tempest',
       img:
@@ -2784,10 +2784,10 @@ const LOL = {
         full: 'Kennen.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 48,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Marksman'],
       partype: 'Energy',
@@ -2814,10 +2814,10 @@ const LOL = {
         attackspeedperlevel: 3.4
       }
     },
-    Khazix: {
+    Khazixx: {
       version: '6.24.1',
       id: 'Khazix',
-      key: '121',
+      keyy: '121',
       name: 'Kha\'Zix',
       title: 'the Voidreaver',
       img:
@@ -2836,10 +2836,10 @@ const LOL = {
         full: 'Khazix.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 96,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Fighter'],
       partype: 'MP',
@@ -2869,7 +2869,7 @@ const LOL = {
     Kindred: {
       version: '6.24.1',
       id: 'Kindred',
-      key: '203',
+      keyy: '203',
       name: 'Kindred',
       title: 'The Eternal Hunters',
       img:
@@ -2888,10 +2888,10 @@ const LOL = {
         full: 'Kindred.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 144,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman'],
       partype: 'MP',
@@ -2921,7 +2921,7 @@ const LOL = {
     Kled: {
       version: '6.24.1',
       id: 'Kled',
-      key: '240',
+      keyy: '240',
       name: 'Kled',
       title: 'the Cantankerous Cavalier',
       img:
@@ -2940,10 +2940,10 @@ const LOL = {
         full: 'Kled.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 48,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'Gnarfury',
@@ -2970,10 +2970,10 @@ const LOL = {
         attackspeedperlevel: 3.5
       }
     },
-    KogMaw: {
+    KogMaww: {
       version: '6.24.1',
       id: 'KogMaw',
-      key: '96',
+      keyy: '96',
       name: 'Kog\'Maw',
       title: 'the Mouth of the Abyss',
       img:
@@ -2992,10 +2992,10 @@ const LOL = {
         full: 'KogMaw.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 192,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Mage'],
       partype: 'MP',
@@ -3025,7 +3025,7 @@ const LOL = {
     Leblanc: {
       version: '6.24.1',
       id: 'Leblanc',
-      key: '7',
+      keyy: '7',
       name: 'LeBlanc',
       title: 'the Deceiver',
       'name:':
@@ -3044,10 +3044,10 @@ const LOL = {
         full: 'Leblanc.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 240,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Mage'],
       partype: 'MP',
@@ -3077,7 +3077,7 @@ const LOL = {
     LeeSin: {
       version: '6.24.1',
       id: 'LeeSin',
-      key: '64',
+      keyy: '64',
       name: 'Lee Sin',
       title: 'the Blind Monk',
       img:
@@ -3096,10 +3096,10 @@ const LOL = {
         full: 'LeeSin.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 288,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Assassin'],
       partype: 'Energy',
@@ -3129,7 +3129,7 @@ const LOL = {
     Leona: {
       version: '6.24.1',
       id: 'Leona',
-      key: '89',
+      keyy: '89',
       name: 'Leona',
       title: 'the Radiant Dawn',
       img:
@@ -3148,10 +3148,10 @@ const LOL = {
         full: 'Leona.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 336,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Support'],
       partype: 'MP',
@@ -3181,7 +3181,7 @@ const LOL = {
     Lissandra: {
       version: '6.24.1',
       id: 'Lissandra',
-      key: '127',
+      keyy: '127',
       name: 'Lissandra',
       title: 'the Ice Witch',
       img:
@@ -3200,10 +3200,10 @@ const LOL = {
         full: 'Lissandra.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 384,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage'],
       partype: 'MP',
@@ -3233,7 +3233,7 @@ const LOL = {
     Lucian: {
       version: '6.24.1',
       id: 'Lucian',
-      key: '236',
+      keyy: '236',
       name: 'Lucian',
       title: 'the Purifier',
       img:
@@ -3252,10 +3252,10 @@ const LOL = {
         full: 'Lucian.png',
         sprite: 'champion1.png',
         group: 'champion',
-        x: 432,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman'],
       partype: 'MP',
@@ -3285,7 +3285,7 @@ const LOL = {
     Lulu: {
       version: '6.24.1',
       id: 'Lulu',
-      key: '117',
+      keyy: '117',
       name: 'Lulu',
       title: 'the Fae Sorceress',
       img:
@@ -3304,10 +3304,10 @@ const LOL = {
         full: 'Lulu.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 0,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Mage'],
       partype: 'MP',
@@ -3334,10 +3334,10 @@ const LOL = {
         attackspeedperlevel: 2.25
       }
     },
-    Lux: {
+    Luxx: {
       version: '6.24.1',
       id: 'Lux',
-      key: '99',
+      keyy: '99',
       name: 'Lux',
       title: 'the Lady of Luminosity',
       img:
@@ -3356,10 +3356,10 @@ const LOL = {
         full: 'Lux.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 48,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -3389,7 +3389,7 @@ const LOL = {
     Malphite: {
       version: '6.24.1',
       id: 'Malphite',
-      key: '54',
+      keyy: '54',
       name: 'Malphite',
       title: 'Shard of the Monolith',
       img:
@@ -3408,10 +3408,10 @@ const LOL = {
         full: 'Malphite.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 96,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Fighter'],
       partype: 'MP',
@@ -3441,7 +3441,7 @@ const LOL = {
     Malzahar: {
       version: '6.24.1',
       id: 'Malzahar',
-      key: '90',
+      keyy: '90',
       name: 'Malzahar',
       title: 'the Prophet of the Void',
       img:
@@ -3460,10 +3460,10 @@ const LOL = {
         full: 'Malzahar.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 144,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Assassin'],
       partype: 'MP',
@@ -3493,7 +3493,7 @@ const LOL = {
     Maokai: {
       version: '6.24.1',
       id: 'Maokai',
-      key: '57',
+      keyy: '57',
       name: 'Maokai',
       title: 'the Twisted Treant',
       img:
@@ -3512,10 +3512,10 @@ const LOL = {
         full: 'Maokai.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 192,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Mage'],
       partype: 'MP',
@@ -3545,7 +3545,7 @@ const LOL = {
     MasterYi: {
       version: '6.24.1',
       id: 'MasterYi',
-      key: '11',
+      keyy: '11',
       name: 'Master Yi',
       title: 'the Wuju Bladesman',
       img:
@@ -3564,10 +3564,10 @@ const LOL = {
         full: 'MasterYi.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 240,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Fighter'],
       partype: 'MP',
@@ -3597,7 +3597,7 @@ const LOL = {
     MissFortune: {
       version: '6.24.1',
       id: 'MissFortune',
-      key: '21',
+      keyy: '21',
       name: 'Miss Fortune',
       title: 'the Bounty Hunter',
       img:
@@ -3616,10 +3616,10 @@ const LOL = {
         full: 'MissFortune.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 288,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman'],
       partype: 'MP',
@@ -3649,7 +3649,7 @@ const LOL = {
     MonkeyKing: {
       version: '6.24.1',
       id: 'MonkeyKing',
-      key: '62',
+      keyy: '62',
       name: 'Wukong',
       title: 'the Monkey King',
       img:
@@ -3668,10 +3668,10 @@ const LOL = {
         full: 'MonkeyKing.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 336,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -3701,7 +3701,7 @@ const LOL = {
     Mordekaiser: {
       version: '6.24.1',
       id: 'Mordekaiser',
-      key: '82',
+      keyy: '82',
       name: 'Mordekaiser',
       title: 'the Iron Revenant',
       img:
@@ -3720,10 +3720,10 @@ const LOL = {
         full: 'Mordekaiser.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 384,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter'],
       partype: 'None',
@@ -3753,7 +3753,7 @@ const LOL = {
     Morgana: {
       version: '6.24.1',
       id: 'Morgana',
-      key: '25',
+      keyy: '25',
       name: 'Morgana',
       title: 'Fallen Angel',
       img:
@@ -3772,10 +3772,10 @@ const LOL = {
         full: 'Morgana.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 432,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -3805,7 +3805,7 @@ const LOL = {
     Nami: {
       version: '6.24.1',
       id: 'Nami',
-      key: '267',
+      keyy: '267',
       name: 'Nami',
       title: 'the Tidecaller',
       img:
@@ -3824,10 +3824,10 @@ const LOL = {
         full: 'Nami.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 0,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Mage'],
       partype: 'MP',
@@ -3857,7 +3857,7 @@ const LOL = {
     Nasus: {
       version: '6.24.1',
       id: 'Nasus',
-      key: '75',
+      keyy: '75',
       name: 'Nasus',
       title: 'the Curator of the Sands',
       img:
@@ -3876,10 +3876,10 @@ const LOL = {
         full: 'Nasus.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 48,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -3909,7 +3909,7 @@ const LOL = {
     Nautilus: {
       version: '6.24.1',
       id: 'Nautilus',
-      key: '111',
+      keyy: '111',
       name: 'Nautilus',
       title: 'the Titan of the Depths',
       img:
@@ -3928,10 +3928,10 @@ const LOL = {
         full: 'Nautilus.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 96,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Fighter'],
       partype: 'MP',
@@ -3961,7 +3961,7 @@ const LOL = {
     Nidalee: {
       version: '6.24.1',
       id: 'Nidalee',
-      key: '76',
+      keyy: '76',
       name: 'Nidalee',
       title: 'the Bestial Huntress',
       img:
@@ -3980,10 +3980,10 @@ const LOL = {
         full: 'Nidalee.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 144,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Fighter'],
       partype: 'MP',
@@ -4013,7 +4013,7 @@ const LOL = {
     Nocturne: {
       version: '6.24.1',
       id: 'Nocturne',
-      key: '56',
+      keyy: '56',
       name: 'Nocturne',
       title: 'the Eternal Nightmare',
       img:
@@ -4032,10 +4032,10 @@ const LOL = {
         full: 'Nocturne.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 192,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Fighter'],
       partype: 'MP',
@@ -4065,7 +4065,7 @@ const LOL = {
     Nunu: {
       version: '6.24.1',
       id: 'Nunu',
-      key: '20',
+      keyy: '20',
       name: 'Nunu',
       title: 'the Yeti Rider',
       img:
@@ -4084,10 +4084,10 @@ const LOL = {
         full: 'Nunu.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 240,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Fighter'],
       partype: 'MP',
@@ -4117,7 +4117,7 @@ const LOL = {
     Olaf: {
       version: '6.24.1',
       id: 'Olaf',
-      key: '2',
+      keyy: '2',
       name: 'Olaf',
       title: 'the Berserker',
       img:
@@ -4136,10 +4136,10 @@ const LOL = {
         full: 'Olaf.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 288,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -4169,7 +4169,7 @@ const LOL = {
     Orianna: {
       version: '6.24.1',
       id: 'Orianna',
-      key: '61',
+      keyy: '61',
       name: 'Orianna',
       title: 'the Lady of Clockwork',
       img:
@@ -4188,10 +4188,10 @@ const LOL = {
         full: 'Orianna.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 336,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -4221,7 +4221,7 @@ const LOL = {
     Pantheon: {
       version: '6.24.1',
       id: 'Pantheon',
-      key: '80',
+      keyy: '80',
       name: 'Pantheon',
       title: 'the Artisan of War',
       img:
@@ -4240,10 +4240,10 @@ const LOL = {
         full: 'Pantheon.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 384,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Assassin'],
       partype: 'MP',
@@ -4270,10 +4270,10 @@ const LOL = {
         attackspeedperlevel: 2.95
       }
     },
-    Poppy: {
+    Poppyy: {
       version: '6.24.1',
       id: 'Poppy',
-      key: '78',
+      keyy: '78',
       name: 'Poppy',
       title: 'Keeper of the Hammer',
       img:
@@ -4292,10 +4292,10 @@ const LOL = {
         full: 'Poppy.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 432,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Fighter'],
       partype: 'MP',
@@ -4325,7 +4325,7 @@ const LOL = {
     Quinn: {
       version: '6.24.1',
       id: 'Quinn',
-      key: '133',
+      keyy: '133',
       name: 'Quinn',
       title: 'Demacia\'s Wings',
       img:
@@ -4344,10 +4344,10 @@ const LOL = {
         full: 'Quinn.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 0,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Fighter'],
       partype: 'MP',
@@ -4377,7 +4377,7 @@ const LOL = {
     Rammus: {
       version: '6.24.1',
       id: 'Rammus',
-      key: '33',
+      keyy: '33',
       name: 'Rammus',
       title: 'the Armordillo',
       img:
@@ -4396,10 +4396,10 @@ const LOL = {
         full: 'Rammus.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 48,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Fighter'],
       partype: 'MP',
@@ -4429,7 +4429,7 @@ const LOL = {
     RekSai: {
       version: '6.24.1',
       id: 'RekSai',
-      key: '421',
+      keyy: '421',
       name: 'Rek\'Sai',
       title: 'the Void Burrower',
       img:
@@ -4448,10 +4448,10 @@ const LOL = {
         full: 'RekSai.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 96,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter'],
       partype: 'Battlefury',
@@ -4481,7 +4481,7 @@ const LOL = {
     Renekton: {
       version: '6.24.1',
       id: 'Renekton',
-      key: '58',
+      keyy: '58',
       name: 'Renekton',
       title: 'the Butcher of the Sands',
       img:
@@ -4500,10 +4500,10 @@ const LOL = {
         full: 'Renekton.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 144,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'Rage',
@@ -4533,7 +4533,7 @@ const LOL = {
     Rengar: {
       version: '6.24.1',
       id: 'Rengar',
-      key: '107',
+      keyy: '107',
       name: 'Rengar',
       title: 'the Pridestalker',
       img:
@@ -4552,10 +4552,10 @@ const LOL = {
         full: 'Rengar.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 192,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Fighter'],
       partype: 'Ferocity',
@@ -4585,7 +4585,7 @@ const LOL = {
     Riven: {
       version: '6.24.1',
       id: 'Riven',
-      key: '92',
+      keyy: '92',
       name: 'Riven',
       title: 'the Exile',
       img:
@@ -4604,10 +4604,10 @@ const LOL = {
         full: 'Riven.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 240,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Assassin'],
       partype: 'None',
@@ -4637,7 +4637,7 @@ const LOL = {
     Rumble: {
       version: '6.24.1',
       id: 'Rumble',
-      key: '68',
+      keyy: '68',
       name: 'Rumble',
       title: 'the Mechanized Menace',
       img:
@@ -4656,10 +4656,10 @@ const LOL = {
         full: 'Rumble.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 288,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Mage'],
       partype: 'Heat',
@@ -4689,7 +4689,7 @@ const LOL = {
     Ryze: {
       version: '6.24.1',
       id: 'Ryze',
-      key: '13',
+      keyy: '13',
       name: 'Ryze',
       title: 'the Rune Mage',
       img:
@@ -4708,10 +4708,10 @@ const LOL = {
         full: 'Ryze.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 336,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Fighter'],
       partype: 'MP',
@@ -4741,7 +4741,7 @@ const LOL = {
     Sejuani: {
       version: '6.24.1',
       id: 'Sejuani',
-      key: '113',
+      keyy: '113',
       name: 'Sejuani',
       title: 'the Winter\'s Wrath',
       img:
@@ -4760,10 +4760,10 @@ const LOL = {
         full: 'Sejuani.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 384,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Fighter'],
       partype: 'MP',
@@ -4793,7 +4793,7 @@ const LOL = {
     Shaco: {
       version: '6.24.1',
       id: 'Shaco',
-      key: '35',
+      keyy: '35',
       name: 'Shaco',
       title: 'the Demon Jester',
       img:
@@ -4812,10 +4812,10 @@ const LOL = {
         full: 'Shaco.png',
         sprite: 'champion2.png',
         group: 'champion',
-        x: 432,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin'],
       partype: 'MP',
@@ -4845,7 +4845,7 @@ const LOL = {
     Shen: {
       version: '6.24.1',
       id: 'Shen',
-      key: '98',
+      keyy: '98',
       name: 'Shen',
       title: 'the Eye of Twilight',
       img:
@@ -4864,10 +4864,10 @@ const LOL = {
         full: 'Shen.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 0,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Melee'],
       partype: 'Energy',
@@ -4897,7 +4897,7 @@ const LOL = {
     Shyvana: {
       version: '6.24.1',
       id: 'Shyvana',
-      key: '102',
+      keyy: '102',
       name: 'Shyvana',
       title: 'the Half-Dragon',
       img:
@@ -4916,10 +4916,10 @@ const LOL = {
         full: 'Shyvana.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 48,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'Dragonfury',
@@ -4949,7 +4949,7 @@ const LOL = {
     Singed: {
       version: '6.24.1',
       id: 'Singed',
-      key: '27',
+      keyy: '27',
       name: 'Singed',
       title: 'the Mad Chemist',
       img:
@@ -4968,10 +4968,10 @@ const LOL = {
         full: 'Singed.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 96,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Fighter'],
       partype: 'MP',
@@ -5001,7 +5001,7 @@ const LOL = {
     Sion: {
       version: '6.24.1',
       id: 'Sion',
-      key: '14',
+      keyy: '14',
       name: 'Sion',
       title: 'The Undead Juggernaut',
       img:
@@ -5020,10 +5020,10 @@ const LOL = {
         full: 'Sion.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 144,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Fighter'],
       partype: 'MP',
@@ -5053,7 +5053,7 @@ const LOL = {
     Sivir: {
       version: '6.24.1',
       id: 'Sivir',
-      key: '15',
+      keyy: '15',
       name: 'Sivir',
       title: 'the Battle Mistress',
       img:
@@ -5072,10 +5072,10 @@ const LOL = {
         full: 'Sivir.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 192,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman'],
       partype: 'MP',
@@ -5105,7 +5105,7 @@ const LOL = {
     Skarner: {
       version: '6.24.1',
       id: 'Skarner',
-      key: '72',
+      keyy: '72',
       name: 'Skarner',
       title: 'the Crystal Vanguard',
       img:
@@ -5124,10 +5124,10 @@ const LOL = {
         full: 'Skarner.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 240,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -5157,7 +5157,7 @@ const LOL = {
     Sona: {
       version: '6.24.1',
       id: 'Sona',
-      key: '37',
+      keyy: '37',
       name: 'Sona',
       title: 'Maven of the Strings',
       img:
@@ -5176,10 +5176,10 @@ const LOL = {
         full: 'Sona.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 288,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Mage'],
       partype: 'MP',
@@ -5209,7 +5209,7 @@ const LOL = {
     Soraka: {
       version: '6.24.1',
       id: 'Soraka',
-      key: '16',
+      keyy: '16',
       name: 'Soraka',
       title: 'the Starchild',
       img:
@@ -5228,10 +5228,10 @@ const LOL = {
         full: 'Soraka.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 336,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Mage'],
       partype: 'MP',
@@ -5261,7 +5261,7 @@ const LOL = {
     Swain: {
       version: '6.24.1',
       id: 'Swain',
-      key: '50',
+      keyy: '50',
       name: 'Swain',
       title: 'the Master Tactician',
       img:
@@ -5280,10 +5280,10 @@ const LOL = {
         full: 'Swain.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 384,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Fighter'],
       partype: 'MP',
@@ -5313,7 +5313,7 @@ const LOL = {
     Syndra: {
       version: '6.24.1',
       id: 'Syndra',
-      key: '134',
+      keyy: '134',
       name: 'Syndra',
       title: 'the Dark Sovereign',
       img:
@@ -5332,10 +5332,10 @@ const LOL = {
         full: 'Syndra.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 432,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -5362,10 +5362,10 @@ const LOL = {
         attackspeedperlevel: 2
       }
     },
-    TahmKench: {
+    TahmKenchh: {
       version: '6.24.1',
       id: 'TahmKench',
-      key: '223',
+      keyy: '223',
       name: 'Tahm Kench',
       title: 'the River King',
       img:
@@ -5384,10 +5384,10 @@ const LOL = {
         full: 'TahmKench.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 0,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Tank'],
       partype: 'MP',
@@ -5414,10 +5414,10 @@ const LOL = {
         attackspeedperlevel: 2.5
       }
     },
-    Taliyah: {
+    Taliyahh: {
       version: '6.24.1',
       id: 'Taliyah',
-      key: '163',
+      keyy: '163',
       name: 'Taliyah',
       title: 'the Stoneweaver',
       img:
@@ -5436,10 +5436,10 @@ const LOL = {
         full: 'Taliyah.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 48,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -5469,7 +5469,7 @@ const LOL = {
     Talon: {
       version: '6.24.1',
       id: 'Talon',
-      key: '91',
+      keyy: '91',
       name: 'Talon',
       title: 'the Blade\'s Shadow',
       img:
@@ -5488,10 +5488,10 @@ const LOL = {
         full: 'Talon.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 96,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Fighter'],
       partype: 'MP',
@@ -5521,7 +5521,7 @@ const LOL = {
     Taric: {
       version: '6.24.1',
       id: 'Taric',
-      key: '44',
+      keyy: '44',
       name: 'Taric',
       title: 'the Shield of Valoran',
       img:
@@ -5540,10 +5540,10 @@ const LOL = {
         full: 'Taric.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 144,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Fighter'],
       partype: 'MP',
@@ -5573,7 +5573,7 @@ const LOL = {
     Teemo: {
       version: '6.24.1',
       id: 'Teemo',
-      key: '17',
+      keyy: '17',
       name: 'Teemo',
       title: 'the Swift Scout',
       img:
@@ -5592,10 +5592,10 @@ const LOL = {
         full: 'Teemo.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 192,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Assassin'],
       partype: 'MP',
@@ -5622,10 +5622,10 @@ const LOL = {
         attackspeedperlevel: 3.38
       }
     },
-    Thresh: {
+    Threshh: {
       version: '6.24.1',
       id: 'Thresh',
-      key: '412',
+      keyy: '412',
       name: 'Thresh',
       title: 'the Chain Warden',
       img:
@@ -5644,10 +5644,10 @@ const LOL = {
         full: 'Thresh.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 240,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Fighter'],
       partype: 'MP',
@@ -5677,7 +5677,7 @@ const LOL = {
     Tristana: {
       version: '6.24.1',
       id: 'Tristana',
-      key: '18',
+      keyy: '18',
       name: 'Tristana',
       title: 'the Yordle Gunner',
       img:
@@ -5696,10 +5696,10 @@ const LOL = {
         full: 'Tristana.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 288,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Assassin'],
       partype: 'MP',
@@ -5729,7 +5729,7 @@ const LOL = {
     Trundle: {
       version: '6.24.1',
       id: 'Trundle',
-      key: '48',
+      keyy: '48',
       name: 'Trundle',
       title: 'the Troll King',
       img:
@@ -5748,10 +5748,10 @@ const LOL = {
         full: 'Trundle.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 336,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -5781,7 +5781,7 @@ const LOL = {
     Tryndamere: {
       version: '6.24.1',
       id: 'Tryndamere',
-      key: '23',
+      keyy: '23',
       name: 'Tryndamere',
       title: 'the Barbarian King',
       img:
@@ -5800,10 +5800,10 @@ const LOL = {
         full: 'Tryndamere.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 384,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Assassin'],
       partype: 'Battlefury',
@@ -5833,7 +5833,7 @@ const LOL = {
     TwistedFate: {
       version: '6.24.1',
       id: 'TwistedFate',
-      key: '4',
+      keyy: '4',
       name: 'Twisted Fate',
       title: 'the Card Master',
       img:
@@ -5852,10 +5852,10 @@ const LOL = {
         full: 'TwistedFate.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 432,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage'],
       partype: 'MP',
@@ -5882,10 +5882,10 @@ const LOL = {
         attackspeedperlevel: 3.22
       }
     },
-    Twitch: {
+    Twitchh: {
       version: '6.24.1',
       id: 'Twitch',
-      key: '29',
+      keyy: '29',
       name: 'Twitch',
       title: 'the Plague Rat',
       img:
@@ -5904,10 +5904,10 @@ const LOL = {
         full: 'Twitch.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 0,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Assassin'],
       partype: 'MP',
@@ -5937,7 +5937,7 @@ const LOL = {
     Udyr: {
       version: '6.24.1',
       id: 'Udyr',
-      key: '77',
+      keyy: '77',
       name: 'Udyr',
       title: 'the Spirit Walker',
       img:
@@ -5956,10 +5956,10 @@ const LOL = {
         full: 'Udyr.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 48,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -5989,7 +5989,7 @@ const LOL = {
     Urgot: {
       version: '6.24.1',
       id: 'Urgot',
-      key: '6',
+      keyy: '6',
       name: 'Urgot',
       title: 'the Headsman\'s Pride',
       img:
@@ -6008,10 +6008,10 @@ const LOL = {
         full: 'Urgot.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 96,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Fighter'],
       partype: 'MP',
@@ -6041,7 +6041,7 @@ const LOL = {
     Varus: {
       version: '6.24.1',
       id: 'Varus',
-      key: '110',
+      keyy: '110',
       name: 'Varus',
       title: 'the Arrow of Retribution',
       img:
@@ -6060,10 +6060,10 @@ const LOL = {
         full: 'Varus.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 144,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Mage'],
       partype: 'MP',
@@ -6093,7 +6093,7 @@ const LOL = {
     Vayne: {
       version: '6.24.1',
       id: 'Vayne',
-      key: '67',
+      keyy: '67',
       name: 'Vayne',
       title: 'the Night Hunter',
       img:
@@ -6112,10 +6112,10 @@ const LOL = {
         full: 'Vayne.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 192,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Marksman', 'Assassin'],
       partype: 'MP',
@@ -6145,7 +6145,7 @@ const LOL = {
     Veigar: {
       version: '6.24.1',
       id: 'Veigar',
-      key: '45',
+      keyy: '45',
       name: 'Veigar',
       title: 'the Tiny Master of Evil',
       img:
@@ -6164,10 +6164,10 @@ const LOL = {
         full: 'Veigar.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 240,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage'],
       partype: 'MP',
@@ -6197,7 +6197,7 @@ const LOL = {
     Velkoz: {
       version: '6.24.1',
       id: 'Velkoz',
-      key: '161',
+      keyy: '161',
       name: 'Vel\'Koz',
       title: 'the Eye of the Void',
       img:
@@ -6216,10 +6216,10 @@ const LOL = {
         full: 'Velkoz.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 288,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage'],
       partype: 'MP',
@@ -6249,7 +6249,7 @@ const LOL = {
     Vi: {
       version: '6.24.1',
       id: 'Vi',
-      key: '254',
+      keyy: '254',
       name: 'Vi',
       title: 'the Piltover Enforcer',
       img: 'https://www.masterypoints.com/assets/img/lol/champion_icons/Vi.png',
@@ -6267,10 +6267,10 @@ const LOL = {
         full: 'Vi.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 336,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Assassin'],
       partype: 'MP',
@@ -6300,7 +6300,7 @@ const LOL = {
     Viktor: {
       version: '6.24.1',
       id: 'Viktor',
-      key: '112',
+      keyy: '112',
       name: 'Viktor',
       title: 'the Machine Herald',
       img:
@@ -6319,10 +6319,10 @@ const LOL = {
         full: 'Viktor.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 384,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage'],
       partype: 'MP',
@@ -6352,7 +6352,7 @@ const LOL = {
     Vladimir: {
       version: '6.24.1',
       id: 'Vladimir',
-      key: '8',
+      keyy: '8',
       name: 'Vladimir',
       title: 'the Crimson Reaper',
       img:
@@ -6371,10 +6371,10 @@ const LOL = {
         full: 'Vladimir.png',
         sprite: 'champion3.png',
         group: 'champion',
-        x: 432,
-        y: 96,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 96,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Tank'],
       partype: 'Gnarfury',
@@ -6404,7 +6404,7 @@ const LOL = {
     Volibear: {
       version: '6.24.1',
       id: 'Volibear',
-      key: '106',
+      keyy: '106',
       name: 'Volibear',
       title: 'the Thunder\'s Roar',
       img:
@@ -6423,10 +6423,10 @@ const LOL = {
         full: 'Volibear.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 0,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -6456,7 +6456,7 @@ const LOL = {
     Warwick: {
       version: '6.24.1',
       id: 'Warwick',
-      key: '19',
+      keyy: '19',
       name: 'Warwick',
       title: 'the Blood Hunter',
       img:
@@ -6475,10 +6475,10 @@ const LOL = {
         full: 'Warwick.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 48,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 48,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -6505,10 +6505,10 @@ const LOL = {
         attackspeedperlevel: 2.88
       }
     },
-    Xerath: {
+    Xerathh: {
       version: '6.24.1',
       id: 'Xerath',
-      key: '101',
+      keyy: '101',
       name: 'Xerath',
       title: 'the Magus Ascendant',
       img:
@@ -6527,10 +6527,10 @@ const LOL = {
         full: 'Xerath.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 96,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 96,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Assassin'],
       partype: 'MP',
@@ -6560,7 +6560,7 @@ const LOL = {
     XinZhao: {
       version: '6.24.1',
       id: 'XinZhao',
-      key: '5',
+      keyy: '5',
       name: 'Xin Zhao',
       title: 'the Seneschal of Demacia',
       img:
@@ -6579,10 +6579,10 @@ const LOL = {
         full: 'XinZhao.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 144,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 144,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Assassin'],
       partype: 'MP',
@@ -6612,7 +6612,7 @@ const LOL = {
     Yasuo: {
       version: '6.24.1',
       id: 'Yasuo',
-      key: '157',
+      keyy: '157',
       name: 'Yasuo',
       title: 'the Unforgiven',
       img:
@@ -6631,10 +6631,10 @@ const LOL = {
         full: 'Yasuo.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 192,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 192,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Assassin'],
       partype: 'Wind',
@@ -6664,7 +6664,7 @@ const LOL = {
     Yorick: {
       version: '6.24.1',
       id: 'Yorick',
-      key: '83',
+      keyy: '83',
       name: 'Yorick',
       title: 'Shepherd of Souls',
       img:
@@ -6683,10 +6683,10 @@ const LOL = {
         full: 'Yorick.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 240,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 240,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Fighter', 'Tank'],
       partype: 'MP',
@@ -6716,7 +6716,7 @@ const LOL = {
     Zac: {
       version: '6.24.1',
       id: 'Zac',
-      key: '154',
+      keyy: '154',
       name: 'Zac',
       title: 'the Secret Weapon',
       img:
@@ -6735,10 +6735,10 @@ const LOL = {
         full: 'Zac.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 288,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 288,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Tank', 'Fighter'],
       partype: 'None',
@@ -6768,7 +6768,7 @@ const LOL = {
     Zed: {
       version: '6.24.1',
       id: 'Zed',
-      key: '238',
+      keyy: '238',
       name: 'Zed',
       title: 'the Master of Shadows',
       img:
@@ -6787,10 +6787,10 @@ const LOL = {
         full: 'Zed.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 336,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 336,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Assassin', 'Fighter'],
       partype: 'Energy',
@@ -6820,7 +6820,7 @@ const LOL = {
     Ziggs: {
       version: '6.24.1',
       id: 'Ziggs',
-      key: '115',
+      keyy: '115',
       name: 'Ziggs',
       title: 'the Hexplosives Expert',
       img:
@@ -6839,10 +6839,10 @@ const LOL = {
         full: 'Ziggs.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 384,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 384,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage'],
       partype: 'MP',
@@ -6872,7 +6872,7 @@ const LOL = {
     Zilean: {
       version: '6.24.1',
       id: 'Zilean',
-      key: '26',
+      keyy: '26',
       name: 'Zilean',
       title: 'the Chronokeeper',
       img:
@@ -6891,10 +6891,10 @@ const LOL = {
         full: 'Zilean.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 432,
-        y: 0,
-        w: 48,
-        h: 48
+        xx: 432,
+        yy: 0,
+        ww: 48,
+        hh: 48
       },
       tags: ['Support', 'Mage'],
       partype: 'MP',
@@ -6924,7 +6924,7 @@ const LOL = {
     Zyra: {
       version: '6.24.1',
       id: 'Zyra',
-      key: '143',
+      keyy: '143',
       name: 'Zyra',
       title: 'Rise of the Thorns',
       img:
@@ -6943,10 +6943,10 @@ const LOL = {
         full: 'Zyra.png',
         sprite: 'champion4.png',
         group: 'champion',
-        x: 0,
-        y: 48,
-        w: 48,
-        h: 48
+        xx: 0,
+        yy: 48,
+        ww: 48,
+        hh: 48
       },
       tags: ['Mage', 'Support'],
       partype: 'MP',
@@ -6975,7 +6975,7 @@ const LOL = {
     }
   }
 };
-const dataCampeones = app.selectedData(app.dataCurated(LOL.data, app.obj));
+const championsData = app.selectedData(app.dataCurated(LOL.data, app.obj));
 describe('loginValidate', () => {
   it('debería ser una función', () => {
     expect(typeof app.loginValidate).toBe('function');
@@ -7042,11 +7042,11 @@ describe('sortAttackdamage', () => {
   it('debería ser una función', () => {
     expect(typeof app.sortAttackdamage).toBe('function');
   });
-  it('debería ordenar por Daño de Ataque Descendente', () => {
-    expect(app.sortAttackdamage(dataCampeones, '1')[0].name).toEqual('Maokai');
+  it('debería ordenar por daño de ataque Descendente', () => {
+    expect(app.sortAttackdamage(championsData, '1')[0].name).toEqual('Maokai');
   });
-  it('debería ordenar por Daño de Ataque Ascendente', () => {
-    expect(app.sortAttackdamage(dataCampeones, '0')[0].name).toEqual('Orianna');
+  it('debería ordenar por daño de ataque Ascendente', () => {
+    expect(app.sortAttackdamage(championsData, '0')[0].name).toEqual('Orianna');
   });
 });
 
@@ -7055,10 +7055,10 @@ describe('sortChampionsAz', () => {
     expect(typeof app.sortChampionsAz).toBe('function');
   });
   it('debería ordenar de Z - A', () => {
-    expect(app.sortChampionsAz(dataCampeones, '1')[0].name).toEqual('Zyra');
+    expect(app.sortChampionsAz(championsData, '1')[0].name).toEqual('Zyra');
   });
   it('debería ordenar de A - Z', () => {
-    expect(app.sortChampionsAz(dataCampeones, '0')[0].name).toEqual('Aatrox');
+    expect(app.sortChampionsAz(championsData, '0')[0].name).toEqual('Aatrox');
   });
 });
 
@@ -7067,9 +7067,9 @@ describe('selectTypeChampions', () => {
     expect(typeof app.selectTypeChampions).toBe('function');
   });
   it('debería mostrar el campeon tipo: "Assassin"', () => {
-    expect(app.selectTypeChampions(dataCampeones, 'Assassin')[0].name).toEqual('Ahri');
+    expect(app.selectTypeChampions(championsData, 'Assassin')[0].name).toEqual('Ahri');
   });
-  it('debería mostrar todos los campeones: "Total"', () => {
-    expect(app.selectTypeChampions(dataCampeones, 'Total')[0].name).toEqual('Aatrox');
+  it('debería mostrar todos los campeones', () => {
+    expect(app.selectTypeChampions(championsData, 'Total')[0].name).toEqual('Aatrox');
   });
 }); 
