@@ -10,13 +10,15 @@ btnLogin.addEventListener('click', event => {
   const user = document.getElementById('user');
   const password = document.getElementById('password');
   const error = document.getElementById('error');
-  let funcLoginValidator = app.loginValidate(user.value, password.value);
+  let funcLoginValidator = app.userLoginValidate(user.value, password.value);
   if (funcLoginValidator === 'ok') {
     pagLogin.classList.add('hide');
     pagGeneral.classList.remove('hide');
     body.classList.replace('login-bg', 'general-bg');
     footer.classList.remove('hide');
   } else {
+    user = '';
+    password = '';
     error.innerHTML = funcLoginValidator;
   }
 });
@@ -69,7 +71,7 @@ const createModal = () => {
   });
 };
 
-const championsData = app.selectedData(app.dataCurated(LOL.data, app.obj));
+const championsData = app.selectedData(app.dataCurated(LOL.data, championsImg));
 const championsContainer = document.getElementById('all-champions');
 // Mostrar campeones
 const createTemplateCard = list => {

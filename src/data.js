@@ -1,13 +1,13 @@
 const app = {
   // Primera Historia de Usuario-- Acceso al sistema
-  loginValidate: (user, password) => {
+  userLoginValidate: (user, password) => {
     let msg = '';
     if (user !== '' && password !== '') {
       if (user === 'LABORATORIA' && password === 'LABORATORIA') {
         msg = 'ok';
       } else {
-        user = '';
-        password = '';
+        // user = '';
+        // password = '';
         msg = 'Usuario o contraseña incorrectas';
       }
     } else {
@@ -21,24 +21,11 @@ const app = {
   },
 
   // Segunda Historia de Usuario-- Mostrar los campeones
-
-  obj: {
-    Blitzcrank: 'https://i.blogs.es/e5a747/blitz/1366_2000.jpg',
-    Jinx: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_13.jpg',
-    LeeSin: 'img/splash/LeeSin_Splash_11.jpg',
-    Lucian: 'https://i.blogs.es/cc1ded/lucian_hiredgun_splash/1366_2000.jpg',
-    Orianna: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_8.jpg',
-    Shaco: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_6.jpg',
-    Singed: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_5.jpg',
-    TahmKench: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_3.jpg',
-    Thresh: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_6.jpg',
-  },
-
   dataCurated: (data, character) => {
     const arrDataCurated = Object.values(data); // Devuelve un array que contiene las propiedades del objeto
     for (let i = 0; i < arrDataCurated.length; i++) {
       if (character.hasOwnProperty(arrDataCurated[i].id)) { // Devuelve un booleano indicando si el objeto tiene la propiedad especificada
-        arrDataCurated[i].splash = app.obj[arrDataCurated[i].id]; // si el valor devuelto es true, el splash cambia a el valor indicado en obj
+        arrDataCurated[i].splash = championsImg[arrDataCurated[i].id]; // si el valor devuelto es true, el splash cambia a el valor indicado en obj
       }
     } return arrDataCurated;
   },
