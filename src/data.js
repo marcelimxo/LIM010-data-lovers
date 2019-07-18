@@ -100,10 +100,10 @@ const app = {
         return -1;
       }
     });
-    if (clickOrder === '0') {
+    if (clickOrder === '1') {
       return arrSortAttackdamage;
     }
-    if (clickOrder === '1') {
+    if (clickOrder === '0') {
       return arrSortAttackdamage.reverse();
     }
   },
