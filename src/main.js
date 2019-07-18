@@ -17,8 +17,6 @@ btnLogin.addEventListener('click', event => {
     body.classList.replace('login-bg', 'general-bg');
     footer.classList.remove('hide');
   } else {
-    user = '';
-    password = '';
     error.innerHTML = funcLoginValidator;
   }
 });
@@ -55,13 +53,13 @@ const createModal = () => {
       document.querySelector('#modal > .champion-name').innerHTML = name;
       document.querySelector('#modal > .tags').innerHTML = tags.join(', ');
       modalBg.style.backgroundImage = `url('${img}')`;
-      document.getElementById('ataque').innerHTML = `<span>${ataque}</span>/10`;
-      document.getElementById('magia').innerHTML = `<span>${magia}</span>/10`;
-      document.getElementById('defensa').innerHTML = `<span>${defensa}</span>/10`;
-      document.getElementById('dificultad').innerHTML = `<span>${dificultad}</span>/10`;
-      document.getElementById('help-points').innerHTML = `<span>Vida</span>: ${Math.round(helpPoints)} <span class="level">(+${helpPointsPerLevel} por nivel)</span>`;
-      document.getElementById('hp-regen').innerHTML = `<span>Regeneración de vida</span>: ${Math.round(hpRegen)} <span class="level">(+${hpRegenPerLevel} por nivel)</span>`;
-      document.getElementById('mana').innerHTML = `<span>Mana</span>: ${Math.round(mana)} <span class="level">(+${manaPerLevel} por nivel)</span>`;
+      document.getElementById('attack').innerHTML = `${attack}`;
+      document.getElementById('magic').innerHTML = `${magic}`;
+      document.getElementById('defense').innerHTML = `${defense}`;
+      document.getElementById('difficulty').innerHTML = `${difficulty}`;
+      document.getElementById('help-points').innerHTML = `<span>Vida</span>: ${Math.round(helpPoints)} (+${helpPointsPerLevel} por nivel)`;
+      document.getElementById('hp-regen').innerHTML = `<span>Regeneración de vida</span>: ${Math.round(hpRegen)} (+${hpRegenPerLevel} por nivel)`;
+      document.getElementById('mana').innerHTML = `<span>Mana</span>: ${Math.round(mana)} (+${manaPerLevel} por nivel)`;
       document.getElementById('movespeed').innerHTML = `<span>Velocidad de movimiento</span>: ${Math.round(movespeed)}`;
       document.getElementById('attackrange').innerHTML = `<span>Rango de ataque</span>: ${Math.round(attackrange)}`;
       document.getElementById('attackdamage').innerHTML = `<span>Daño de ataque</span>: ${Math.round(attackdamage)}`;
@@ -103,9 +101,8 @@ createTemplateCard(championsData);
 // Ordenar en orden alfabetico
 const selectSortAz = document.getElementById('cbox-az');
 selectSortAz.addEventListener('change', () => {
-  const dataOrdenadaAz = app.sortChampionsAz(app.selectTypeChampions(dataCampeones, selectTypeChamp.value), selectSortAz.value);
+  const dataOrdenadaAz = app.sortChampionsAz(app.selectTypeChampions(championsData, selectTypeChamp.value), selectSortAz.value);
   createTemplateCard(dataOrdenadaAz); 
-  searchInput.value = '';
 });
 
 // Ordenar por attackdamage
@@ -113,7 +110,6 @@ const selectAttackdamage = document.getElementById('ad');
 selectAttackdamage.addEventListener('change', () => {
   const dataOrdenada = app.sortAttackdamage(app.selectTypeChampions(championsData, selectTypeChamp.value), selectAttackdamage.value);
   createTemplateCard(dataOrdenada);
-  searchInput.value = '';
 });
 
 // Mostrar campeones por tipo
@@ -122,7 +118,6 @@ const selectTypeChamp = document.getElementById('select-type');
 const average = document.getElementById('average');
 
 selectTypeChamp.addEventListener('change', () => {
-  searchInput.value = '';
   let dataTypeChampions = [];
   dataTypeChampions = app.selectTypeChampions(championsData, selectTypeChamp.value);
   let attackdamageTotal = 0;
