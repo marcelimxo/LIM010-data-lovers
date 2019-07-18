@@ -397,18 +397,15 @@ table {
 }
 
 td {
-  text-align: center;
-  padding: 0 2%;
+  width: 10%;
+  text-align: justify;
+  padding-left: 4.5%;
+  padding-right: 2%;
 }
 
 td > span {
   font-weight: bold;
   color: #1e2328;
-}
-
-td > span.level {
-  color: green;
-  font-weight: lighter;
 }
 
 .mask {
