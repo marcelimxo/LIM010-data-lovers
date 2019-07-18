@@ -7042,10 +7042,10 @@ describe('sortAttackdamage', () => {
   it('debería ser una función', () => {
     expect(typeof app.sortAttackdamage).toBe('function');
   });
-  it('debería ordenar por Daño de Ataque Descendente', () => {
+  it('debería ordenar por daño de ataque Descendente', () => {
     expect(app.sortAttackdamage(dataCampeones, '1')[0].name).toEqual('Maokai');
   });
-  it('debería ordenar por Daño de Ataque Ascendente', () => {
+  it('debería ordenar por daño de ataque Ascendente', () => {
     expect(app.sortAttackdamage(dataCampeones, '0')[0].name).toEqual('Orianna');
   });
 });
@@ -7069,7 +7069,7 @@ describe('selectTypeChampions', () => {
   it('debería mostrar el campeon tipo: "Assassin"', () => {
     expect(app.selectTypeChampions(dataCampeones, 'Assassin')[0].name).toEqual('Ahri');
   });
-  it('debería mostrar todos los campeones: "Total"', () => {
+  it('debería mostrar todos los campeones', () => {
     expect(app.selectTypeChampions(dataCampeones, 'Total')[0].name).toEqual('Aatrox');
   });
 }); 
