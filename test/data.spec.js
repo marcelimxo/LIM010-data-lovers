@@ -681,7 +681,7 @@ describe('replaceChampsImg', () => {
     expect(typeof app.replaceChampsImg(inputLOL, inputChampsImg)).toBe('object');
   });
   it('debería retornar las imagenes nuevas del newChampsImg', () => {
-    expect(app.replaceChampsImg(inputLOL, inputChampsImg)).toEqual(replaceChampsImgData);
+    expect(app.replaceChampsImg(inputLOL, inputChampsImg)).toBe(replaceChampsImgData);
   }); 
 });
 
