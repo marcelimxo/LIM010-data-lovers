@@ -589,7 +589,7 @@ const LOL = {
         "Zaun is a place where both magic and science have gone awry, and the unchecked nature of experimentation has taken its toll. However, Zaun's lenient restrictions allow their researchers and inventors the leeway to push the bounds of science at an ...",
       info: {
         attack: 4,
-        defense: 8,
+        dBlitzcrankefense: 8,
         magic: 5,
         difficulty: 4
       },

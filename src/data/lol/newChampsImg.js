@@ -10,4 +10,4 @@ const championsImg = {
     Thresh: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_6.jpg',
   };
 
-  window.championsImg =championsImg;
+  window.championsImg = championsImg;

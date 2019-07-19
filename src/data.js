@@ -21,7 +21,7 @@ const app = {
   },
 
   // Segunda Historia de Usuario-- Mostrar los campeones
-  dataCurated: (data, character) => {
+  replaceChampsImg: (data, character) => {
     const arrDataCurated = Object.values(data); // Devuelve un array que contiene las propiedades del objeto
     for (let i = 0; i < arrDataCurated.length; i++) {
       if (character.hasOwnProperty(arrDataCurated[i].id)) { // Devuelve un booleano indicando si el objeto tiene la propiedad especificada
