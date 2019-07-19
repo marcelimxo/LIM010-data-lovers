@@ -53,10 +53,10 @@ const createModal = () => {
       document.querySelector('#modal > .champion-name').innerHTML = name;
       document.querySelector('#modal > .tags').innerHTML = tags.join(', ');
       modalBg.style.backgroundImage = `url('${img}')`;
-      document.getElementById('attack').innerHTML = `${attack}`;
-      document.getElementById('magic').innerHTML = `${magic}`;
-      document.getElementById('defense').innerHTML = `${defense}`;
-      document.getElementById('difficulty').innerHTML = `${difficulty}`;
+      document.getElementById('attack').innerHTML = `<span>${attack}</span>/10`;
+      document.getElementById('magic').innerHTML = `<span>${magic}</span>/10`;
+      document.getElementById('defense').innerHTML = `<span>${defense}</span>/10`;
+      document.getElementById('difficulty').innerHTML = `<span>${difficulty}</span>/10`;
       document.getElementById('help-points').innerHTML = `<span>Vida</span>: ${Math.round(helpPoints)} (+${helpPointsPerLevel} por nivel)`;
       document.getElementById('hp-regen').innerHTML = `<span>Regeneración de vida</span>: ${Math.round(hpRegen)} (+${hpRegenPerLevel} por nivel)`;
       document.getElementById('mana').innerHTML = `<span>Mana</span>: ${Math.round(mana)} (+${manaPerLevel} por nivel)`;

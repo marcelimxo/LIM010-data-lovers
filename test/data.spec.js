@@ -587,76 +587,83 @@ const outputSelectChamps = [
     attackdamage: 53.384,
     tags: [ 'Tank', 'Mage' ] } ];
 
-describe('userLoginValidate', () => {
-  it('debería ser una función', () => {
-    expect(typeof app.userLoginValidate).toBe('function');
+describe('app', ()=> {
+  it('debería ser un objeto', ()=>{
+    expect(typeof app).toBe('object');
   });
 
-  it('debería retornar "ok" si la contraseña y el usuario son iguales a "LABORATORIA"', () => {
-    expect(app.userLoginValidate('LABORATORIA', 'LABORATORIA')).toBe('ok');
+  describe('userLoginValidate', () => {
+    it('debería ser una función', () => {
+      expect(typeof app.userLoginValidate).toBe('function');
+    });
+  
+    it('debería retornar "ok" si la contraseña y el usuario son iguales a "LABORATORIA"', () => {
+      expect(app.userLoginValidate('LABORATORIA', 'LABORATORIA')).toBe('ok');
+    });
+    it('debería retornar "Usuario o contraseña incorrectas" si la contraseña o el usuario son diferentes a "LABORATORIA"', () => {
+      expect(app.userLoginValidate('USUARIO', 'LABORATORIA')).toBe('Usuario o contraseña incorrectas');
+    });
+    it('debería retornar "Ingrese el usuario" si el usuario se encuentra vacio', () => {
+      expect(app.userLoginValidate('', 'LABORATORIA')).toBe('Ingrese el usuario');
+    });
+    it('debería retornar "Ingrese la contraseña" si la contraseña se encuentra vacio', () => {
+      expect(app.userLoginValidate('LABORATORIA', '')).toBe('Ingrese la contraseña');
+    });
   });
-  it('debería retornar "Usuario o contraseña incorrectas" si la contraseña o el usuario son diferentes a "LABORATORIA"', () => {
-    expect(app.userLoginValidate('USUARIO', 'LABORATORIA')).toBe('Usuario o contraseña incorrectas');
+  describe('replaceChampsImg', () => {
+    it('debería ser una función', () => {
+      expect(typeof app.replaceChampsImg).toBe('function');
+    });
+  
+    it('debería devolver un nuevo objeto', () => {
+      expect(typeof app.replaceChampsImg(inputLOL, inputChampsImg)).toBe('object');
+    });
+    it('debería retornar las imagenes nuevas del newChampsImg', () => {
+      expect(app.replaceChampsImg(inputLOL, inputChampsImg)).toStrictEqual(replaceChampsImgData);
+    }); 
   });
-  it('debería retornar "Ingrese el usuario" si el usuario se encuentra vacio', () => {
-    expect(app.userLoginValidate('', 'LABORATORIA')).toBe('Ingrese el usuario');
+  describe('selectedData', () => {
+    it('debería ser una función', () => {
+      expect(typeof app.selectedData).toBe('function');
+    });
+    it('debería retornar un nuevo objeto con atributos personalizados', () => {
+      expect(app.selectedData(replaceChampsImgData)).toStrictEqual(outputSelectChamps);
+    });
   });
-  it('debería retornar "Ingrese la contraseña" si la contraseña se encuentra vacio', () => {
-    expect(app.userLoginValidate('LABORATORIA', '')).toBe('Ingrese la contraseña');
+  describe('sortAttackdamage', () => {
+    it('debería ser una función', () => {
+      expect(typeof app.sortAttackdamage).toBe('function');
+    });
+    it('debería ordenar por daño de ataque Descendente', () => {
+      expect(app.sortAttackdamage(outputSelectChamps, '1')[0].name).toBe('Amumu');
+    });
+    it('debería ordenar por daño de ataque Ascendente', () => {
+      expect(app.sortAttackdamage(outputSelectChamps, '0')[0].name).toBe('Blitzcrank');
+    });
+  });
+  
+  describe('sortChampionsAz', () => {
+    it('debería ser una función', () => {
+      expect(typeof app.sortChampionsAz).toBe('function');
+    });
+    it('debería ordenar de Z - A', () => {
+      expect(app.sortChampionsAz(outputSelectChamps, '1')[0].name).toBe('Lucian');
+    });
+    it('debería ordenar de A - Z', () => {
+      expect(app.sortChampionsAz(outputSelectChamps, '0')[0].name).toBe('Amumu');
+    });
+  });
+  
+  describe('selectTypeChampions', () => {
+    it('debería ser una función', () => {
+      expect(typeof app.selectTypeChampions).toBe('function');
+    });
+    it('debería mostrar el campeon tipo: "Assassin"', () => {
+      expect(app.selectTypeChampions(outputSelectChamps, 'Assassin')[0].name).toBe('Lee Sin');
+    });
+    it('debería mostrar todos los campeones', () => {
+      expect(app.selectTypeChampions(outputSelectChamps, 'Total')[0].name).toBe('Amumu');
+    });
   });
 });
-describe('replaceChampsImg', () => {
-  it('debería ser una función', () => {
-    expect(typeof app.replaceChampsImg).toBe('function');
-  });
 
-  it('debería devolver un nuevo objeto', () => {
-    expect(typeof app.replaceChampsImg(inputLOL, inputChampsImg)).toBe('object');
-  });
-  it('debería retornar las imagenes nuevas del newChampsImg', () => {
-    expect(app.replaceChampsImg(inputLOL, inputChampsImg)).toEqual(replaceChampsImgData);
-  }); 
-});
-describe('selectedData', () => {
-  it('debería ser una función', () => {
-    expect(typeof app.selectedData).toBe('function');
-  });
-  it('debería retornar un nuevo objeto con atributos personalizados', () => {
-    expect(app.selectedData(replaceChampsImgData)).toEqual(outputSelectChamps);
-  });
-});
-describe('sortAttackdamage', () => {
-  it('debería ser una función', () => {
-    expect(typeof app.sortAttackdamage).toBe('function');
-  });
-  it('debería ordenar por daño de ataque Descendente', () => {
-    expect(app.sortAttackdamage(outputSelectChamps, '1')[0].name).toEqual('Amumu');
-  });
-  it('debería ordenar por daño de ataque Ascendente', () => {
-    expect(app.sortAttackdamage(outputSelectChamps, '0')[0].name).toEqual('Blitzcrank');
-  });
-});
-
-describe('sortChampionsAz', () => {
-  it('debería ser una función', () => {
-    expect(typeof app.sortChampionsAz).toBe('function');
-  });
-  it('debería ordenar de Z - A', () => {
-    expect(app.sortChampionsAz(outputSelectChamps, '1')[0].name).toEqual('Lucian');
-  });
-  it('debería ordenar de A - Z', () => {
-    expect(app.sortChampionsAz(outputSelectChamps, '0')[0].name).toEqual('Amumu');
-  });
-});
-
-describe('selectTypeChampions', () => {
-  it('debería ser una función', () => {
-    expect(typeof app.selectTypeChampions).toBe('function');
-  });
-  it('debería mostrar el campeon tipo: "Assassin"', () => {
-    expect(app.selectTypeChampions(outputSelectChamps, 'Assassin')[0].name).toEqual('Lee Sin');
-  });
-  it('debería mostrar todos los campeones', () => {
-    expect(app.selectTypeChampions(outputSelectChamps, 'Total')[0].name).toEqual('Amumu');
-  });
-});   
