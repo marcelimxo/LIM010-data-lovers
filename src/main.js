@@ -17,6 +17,8 @@ btnLogin.addEventListener('click', event => {
     body.classList.replace('login-bg', 'general-bg');
     footer.classList.remove('hide');
   } else {
+    user.innerHTML = '';
+    password.innerHTML = '';
     error.innerHTML = funcLoginValidator;
   }
 });
