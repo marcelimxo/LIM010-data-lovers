@@ -69,7 +69,7 @@ const createModal = () => {
   });
 };
 
-const championsData = app.selectedData(app.dataCurated(LOL.data, championsImg));
+const championsData = app.selectedData(app.replaceChampsImg(LOL.data, championsImg));
 const championsContainer = document.getElementById('all-champions');
 // Mostrar campeones
 const createTemplateCard = list => {
