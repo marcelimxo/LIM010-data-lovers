@@ -6,8 +6,6 @@ const app = {
       if (user === 'LABORATORIA' && password === 'LABORATORIA') {
         msg = 'ok';
       } else {
-        user = '';
-        password = '';
         msg = 'Usuario o contraseña incorrectas';
       }
     } else {
