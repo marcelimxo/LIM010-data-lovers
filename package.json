@@ -13,7 +13,8 @@
     "chai": "^4.2.0",
     "eslint": "^5.9.0",
     "eslint-plugin-jest": "^22.1.2",
-    "htmlhint": "^0.10.1"
+    "htmlhint": "^0.10.1",
+    "jest": "^24.8.0"
   },
   "description": "Esta es una aplicación dirigida a la comunidad de uno de los más grandes eSports, League of Legends, específicamente en la región LAN (Latinoamérica Norte) y LAS (Latinoamérica Sur) que aspiran a incrementar sus habilidades en el juego, conociendo más a fondo las distintas cualidades de cada campeón.",
   "directories": {
