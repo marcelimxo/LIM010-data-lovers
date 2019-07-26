@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Caudex:400,700|Open+Sans&display=swap');
-html, main {
+@import url("https://fonts.googleapis.com/css?family=Caudex:400,700|Open+Sans&display=swap");
+html,
+main {
   width: 100%;
   min-height: 100vh;
 }
@@ -72,8 +73,13 @@ body {
 }
 
 .logo {
-  margin: 0;
+  margin: 0 0 20px 0;
   text-align: center;
+}
+
+.labels-sort {
+  justify-content: space-around;
+  padding: 0 20px;
 }
 
 .flex {
@@ -138,6 +144,7 @@ body {
 .lost-password span {
   font-size: 14px;
   line-height: 0.07;
+  color: #c4b998;
 }
 
 .lost-password {
@@ -161,14 +168,19 @@ body {
   border-image-slice: 1;
   letter-spacing: 1.3px;
   font-size: 15px;
+  font-weight: bold;
   color: #cdfafa;
   background-origin: border-box;
+  background-color: #1e2328;
 }
 .btn-login:active {
   border-image: linear-gradient(to top, #0d404c 0%, #0d404c 83%, #0d404c 100%);
   border-image-slice: 1;
   color: #0d404c;
   background: #1e2328;
+}
+.span-no-account {
+  color: #937341;
 }
 .error span {
   color: #ea3636;
@@ -181,6 +193,16 @@ body {
   text-align: center;
 }
 /* Estilos generales */
+option {
+  background-color: #0a0d0ecc;
+  color: #c4b998;
+  font-weight: bolder;
+}
+.sort-titles {
+  letter-spacing: 4px;
+  color: #937341;
+  font-weight: bold;
+}
 .divider {
   content: url(img/divider-desktop.svg);
 }
@@ -191,9 +213,7 @@ body {
 .img-sort {
   width: 10.1px;
 }
-.space-around {
-  justify-content: space-around;
-}
+
 .search {
   background-color: #1e2328;
   color: #937341;
@@ -220,14 +240,17 @@ body {
   background-position-x: 80%;
   background-size: 15%;
   padding: 0.4em 1em;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.61);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 select.filter-buttons {
-  background: url(img/tag.svg) no-repeat right #191c2180;
+  background: url(img/tag.svg) no-repeat right #0d1117;
   background-position-x: 80%;
   background-size: 15%;
 }
 .icon-select.filter-buttons {
-  background: url(img/sort.svg) no-repeat right #191c2180;
+  background: url(img/sort.svg) no-repeat right #0d1117;
   background-position-x: 80%;
   background-size: 15%;
 }
@@ -236,6 +259,14 @@ select.filter-buttons {
   border: solid 1px #c49646;
   outline: none;
 }
+
+.filter-buttons:hover {
+  background-color: #1e2328;
+  box-shadow: 0px 15px 20px #0ac8b978;
+  color: #c49646;
+  transform: translateY(-3px);
+}
+
 .label-champions {
   font-size: 25px;
   letter-spacing: 8px;
@@ -249,9 +280,22 @@ select.filter-buttons {
   color: #937341;
 }
 
-p.sort {
-  font-size: 0.9em;
-  word-spacing: 0.2rem;
+.champ-name {
+  color: #c4b998;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: "Caudex", serif;
+  margin-bottom: 4px;
+}
+
+.champ-aka {
+  margin: 0;
+  color: #937341;
+  font-size: 0.86em;
+  letter-spacing: 1.3px;
+  font-family: "Caudex", serif;
+  padding: 0 5px;
 }
 
 .sort-control {
@@ -268,7 +312,7 @@ p.sort {
   font-size: 1.3em;
 }
 
-footer{
+footer {
   color: #ffffff;
   text-align: center;
   border-top: 1px solid #c3a758;
@@ -288,15 +332,16 @@ footer > a:nth-child(2) {
 /* Campeones */
 .champ-img {
   margin: 0;
-  display: inline-block;
+  display: block;
   width: 165px;
   height: 170.4px;
   border-style: solid;
   border-width: 1px;
   border-image-source: linear-gradient(to bottom, #927345, #92734500);
   border-image-slice: 1;
+  border-bottom-width: 0;
 }
-.champ-name {
+.champ-card-info {
   height: 40%;
   min-height: 50px;
   width: 165px;
@@ -305,14 +350,21 @@ footer > a:nth-child(2) {
   border-width: 1px;
   border-image-source: linear-gradient(to bottom, #92734500, #927345);
   border-image-slice: 1;
-  background: linear-gradient(180deg, #13191d 0%, #29363f00 100%);
+  background: linear-gradient(180deg, #13191d 0%, #0a0d0ed4 100%);
+  border-top-width: 0;
 }
 
 .cards {
   text-align: center;
   margin: 0 30px 30px 0;
   cursor: pointer;
+  transition: .4s ease-in-out;
 }
+
+.cards:hover {
+  transform: scale(1.1);
+}
+
 .cards img {
   display: none;
 }
@@ -377,7 +429,7 @@ footer > a:nth-child(2) {
   border: 10px double rgba(0, 0, 0, 0.5);
 }
 
-.tables:nth-child(2){
+.tables:nth-child(2) {
   background-color: #e5e5e5e3;
   width: 60%;
   border: 10px double rgba(0, 0, 0, 0.5);
@@ -509,7 +561,8 @@ td > span {
     padding: 0px;
   }
 
-  .tables,.tables:nth-child(2) {
+  .tables,
+  .tables:nth-child(2) {
     margin: 10px 0;
     width: auto;
   }
@@ -520,7 +573,7 @@ td > span {
     width: 0;
     height: 0;
   }
-  .champ-name {
+  .champ-card-info {
     width: auto;
     flex-flow: column nowrap;
     border: none;
@@ -540,7 +593,8 @@ td > span {
     display: inline;
   }
 
-  .champs-modal,.modal-bg{
+  .champs-modal,
+  .modal-bg {
     position: fixed;
     top: -33px;
     overflow-y: auto;

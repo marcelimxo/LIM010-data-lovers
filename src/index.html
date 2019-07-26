@@ -43,23 +43,23 @@
     <section id="general" class="general hide">
         <h2 class="hide">Campeones</h2>
       <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
-      <div class="labels-sort flex space-around">
-        <label for="search" id="search-champ" class="sort caudex pale-gold-letter">BUSCAR UN CAMPEÓN</label>
-        <label for="cbox-az" id="filters" class="sort caudex pale-gold-letter">ORDENAR POR</label>
+      <div class="labels-sort flex">
+        <label for="search" id="search-champ" class="caudex sort-titles">BUSCAR UN CAMPEÓN</label>
+        <label for="cbox-az" id="filters" class="caudex sort-titles">ORDENAR POR</label>
       </div>
       <div class="filter-group flex">
         <div class="input-group with-icon">
-          <input type="text" id="search" class="search" placeholder="BUSCAR" />
+          <input type="text" id="search" class="search" placeholder="BUSCAR">
           <img class="icon" alt="lupa" src="img/magnifier.svg">
         </div>
-        <div class="filter-group flex">
+        
           <div class="sort-control flex">
             <select class="filter-buttons sort caudex icon-select" id="cbox-az">
-              <option value="0" selected>A - Z</option>
+              <option value="0" selected="">A - Z</option>
               <option value="1">Z - A</option>
             </select>
             <select id="select-type" class="filter-buttons sort caudex">
-              <option selected disabled>TIPO</option>
+              <option selected="" disabled="">TIPO</option>
               <option value="Assassin">Assassin</option>
               <option value="Fighter">Fighter</option>
               <option value="Mage">Mage</option>
@@ -69,12 +69,13 @@
               <option value="Total">Total</option>
             </select>
             <select class="filter-buttons sort caudex icon-select" id="ad">
-              <option disabled selected>AD</option>
+              <option disabled="" selected="">AD</option>
               <option value="0">Asc</option>
               <option value="1">Desc</option>
             </select>
           </div>
-        </div>
+
+
       </div>
 
       <div class="title-champs flex">

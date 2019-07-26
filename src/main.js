@@ -87,9 +87,9 @@ const createTemplateCard = list => {
       ">
             <img class"champ-small-img" src="${ourData.icon}"/>
           </figure>
-          <div class="champ-name flex">
-            <p class="sort caudex bold">${ourData.name}</p>
-            <p class="sort caudex">${ourData.aka}</p>
+          <div class="champ-card-info flex">
+            <p class="champ-name">${ourData.name}</p>
+            <p class="champ-aka">${ourData.aka}</p>
           </div>
       </div>`;
     templateCard += card;
