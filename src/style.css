@@ -99,7 +99,7 @@ body {
 .icon {
   position: absolute;
   left: 90%;
-  top: 13px;
+  top: 15px;
 }
 
 /* Estilos que se repiten */
@@ -203,6 +203,9 @@ option {
   color: #937341;
   font-weight: bold;
 }
+.sort-titles:first-child {
+  padding-right: 15vw;
+}
 .divider {
   content: url(img/divider-desktop.svg);
 }
@@ -217,7 +220,7 @@ option {
 .search {
   background-color: #1e2328;
   color: #937341;
-  height: 32.84px !important;
+  height: 40px !important;
 }
 
 ::placeholder {
@@ -227,13 +230,14 @@ option {
   letter-spacing: 4px;
 }
 .filter-buttons {
-  width: 100px;
   margin-left: 1em;
   border-style: solid;
   border-width: 1px;
   border-image: linear-gradient(to bottom, #c3a758, #6b521e);
   border-image-slice: 1;
   background-color: #191c2180;
+  letter-spacing: 2px;
+  color: #937341;
   overflow: hidden;
   overflow: -moz-hidden-unscrollable;
   -webkit-appearance: none;
@@ -244,16 +248,21 @@ option {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-select.filter-buttons {
+.filter-buttons:nth-child(even) {
   background: url(img/tag.svg) no-repeat right #0d1117;
-  background-position-x: 80%;
+  background-position-x: 90%;
   background-size: 15%;
+  width: 140px;
 }
-.icon-select.filter-buttons {
+
+.filter-buttons:nth-child(odd) {
   background: url(img/sort.svg) no-repeat right #0d1117;
   background-position-x: 80%;
   background-size: 15%;
+  width: 100px;
 }
+
+
 .filter-buttons:active,
 .filter-buttons:focus {
   border: solid 1px #c49646;
@@ -273,7 +282,13 @@ select.filter-buttons {
 }
 .title-champs {
   justify-content: space-evenly;
-  padding: 15px 0px 15px 0px;
+  margin: 40px 0px 2px 0px;
+}
+.average {
+  text-align: center;
+  font-size: 1.3em;
+  color: #c4b998;
+  margin: 0 0 40px 0;
 }
 .sort {
   letter-spacing: 4px;
@@ -295,7 +310,7 @@ select.filter-buttons {
   font-size: 0.86em;
   letter-spacing: 1.3px;
   font-family: "Caudex", serif;
-  padding: 0 5px;
+  padding: 0 5px 5px;
 }
 
 .sort-control {
@@ -307,10 +322,7 @@ select.filter-buttons {
   justify-content: space-around;
 }
 
-.average {
-  text-align: center;
-  font-size: 1.3em;
-}
+
 
 footer {
   color: #ffffff;
@@ -356,13 +368,14 @@ footer > a:nth-child(2) {
 
 .cards {
   text-align: center;
-  margin: 0 30px 30px 0;
+  margin: 0px 10px 50px 0;
   cursor: pointer;
   transition: .4s ease-in-out;
 }
 
 .cards:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  margin-bottom: 40px;
 }
 
 .cards img {
@@ -392,7 +405,7 @@ footer > a:nth-child(2) {
   text-shadow: 0px 3px 4px #111318e6;
 }
 
-.champion-name {
+.modal-champ-name {
   margin: 5% 0 1px 10%;
   font-family: "Caudex", serif;
   font-size: 2.4rem;
@@ -499,13 +512,28 @@ td > span {
     height: 10.4px;
   }
   .filter-buttons {
-    padding: 0.4em 0 0.4em 0;
+    padding: 0 .5em;
     margin: 0;
+    height: 40px;
+  }
+  .filter-buttons:nth-child(even) {
+    background-position-x: 90%;
+    background-size: 12%;
+    width: 120px;
+  }
+  .filter-buttons:nth-child(odd) {
+    background-position-x: 90%;
+    background-size: 16%;
+    width: 80px;
   }
   .label-champions {
     font-size: 1em;
     letter-spacing: 4px;
     text-align: center;
+    padding: 0 5px;
+  }
+  .title-champs {
+    margin: 30px 0 10px 0;
   }
   .average {
     font-size: 1em;

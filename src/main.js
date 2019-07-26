@@ -52,7 +52,7 @@ const createModal = () => {
         attackrange,
         attackdamage
       } = champData;
-      document.querySelector('#modal > .champion-name').innerHTML = name;
+      document.querySelector('#modal > .modal-champ-name').innerHTML = name;
       document.querySelector('#modal > .tags').innerHTML = tags.join(', ');
       modalBg.style.backgroundImage = `url('${img}')`;
       document.getElementById('attack').innerHTML = `<span>${attack}</span>/10`;
