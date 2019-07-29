@@ -96,7 +96,7 @@ const app = {
   // Filtro por tipo
   selectTypeChampions: (data, type) => {
     const filterTypeChamp = data.filter((obj) => {
-      if (type !== 'Total') {
+      if (type !== 'Total' && type !== 'TIPO') {
         return (obj.tags[0] === type || obj.tags[1] === type); // 0 y 1 para repetir campeones
       } else {
         return data;
