@@ -383,6 +383,13 @@ footer > a:nth-child(2) {
   display: none;
 }
 
+.empty-champs {
+  font-size: 2rem;
+  color: #c4b998;
+  text-align: center;
+  text-shadow: 3px 3px 3px #000000e6;
+}
+
 .modal{
   position: fixed;
   top: 10%;

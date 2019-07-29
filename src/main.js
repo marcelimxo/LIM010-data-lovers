@@ -173,6 +173,9 @@ searchInput.addEventListener('input', event => {
   const results = championsData.filter(
     champ =>
       champ.name.toLowerCase().indexOf(event.target.value.toLowerCase()) === 0
-  );
-  createTemplateCard(results);
+  ); 
+
+  if (results.length === 0) {
+    championsContainer.innerHTML = '<p class="empty-champs caudex"> Lo sentimos, no existe ningún campeón con ese nombre :-( </p>';
+  } else createTemplateCard(results);
 });
