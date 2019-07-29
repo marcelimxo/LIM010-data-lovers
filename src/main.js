@@ -135,17 +135,30 @@ selectTypeChamp.addEventListener('change', () => {
   title.innerHTML = `${selectTypeChamp.value} (${dataTypeChampions.length})`;
 });
 
-// Boton de ocultar modal
+// Ocultar modal
 const closeBtn = document.getElementById('close-btn');
 const modal = document.getElementById('modal');
-const mask = document.getElementById('mask');
+const mask = document.getElementById('all-modal');
 const modalBg = document.getElementById('modal-bg');
 
-closeBtn.addEventListener('click', () => {
+const hideModal = ()=>{
   modal.classList.remove('visible');
   mask.classList.remove('visible');
   modalBg.classList.remove('visible');
+};
+
+const hideModalWithEscKey = ((event) =>{ 
+  if (event.keyCode === 27) { 
+    hideModal();
+  }
 });
+
+closeBtn.addEventListener('click', hideModal);
+
+mask.addEventListener('click', hideModal);
+
+body.onkeydown = hideModalWithEscKey;
+
 // Mostrar modal
 const showModal = () => {
   modal.classList.add('visible');
@@ -159,7 +172,7 @@ const searchInput = document.getElementById('search');
 searchInput.addEventListener('input', event => {
   const results = championsData.filter(
     champ =>
-      champ.name.toLowerCase().indexOf(event.target.value.toLowerCase()) >= 0
+      champ.name.toLowerCase().indexOf(event.target.value.toLowerCase()) === 0
   );
   createTemplateCard(results);
 });

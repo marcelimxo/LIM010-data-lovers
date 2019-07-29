@@ -30,6 +30,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  box-shadow: inset 0px 0px 300px 130px #000000e6;
 }
 
 .login {
@@ -273,7 +274,7 @@ option {
   background-color: #1e2328;
   box-shadow: 0px 15px 20px #0ac8b978;
   color: #c49646;
-  transform: translateY(-3px);
+  transform: translateY(-0.5px);
 }
 
 .label-champions {
@@ -288,7 +289,7 @@ option {
   text-align: center;
   font-size: 1.3em;
   color: #c4b998;
-  margin: 0 0 40px 0;
+  margin: 0 0 3rem 0;
 }
 .sort {
   letter-spacing: 4px;
@@ -382,14 +383,27 @@ footer > a:nth-child(2) {
   display: none;
 }
 
-.champs-modal {
+.modal{
   position: fixed;
   top: 10%;
   left: 0;
   right: 0;
   margin: 0 auto;
   width: 85%;
-  height: 500px;
+  height: 70vh;
+}
+
+.modal-bg {  
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+  visibility: hidden;
+  transform: translateY(45px);
+  z-index: 2;
+  box-shadow: 2px 4px 15px hsla(0, 0%, 0%, 0.9);
+}
+
+.modal-champion {
   z-index: 3;
   transition: 0.3s ease-out;
   visibility: hidden;
@@ -413,23 +427,7 @@ footer > a:nth-child(2) {
   text-shadow: 0px 3px 4px #111318e6;
 }
 
-.modal-bg {
-  position: fixed;
-  top: 10%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 85%;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  filter: contrast(0.5);
-  transition: 0.3s ease-out;
-  visibility: hidden;
-  transform: translateY(45px);
-  opacity: 0;
-  z-index: 2;
-}
+
 
 .tables-container {
   justify-content: space-around;
@@ -438,7 +436,8 @@ footer > a:nth-child(2) {
 
 .tables {
   background-color: #e5e5e5e3;
-  width: 300px;
+  margin: 0 2%;
+  width: 27%;
   border: 10px double rgba(0, 0, 0, 0.5);
 }
 
@@ -473,7 +472,7 @@ td > span {
   color: #1e2328;
 }
 
-.mask {
+.all-modal {
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -482,7 +481,7 @@ td > span {
   height: 100%;
   background: rgba(52, 73, 94, 0.8);
   z-index: 1;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   opacity: 0;
 }
 
@@ -498,9 +497,17 @@ td > span {
   border: 0;
 }
 
+.close:hover {
+  background: #3a8f8b;
+  transition: .2s ease-in-out;
+  color: #fff;
+  font-weight: bold;
+}
+
 .visible {
   visibility: visible;
   opacity: 1;
+  transition: 0.3s ease-out;
 }
 /* Estilos para mobile */
 @media screen and (max-width: 767px) {
@@ -621,10 +628,10 @@ td > span {
     display: inline;
   }
 
-  .champs-modal,
-  .modal-bg {
+  .modal {
     position: fixed;
-    top: -33px;
+    top: -5vh;
     overflow-y: auto;
+    height: 90vh;
   }
 }

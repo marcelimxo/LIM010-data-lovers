@@ -16,7 +16,7 @@
   </header>
   <main class="position-relative">
     <section id="login-container" class="align height-100">
-        <h2 class="hide">¡Bienvenidos</h2>
+      <h2 class="hide">¡Bienvenidos</h2>
       <form class="login">
         <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
         <div class="error">
@@ -28,20 +28,20 @@
         </div>
         <div class="input-group">
           <label for="password" class="mobile-label pale-gold-letter">Contraseña</label>
-          <input type="password" id="password" class="mobile-input pale-gold-letter gunmetal-bg"  />
+          <input type="password" id="password" class="mobile-input pale-gold-letter gunmetal-bg" />
           <div class="lost-password"><span class="pale-gold-letter bold">¿Olvidaste tu contraseña?</span></div>
         </div>
         <div>
           <input type="submit" value="INGRESA" class="btn-login bold caudex gunmetal-bg" id="btn-login" />
         </div>
-        <div class="registration">          
+        <div class="registration">
           <span class="span-no-account dark-gold-letter">¿No tienes una cuenta?</span>
           <span class="span-no-account bold dark-gold-letter">Registrate</span>
         </div>
       </form>
     </section>
     <section id="general" class="general hide">
-        <h2 class="hide">Campeones</h2>
+      <h2 class="hide">Campeones</h2>
       <figure class="logo"><img src="img/logo-mobile.svg" alt="Invocadores Leyendas"></figure>
       <div class="labels-sort flex">
         <label for="search" id="search-champ" class="caudex sort-titles">BUSCAR UN CAMPEÓN</label>
@@ -52,28 +52,28 @@
           <input type="text" id="search" class="search" placeholder="BUSCAR">
           <img class="icon" alt="lupa" src="img/magnifier.svg">
         </div>
-        
-          <div class="sort-control flex">
-            <select class="filter-buttons caudex sort-icon" id="cbox-az">
-              <option value="0" selected="">A - Z</option>
-              <option value="1">Z - A</option>
-            </select>
-            <select id="select-type" class="filter-buttons caudex">
-              <option selected="" disabled="">TIPO</option>
-              <option value="Assassin">Assassin</option>
-              <option value="Fighter">Fighter</option>
-              <option value="Mage">Mage</option>
-              <option value="Marksman">Marksman</option>
-              <option value="Support">Support</option>
-              <option value="Tank">Tank</option>
-              <option value="Total">Total</option>
-            </select>
-            <select class="filter-buttons caudex sort-icon" id="ad">
-              <option disabled="" selected="">AD</option>
-              <option value="0">Asc</option>
-              <option value="1">Desc</option>
-            </select>
-          </div>
+
+        <div class="sort-control flex">
+          <select class="filter-buttons caudex sort-icon" id="cbox-az">
+            <option value="0" selected="">A - Z</option>
+            <option value="1">Z - A</option>
+          </select>
+          <select id="select-type" class="filter-buttons caudex">
+            <option selected="" disabled="">TIPO</option>
+            <option value="Assassin">Assassin</option>
+            <option value="Fighter">Fighter</option>
+            <option value="Mage">Mage</option>
+            <option value="Marksman">Marksman</option>
+            <option value="Support">Support</option>
+            <option value="Tank">Tank</option>
+            <option value="Total">Total</option>
+          </select>
+          <select class="filter-buttons caudex sort-icon" id="ad">
+            <option disabled="" selected="">AD</option>
+            <option value="0">Asc</option>
+            <option value="1">Desc</option>
+          </select>
+        </div>
 
 
       </div>
@@ -86,62 +86,65 @@
       <div class="average caudex hide" id="average"></div>
       <div id="all-champions" class="galeria flex"></div>
 
-      <div class="mask " id="mask"></div>
-      <div class="modal-bg" id="modal-bg"></div>
-      <div class="champs-modal " id="modal">
-        <button class="close" id="close-btn">X</button>
-        <p class="modal-champ-name"></p>
-        <p class="tags"></p>
-        <div class="tables-container flex">
-          <div class="tables">
-            <p>Datos</p>
-            <table>
-              <tbody>
-                <tr>
-                  <td><span>Ataque</span></td>
-                  <td id="attack"></td>
-                </tr>
-                <tr>
-                  <td><span>Defensa</span></td>
-                  <td id="defense"></td>
-                </tr>
-                <tr>
-                  <td><span>Magia</span></td>
-                  <td id="magic"></td>
-                </tr>
-                <tr>
-                  <td><span>Dificultad</span></td>
-                  <td id="difficulty"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="tables">
-            <p>Stats</p>
-            <table>
-              <tbody>
-                <tr>
-                  <td id="help-points"></td>
-                  <td id="hp-regen"></td>
-                </tr>
-                <tr>
-                  <td id="mana"></td>
-                  <td id="movespeed"></td>
-                </tr>
-                <tr>
+      <div class="all-modal" id="all-modal">
+        <div class="modal modal-bg" id="modal-bg"></div>
+        <div class="modal modal-champion " id="modal">
+          <button class="close" id="close-btn">X</button>
+          <p class="modal-champ-name"></p>
+          <p class="tags"></p>
+          <div class="tables-container flex">
+            <div class="tables">
+              <p>Datos</p>
+              <table>
+                <tbody>
+                  <tr>
+                    <td><span>Ataque</span></td>
+                    <td id="attack"></td>
+                  </tr>
+                  <tr>
+                    <td><span>Defensa</span></td>
+                    <td id="defense"></td>
+                  </tr>
+                  <tr>
+                    <td><span>Magia</span></td>
+                    <td id="magic"></td>
+                  </tr>
+                  <tr>
+                    <td><span>Dificultad</span></td>
+                    <td id="difficulty"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tables">
+              <p>Stats</p>
+              <table>
+                <tbody>
+                  <tr>
+                    <td id="help-points"></td>
+                    <td id="hp-regen"></td>
+                  </tr>
+                  <tr>
+                    <td id="mana"></td>
+                    <td id="movespeed"></td>
+                  </tr>
+                  <tr>
                     <td id="attackrange"></td>
                     <td id="attackdamage"></td>
                   </tr>
-              </tbody>
-            </table>
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
 
     </section>
   </main>
-  <footer id="footer" class="hide">Copyright ©2019 <a href="https://github.com/marcelimxo" target="_blank" rel="noopener noreferrer">Marcelim</a> & <a href="https://github.com/Jesseliz/" target="_blank" rel="noopener noreferrer">Yesseliz</a>. Hecho con ♡</footer>
+  <footer id="footer" class="hide">Copyright ©2019 <a href="https://github.com/marcelimxo" target="_blank"
+      rel="noopener noreferrer">Marcelim</a> & <a href="https://github.com/Jesseliz/" target="_blank"
+      rel="noopener noreferrer">Yesseliz</a>. Hecho con ♡</footer>
   <script src="./data/lol/lol.js"></script>
   <script src="./data/lol/newChampsImg.js"></script>
   <script src="data.js"></script>
